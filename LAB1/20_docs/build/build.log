@@ -1,0 +1,71 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex.fmt)
+ restricted \write18 enabled.
+entering extended mode
+(main.tex
+LaTeX2e <2025-06-01> patch level 1
+L3 programming layer <2025-07-20>
+(/home/noname/.miktex/texmfs/install/tex/latex/base/article.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+(/home/noname/.miktex/texmfs/install/tex/latex/base/size12.clo))
+(my-coverpage.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/graphics/graphicx.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/graphics/keyval.sty)
+(/home/noname/.miktex/texmfs/install/tex/latex/graphics/graphics.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/graphics/trig.sty)
+(/home/noname/.miktex/texmfs/install/tex/latex/graphics-cfg/graphics.cfg)
+(/home/noname/.miktex/texmfs/install/tex/latex/graphics-def/pdftex.def)))
+(/home/noname/.miktex/texmfs/install/tex/latex/booktabs/booktabs.sty)
+(/home/noname/.miktex/texmfs/install/tex/latex/eso-pic/eso-pic.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/xcolor/xcolor.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/graphics-cfg/color.cfg)
+(/home/noname/.miktex/texmfs/install/tex/latex/graphics/mathcolor.ltx)))
+(/home/noname/.miktex/texmfs/install/tex/latex/tools/array.sty)
+(/home/noname/.miktex/texmfs/install/tex/latex/float/float.sty)
+(/home/noname/.miktex/texmfs/install/tex/latex/tools/tabularx.sty)
+(/home/noname/.miktex/texmfs/install/tex/latex/base/inputenc.sty)
+(/home/noname/.miktex/texmfs/install/tex/latex/base/fontenc.sty)
+(/home/noname/.miktex/texmfs/install/tex/generic/babel/babel.sty
+(/home/noname/.miktex/texmfs/install/tex/generic/babel/txtbabel.def)
+*************************************
+* Local config file bblopts.cfg used
+*
+(/home/noname/.miktex/texmfs/install/tex/latex/arabi/bblopts.cfg)
+(/home/noname/.miktex/texmfs/install/tex/latex/babel-vietnamese/vietnamese.ldf
+(/home/noname/.miktex/texmfs/install/tex/generic/babel/locale/vi/babel-vietname
+se.tex)
+
+Package babel Warning: No hyphenation patterns were preloaded for
+(babel)                the language 'Vietnamese' into the format.
+(babel)                Please, configure your TeX system to add them and
+(babel)                rebuild the format. Now I will use the patterns
+(babel)                preloaded for \language=0 instead on input line 36.
+
+Loading definitions for the Vietnamese font encoding
+(/home/noname/.miktex/texmfs/install/tex/latex/vntex/t5enc.def
+(/home/noname/.miktex/texmfs/install/tex/latex/vntex/t5enc.dfu)))))
+(/home/noname/.miktex/texmfs/install/tex/latex/base/fontenc.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/vntex/t5cmr.fd))
+(/home/noname/.miktex/texmfs/install/tex/latex/l3backend/l3backend-pdftex.def)
+(/home/noname/Documents/project_tiny/FPGA/LAB1/20_docs/build/main.aux)
+(/home/noname/.miktex/texmfs/install/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/home/noname/.miktex/texmfs/install/tex/latex/epstopdf-pkg/epstopdf-base.sty
+(/home/noname/.miktex/texmfs/install/tex/generic/infwarerr/infwarerr.sty)
+(/home/noname/.miktex/texmfs/install/tex/latex/grfext/grfext.sty
+(/home/noname/.miktex/texmfs/install/tex/generic/kvdefinekeys/kvdefinekeys.sty)
+) (/home/noname/.miktex/texmfs/install/tex/latex/kvoptions/kvoptions.sty
+(/home/noname/.miktex/texmfs/install/tex/generic/ltxcmds/ltxcmds.sty)
+(/home/noname/.miktex/texmfs/install/tex/latex/kvsetkeys/kvsetkeys.sty))
+(/home/noname/.miktex/texmfs/install/tex/generic/pdftexcmds/pdftexcmds.sty
+(/home/noname/.miktex/texmfs/install/tex/generic/iftex/iftex.sty))
+(/home/noname/.miktex/texmfs/install/tex/latex/00miktex/epstopdf-sys.cfg))
+[1{/home/noname/.miktex/texmfs/data/fonts/map/pdftex/pdftex.map} <./my-chapters
+/my-images/bia.jpg> <./my-chapters/my-images/01_logobachkhoatoi.png>]
+[2] (/home/noname/Documents/project_tiny/FPGA/LAB1/20_docs/build/main.aux) )</h
+ome/noname/.miktex/texmfs/install/fonts/type1/vntex/vnr/vnbx12.pfb></home/nonam
+e/.miktex/texmfs/install/fonts/type1/vntex/vnr/vnr12.pfb></home/noname/.miktex/
+texmfs/install/fonts/type1/vntex/vnr/vnr17.pfb>
+Output written on /home/noname/Documents/project_tiny/FPGA/LAB1/20_docs/build/m
+ain.pdf (2 pages, 92778 bytes).
+Transcript written on /home/noname/Documents/project_tiny/FPGA/LAB1/20_docs/bui
+ld/main.log.

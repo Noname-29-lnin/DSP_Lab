@@ -1,0 +1,114 @@
+\ProvidesPackage{my-codespace}[2025/08/11 v0.0 My Codespace Package]
+
+% Required packages
+% Additional predefined colors can be enabled via options: dvipsnames, svgnames, x11names
+\RequirePackage{xcolor}
+\RequirePackage{tikz}
+\RequirePackage[framemethod=tikz]{mdframed}
+\RequirePackage{listings,lstautogobble}
+\RequirePackage{minted,verbatim}
+
+% Color definitions
+\colorlet{codebackground}{magenta!10}
+\definecolor{codebasic}{RGB}{106,106,106}
+\definecolor{codeidentifier}{RGB}{0,0,0}
+\definecolor{codecomment}{RGB}{0,136,0}
+\definecolor{codestring}{RGB}{187,68,68}
+\definecolor{codekeyword}{RGB}{170,34,255}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+% Style for source code
+\lstdefinestyle{StyleCode}{
+    backgroundcolor=\color{white},    % White background
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\fontsize{7}{8}\selectfont\ttfamily, % Custom font size
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=9pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=3,
+    frame=single,                      % Single border frame
+    rulecolor=\color{black},           % Border color
+    framexleftmargin=5pt,              % Left padding inside frame
+    framexrightmargin=5pt,             % Right padding inside frame
+    framextopmargin=3pt,               % Top padding inside frame
+    framexbottommargin=3pt             % Bottom padding inside frame
+}
+\lstdefinestyle{StylePseudo}{
+    basicstyle=\ttfamily\footnotesize,
+    keywordstyle=\color{blue},
+    commentstyle=\color{gray},
+    numbers=left,
+    numberstyle=\tiny\color{gray},
+    stepnumber=1,
+    numbersep=5pt,
+    backgroundcolor=\color{backcolour},
+    frame=single,
+    framesep=5pt,
+    rulecolor=\color{black},
+    breaklines=true,
+    showstringspaces=false,
+    tabsize=2
+}
+\lstdefinelanguage{Pseudo}{
+	keywords={Function, if, then, else, return, for},
+	sensitive=true
+}
+
+% Language definition: C
+\lstdefinelanguage{C}{
+	keywords={break, case, char, const, continue, default, do, double, else, enum, extern, float, for, goto, if, int, long, register, return, short, signed, sizeof, static, struct, switch, typedef, union, unsigned, void, volatile, while},
+	sensitive=true,
+	comment=[l]{//},
+	morecomment=[s]{/*}{*/},
+	morestring=[b]",
+	morestring=[b]'
+}
+
+% Language definition: SystemVerilog
+\lstdefinelanguage{SystemVerilog}{
+	keywords={module, endmodule, input, output, wire, reg, logic, always, assign, begin, end, if, else, case, default, for, while, repeat, forever, fork, join, initial, task, function, return, break, continue, typedef, struct, enum, union, package, import, export, parameter, localparam, defparam, generate, endgenerate, always_comb, always_ff, always_latch, posedge, negedge, edge, wait, assert, assume, cover, property, sequence, rand, randc, constraint, randomize, with, inside, dist, class, endclass, extends, virtual, interface, endinterface, clocking, endclocking, modport, covergroup, endgroup, forkjoin, unique, priority, casex, casez, packed, unsigned, signed, static, automatic, protected, local, const, ref, this, super, new, null, extern, pure, forkjoin_none, time, bit, byte, shortint, int, longint, integer, time, real, shortreal, chandle, string, event, void, null, input, output, inout, tri, triand, trior, tri0, tri1, supply0, supply1, wand, wor, weak0, weak1, pullup, pulldown, highz0, highz1, small, medium, large, scalared, vectored},
+	sensitive=true,
+	morecomment=[l]//,
+	morecomment=[s]{/*}{*/},
+	morestring=[b]",
+	morestring=[b]'
+}
+
+% Style for result output
+\lstdefinestyle{StyleResult}{
+	backgroundcolor=\color{backcolour},
+	commentstyle=\color{codegreen},
+	keywordstyle=\color{magenta},
+	numberstyle=\tiny\color{codegray},
+	stringstyle=\color{codepurple},
+	basicstyle=\fontsize{10}{11}\selectfont\ttfamily, % Custom font size,
+	breakatwhitespace=false,
+	breaklines=true,
+	captionpos=b,
+	keepspaces=true,
+	numbers=none,
+	numbersep=5pt,
+	showspaces=false,
+	showstringspaces=false,
+	showtabs=false,
+	tabsize=2,
+	language=Result
+}
+
+% Language definition: Result (for console/log output)
+\lstdefinelanguage{Result}{
+	keywords={PASS, FAIL},
+	sensitive=true
+}

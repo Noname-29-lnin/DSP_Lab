@@ -1,0 +1,122 @@
+module top_module (
+    input  logic        CLOCK_50        ,
+    input  logic  [9:0] SW              ,
+    input  logic  [3:0] KEY             ,
+
+    inout  wire         FPGA_I2C_SDAT   ,
+    output logic        FPGA_I2C_SCLK   ,
+
+    output logic  [9:0] LEDR            ,
+    output logic  [6:0] HEX0            ,
+    output logic  [6:0] HEX1            ,
+    output logic  [6:0] HEX2            ,
+    output logic  [6:0] HEX3            ,
+    output logic  [6:0] HEX4            ,
+    output logic  [6:0] HEX5            ,
+
+    output logic        AUD_XCK         ,
+    output logic        AUD_BCLK        ,
+    input  logic        AUD_ADCDAT      ,
+    output logic        AUD_ADCLRCK     ,
+    output logic        AUD_DACDAT      ,
+    output logic        AUD_DACLRCK 
+);
+
+    logic config_done;
+
+    logic CLOCK_12, samp_tick_en, locked;
+
+    logic [23:0] p2s_dac, s2p_adc;
+	 
+	 PLL div(
+		.refclk(CLOCK_50),   //  refclk.clk
+		.rst(1'b0),      //   reset.reset
+		.outclk_0(CLOCK_12), // outclk0.clk
+		.locked(locked)    //  locked.export
+	);
+
+
+	 
+    config_codec #(
+        .DEPTH(11)
+    ) codec_config_i2c (
+        .i_clk  (CLOCK_12), 
+        .i_rst_n(SW[9]),
+        .o_done (config_done), 
+        .o_scl  (FPGA_I2C_SCLK),
+        .io_sda (FPGA_I2C_SDAT)
+    );
+
+    assign AUD_XCK = CLOCK_12;
+
+    codec_data codec_trans_rec (
+        .i_clk        (CLOCK_12),    //  12MHz - MCLK
+        .i_rst_n      (SW[9]),
+        .i_config_done(config_done), // done kick signal from i2c_config
+        .i_p2s_in     (p2s_dac),     // data need DAC
+        .o_s2p_out    (s2p_adc),     // only left channel
+        .o_bclk       (AUD_BCLK),    // 240kHz ( 40:60 - 0:1)
+        .o_daclrck    (AUD_DACLRCK), //  48kHz ( 50:50 - 0:1) 
+        .o_adclrck    (AUD_ADCLRCK), //  48kHz ( 50:50 - 0:1)   
+        .o_sample_tick(samp_tick_en),//  48kHz (249: 1 - 0:1) 
+        .i_adc_dat    (AUD_ADCDAT),
+        .o_dac_dat    (AUD_DACDAT)
+    );
+
+    logic add_noise, lfsr_sin;
+    logic [3:0] gain_wave, gain_noise;
+    logic [2:0] sel_wave, sel_duty;
+    logic [9:0] phase_step, sine_step;
+
+    Top_gen_wave #(
+        .SIZE_BTN       (4 )   ,
+        .SIZE_SW        (10)   ,
+        .SIZE_LEDR      (10)   ,
+        .SIZE_LEDG      (4 )   ,
+        .SIZE_WIDTH     (24)   ,
+        .SIZE_DEPTH     (1024) ,
+        .SIZE_SEG       (7)    ,
+        .NUM_MODE_WAVE  (3)  ,
+        .NUM_DUTY_CYCLE (3) ,
+        .SIZE_GAIN_WAVE (3)
+    ) control_io (
+        .i_clk(CLOCK_12),
+        .i_btn(KEY),
+        .i_sw(SW),
+        .o_add_noise(add_noise), // 0 - sóng thuần túy, 1 - sóng + nhiễu
+        .o_sel_wave(sel_wave), // chọn loại sóng xuất
+        .o_sel_duty_cycle(sel_duty), // chọn duty cycle cho sóng vuông
+        .o_gain_wave(gain_wave), // lựa chọn độ lợi áp khôi phục của sóng
+        .o_phase_step_wave(phase_step), // chỉnh bước nhảy của NCO của sóng - chỉnh tẩn số
+        .o_lfsr_sin(lfsr_sin), // 0 - lfsr, 1 - hài bậc cao sóng sine
+        .o_phase_step_noise(sine_step), // chỉnh bước nhảy của NCO của nhiểu sin cao - chỉnh tẩn số
+        .o_gain_noise(gain_noise), // lựa chọn độ lợi áp khôi phục của nhiễu
+        .o_ledr(LEDR),
+        .o_ledg(),
+        .o_hex_0(HEX0), // value0 |
+        .o_hex_1(HEX1), // Value1 | Amplitude
+        .o_hex_2(HEX2), // value2 |
+        .o_hex_3(HEX3), // sign   |
+        .o_hex_4(HEX4), // Value0 | Frequency
+        .o_hex_5(HEX5)  // value1 |
+    );
+
+    wave_gen #(
+        .WIDTH(24  ),
+        .DEPTH(1024)
+    ) wave_gen (
+        .i_clk             (CLOCK_12),
+        .i_rst_n           (SW[9]),
+        .i_samp_tick       (samp_tick_en),
+        .i_add_noise       (add_noise), // 0 - sóng thuần túy, 1 - sóng + nhiễu
+        .i_sel_wave        (sel_wave), // chọn loại sóng xuất
+        .i_wave_phase_step (phase_step), // chỉnh bước nhảy của NCO của sóng - chỉnh tẩn số
+        .i_sel_duty_cycle  (sel_duty), // chọn duty cycle cho sóng vuông
+        .i_gain_wave       (gain_wave), // lựa chọn độ lợi áp khôi phục của sóng
+        .i_lfsr_sin        (lfsr_sin), // 0 - lfsr, 1 - hài bậc cao sóng sine
+        .i_wave_sine_step  (sine_step), // chỉnh bước nhảy của NCO của nhiểu sin cao - chỉnh tẩn số
+        .i_gain_noise      (gain_noise), // lựa chọn độ lợi áp khôi phục của nhiễu
+        .o_wave_out        (p2s_dac) 
+    );
+
+endmodule

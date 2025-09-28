@@ -1,0 +1,195 @@
+\ProvidesPackage{my-coverpage}[2025/08/11 HCMUT Report Cover Page]
+
+% Packages needed for coverpage
+\RequirePackage{graphicx}
+\RequirePackage{booktabs}
+\RequirePackage{eso-pic}
+\RequirePackage{array}
+\RequirePackage{booktabs}
+\RequirePackage{float}
+\RequirePackage{tabularx}
+
+
+% Optional: support for Vietnamese characters
+\makeatletter
+\RequirePackage[utf8]{inputenc}
+\RequirePackage[T1]{fontenc}
+\RequirePackage[vietnamese]{babel}
+
+% ===========
+% Default values
+% ===========
+\newcommand{\@NameUpperUniname}{Vietnam National University Ho Chi Minh City}
+\newcommand{\NameUpperUniname}[1]{\renewcommand{\@NameUpperUniname}{#1}}
+
+\newcommand{\@NameUniname}{Ho Chi Minh City University of Technology}
+\newcommand{\NameUniname}[1]{\renewcommand{\@NameUniname}{#1}}
+
+\newcommand{\@NameDeptname}{FACULTY OF ELECTRICAL AND ELECTRONICS ENGINEERING}
+\newcommand{\NameDeptname}[1]{\renewcommand{\@NameDeptname}{#1}}
+
+\newcommand{\@NamePathlogo}{./my-chapters/my-images/01_logobachkhoatoi.png}
+\newcommand{\NamePathlogo}[1]{\renewcommand{\@NamePathlogo}{#1}}
+
+\newcommand{\@NameClass}{Class} % Character, Vietnamese, No resize
+\newcommand{\NameClass}[1]{\renewcommand{\@NameClass}{#1}}
+
+\newcommand{\@NameGroup}{Group} % Number, No resize
+\newcommand{\NameGroup}[1]{\renewcommand{\@NameGroup}{#1}}
+
+\newcommand{\@NameLesson}{Name Lesson}
+\newcommand{\NameLesson}[2][\Large]{% Character, Vietnamese, Resize
+  \renewcommand{\@NameLesson}{%
+    {#1\fontencoding{T5}\selectfont #2}%
+  }%
+}
+
+\newcommand{\@NameTitle}{Title Report}
+\newcommand{\NameTitle}[2][\Huge]{% Character, Vietnamese, Resize
+  \renewcommand{\@NameTitle}{%
+    {#1\fontencoding{T5}\selectfont #2}%
+  }%
+}
+
+
+\newcommand{\@NameAdvisor}{Advisor} % Character, Vietnamese, No Resize
+\newcommand{\NameAdvisor}[1]{%
+  \renewcommand{\@NameAdvisor}{%
+    {\fontencoding{T5}\selectfont #1}%
+  }%
+}
+
+\newcommand{\@NamePathBackground}{./my-chapters/my-images/bia.jpg}
+\newcommand{\NamePathBackground}[2][]{%
+  \renewcommand{\@NamePathBackground}{#2}%
+  \AddToShipoutPictureBG*{%
+    \AtPageLowerLeft{%
+      \includegraphics[#1]{\@NamePathBackground}%
+    }%
+  }%
+}
+
+\newcommand{\@NamePlace}{Ho Chi Minh City}
+\newcommand{\NamePlace}[1]{\renewcommand{\@NamePlace}{#1}}
+\newcommand{\@NameTime}{../../20..}
+\newcommand{\NameTime}[1]{\renewcommand{\@NameTime}{#1}}
+
+
+\newcommand{\@NameStudent}{Student} % Character, Vietnamese, No Resize
+\newcommand{\NameStudent}[1]{%
+  \renewcommand{\@NameStudent}{%
+    {\fontencoding{T5}\selectfont #1}%
+  }%
+} 
+\newcommand{\@NameIDStudent}{ID Student} % Number, No Resize
+\newcommand{\NameIDStudent}[1]{\renewcommand{\@NameIDStudent}{#1}}
+
+% ===========
+% Member table handling
+% ===========
+
+\newcommand{\@MemberTableContent}{STT & ID & Name & Class \\ \hline}
+\newcommand{\MemberTableData}[1]{%
+  \renewcommand{\@MemberTableContent}{#1}%
+}
+\newcommand{\PrintMemberTable}[1][]{%
+  \begin{center}
+    \ifx&#1&\else{\normalsize\textbf{#1}\\[0.5em]}\fi
+    \begin{tabular}{|>{\centering\arraybackslash}p{1cm}%
+                    |>{\centering\arraybackslash}p{2.5cm}%
+                    |>{\raggedright\arraybackslash}p{6cm}%
+                    |>{\centering\arraybackslash}p{2cm}|}
+      \hline
+      \textbf{STT} & \textbf{MSSV} & \textbf{Họ Và Tên} & \textbf{Lớp} \\
+      \hline
+      \@MemberTableContent
+    \end{tabular}
+  \end{center}
+}
+
+% ===========
+% Cover page command
+% ===========
+\newcommand{\MycoverFinalProject}{%
+  \pagestyle{empty}
+  \begin{center}
+    {
+      \fontsize{18}{16}\selectfont
+      \MakeUppercase{\@NameUpperUniname}\\[0.25em]
+      \MakeUppercase{\@NameUniname}\\[0.5em]
+    }
+    {
+      \fontsize{16}{15}\selectfont
+      \MakeUppercase{\@NameDeptname}\\[1em]
+    }
+    \textbf{---o0o---}
+    \vfill
+    \includegraphics[scale=0.4]{\@NamePathlogo}
+    \vfill
+    \rule{0.8\linewidth}{1pt}\\[1em]
+    {\@NameLesson}\\[1.5em]
+    { \bfseries \@NameTitle}
+    \rule{0.8\linewidth}{2pt}\\
+  \end{center}
+  \vfill
+  \hspace{0.4\linewidth}{%
+    \fontsize{14}{16}\selectfont
+    \begin{tabular}{@{}l@{\quad}l@{}}
+      SUPERVISOR: & \@NameAdvisor \\[0.25em]
+      SUBJECT: & \@NameClass \\[0.25em]
+      GROUP: & \@NameGroup \\[0.25em]
+    \end{tabular}
+  }%
+  \vfill
+  {
+    \fontsize{14}{16}\selectfont
+    \PrintMemberTable[List of Members]
+  }
+  \vfill
+  \vspace*{\fill} % push content to the bottom of the page
+  \begin{center}
+    \vspace*{-3cm} % move up 3cm form the bottom margin
+    {\fontsize{11}{10}\selectfont \@NamePlace, \@NameTime}
+  \end{center}
+}
+
+\newcommand{\MycoverProject}{%
+  \pagestyle{empty}
+  \begin{center}
+    {
+      \fontsize{18}{16}\selectfont
+      \MakeUppercase{\@NameUpperUniname}\\[0.25em]
+      \MakeUppercase{\@NameUniname}\\[0.5em]
+    }
+    {
+      \fontsize{16}{15}\selectfont
+      \MakeUppercase{\@NameDeptname}\\[1em]
+    }
+    \textbf{---o0o---}
+    \vfill
+    \includegraphics[scale=0.4]{\@NamePathlogo}
+    \vfill
+    \rule{0.8\linewidth}{1pt}\\[1em]
+    {\@NameLesson}\\[1.5em]
+    { \bfseries \@NameTitle}
+    \rule{0.8\linewidth}{2pt}\\
+  \end{center}
+  \vspace{1cm}
+  \hspace{0.4\linewidth}{%
+    \fontsize{14}{16}\selectfont
+    \begin{tabular}{@{}l@{\quad}l@{}}
+      SUPERVISOR: & \@NameAdvisor \\[0.25em]
+      STUDENT: & \@NameStudent \\[0.25em]
+      ID: & \@NameIDStudent \\[0.25em]
+    \end{tabular}
+  }%
+  \vfill
+  \vspace*{\fill} % push content to the bottom of the page
+  \begin{center}
+    \vspace*{-3cm} % move up 3cm form the bottom margin
+    {\fontsize{11}{10}\selectfont \@NamePlace, \@NameTime}
+  \end{center}
+}
+
+\makeatother
+\endinput

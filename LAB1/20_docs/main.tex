@@ -1,0 +1,82 @@
+\documentclass{article}
+\usepackage[margin=2cm]{geometry}
+\usepackage{my-coverpage}
+\usepackage[utf8]{inputenc}
+\usepackage[T5]{fontenc}
+\usepackage[vietnamese]{babel}
+
+% =========================
+% Packages
+% =========================
+
+\usepackage{amsmath, amsfonts, amssymb}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+
+\usepackage{array}
+\usepackage{setspace}
+\usepackage{indentfirst}
+\usepackage{enumerate}  % gói cơ bản, hỗ trợ đổi kiểu số thứ tự
+\usepackage{enumitem}   % gói mở rộng, chỉnh cấu hình linh hoạt
+
+\usepackage[
+unicode,            % hỗ trợ tiếng Việt trong bookmark
+bookmarks=true,     % bật bookmark
+bookmarksopen=true, % mở bookmark theo cây
+bookmarksnumbered=true, % thêm số chương/mục vào bookmark
+pdfborder={0 0 0},  % bỏ khung đỏ quanh link
+colorlinks=true,    % dùng màu thay vì khung
+linkcolor=black,     % màu link nội bộ
+citecolor=black,      % màu link trích dẫn
+urlcolor=magenta    % màu link URL
+]{hyperref}
+
+% =========================
+% Cover page information
+% =========================
+\NameUpperUniname{Vietnam National University Ho Chi Minh City}
+\NameUniname{Ho Chi Minh City University of Technology}
+\NameDeptname{Faculty of Electrical and Electronics Engineering}
+\NamePathlogo{./my-chapters/my-images/01_logobachkhoatoi.png}
+\NameClass{Digital signal processing on FPGA}
+\NameGroup{08}
+\NameLesson[\Large]{LABORATORY REPORT}
+\NameTitle[\Huge]{Waveform generator}
+\NameAdvisor{Nguyễn Tuấn Hùng}
+\NamePlace{Ho Chi Minh}
+\NameTime{../../20..}
+\NamePathBackground[width=\paperwidth,height=\paperheight]{./my-chapters/my-images/bia.jpg} 
+\MemberTableData{
+1 & 2213874 & Nguyễn Thanh Tùng & L01 \\ \hline
+2 & 2210780 & Nguyễn Đại Đồng & L01 \\ \hline
+3 & 2213496 & Nguyễn Quốc Tín & L01 \\ \hline
+}
+
+% =========================
+% Configuration
+% =========================
+%--- Header and footer
+\fancyhf{}
+\fancyhead[L]{\leftmark}
+\fancyfoot[R]{\thepage | \pageref{LastPage}}
+% =========================
+% Document
+% =========================
+\begin{document}
+\pagestyle{empty}
+\MycoverProject % Cover page
+\newpage
+\renewcommand{\arraystretch}{1.5} % tăng khoảng cách dòng (row height)
+\setlength{\parindent}{1cm}
+\onehalfspacing
+\setlength{\parskip}{6pt} 
+\pagestyle{fancy}
+
+
+\newpage
+\include{./my-chapters/theoritical_basic.tex}
+
+\end{document}

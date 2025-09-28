@@ -1,0 +1,581 @@
+|Top_gen_wave
+i_clk => i_clk.IN10
+i_btn[0] => i_btn[0].IN3
+i_btn[1] => i_btn[1].IN3
+i_btn[2] => i_btn[2].IN3
+i_btn[3] => i_btn[3].IN3
+i_sw[0] => ~NO_FANOUT~
+i_sw[1] => o_sel_duty_cycle[0]~reg0.DATAIN
+i_sw[2] => o_sel_duty_cycle[1]~reg0.DATAIN
+i_sw[3] => o_sel_duty_cycle[2]~reg0.DATAIN
+i_sw[4] => w_sel_wave[0].DATAIN
+i_sw[5] => w_sel_wave[1].DATAIN
+i_sw[6] => w_sel_wave[2].DATAIN
+i_sw[7] => w_en_add_noise.IN0
+i_sw[7] => w_en_freq.IN0
+i_sw[7] => w_en_duty.IN0
+i_sw[7] => w_en_amp.IN0
+i_sw[8] => w_en_amp.IN1
+i_sw[8] => w_en_freq.IN1
+i_sw[8] => w_en_add_noise.IN1
+i_sw[8] => w_en_duty.IN1
+i_sw[9] => i_rst_n.IN10
+o_add_noise << o_add_noise~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_sel_wave[0] << w_sel_wave[0].DB_MAX_OUTPUT_PORT_TYPE
+o_sel_wave[1] << w_sel_wave[1].DB_MAX_OUTPUT_PORT_TYPE
+o_sel_wave[2] << w_sel_wave[2].DB_MAX_OUTPUT_PORT_TYPE
+o_sel_duty_cycle[0] << o_sel_duty_cycle[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_sel_duty_cycle[1] << o_sel_duty_cycle[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_sel_duty_cycle[2] << o_sel_duty_cycle[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_gain_wave[0] << CTR_adjust_amp_wave:CTR_adjust_amp_wave_unit.o_gain_wave
+o_gain_wave[1] << CTR_adjust_amp_wave:CTR_adjust_amp_wave_unit.o_gain_wave
+o_gain_wave[2] << CTR_adjust_amp_wave:CTR_adjust_amp_wave_unit.o_gain_wave
+o_gain_wave[3] << CTR_adjust_amp_wave:CTR_adjust_amp_wave_unit.o_gain_wave
+o_phase_step_wave[0] << CTR_adjust_phase_wave:CTR_adjust_phase_wave_unit.o_phase_wave
+o_phase_step_wave[1] << CTR_adjust_phase_wave:CTR_adjust_phase_wave_unit.o_phase_wave
+o_phase_step_wave[2] << CTR_adjust_phase_wave:CTR_adjust_phase_wave_unit.o_phase_wave
+o_phase_step_wave[3] << CTR_adjust_phase_wave:CTR_adjust_phase_wave_unit.o_phase_wave
+o_phase_step_wave[4] << CTR_adjust_phase_wave:CTR_adjust_phase_wave_unit.o_phase_wave
+o_phase_step_wave[5] << CTR_adjust_phase_wave:CTR_adjust_phase_wave_unit.o_phase_wave
+o_phase_step_wave[6] << CTR_adjust_phase_wave:CTR_adjust_phase_wave_unit.o_phase_wave
+o_phase_step_wave[7] << CTR_adjust_phase_wave:CTR_adjust_phase_wave_unit.o_phase_wave
+o_phase_step_wave[8] << CTR_adjust_phase_wave:CTR_adjust_phase_wave_unit.o_phase_wave
+o_phase_step_wave[9] << CTR_adjust_phase_wave:CTR_adjust_phase_wave_unit.o_phase_wave
+o_lfsr_sin << o_lfsr_sin~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_phase_step_noise[0] << CTR_adjust_phase_noise:CTR_adjust_phase_noise_unit.o_phase_wave
+o_phase_step_noise[1] << CTR_adjust_phase_noise:CTR_adjust_phase_noise_unit.o_phase_wave
+o_phase_step_noise[2] << CTR_adjust_phase_noise:CTR_adjust_phase_noise_unit.o_phase_wave
+o_phase_step_noise[3] << CTR_adjust_phase_noise:CTR_adjust_phase_noise_unit.o_phase_wave
+o_phase_step_noise[4] << CTR_adjust_phase_noise:CTR_adjust_phase_noise_unit.o_phase_wave
+o_phase_step_noise[5] << CTR_adjust_phase_noise:CTR_adjust_phase_noise_unit.o_phase_wave
+o_phase_step_noise[6] << CTR_adjust_phase_noise:CTR_adjust_phase_noise_unit.o_phase_wave
+o_phase_step_noise[7] << CTR_adjust_phase_noise:CTR_adjust_phase_noise_unit.o_phase_wave
+o_phase_step_noise[8] << CTR_adjust_phase_noise:CTR_adjust_phase_noise_unit.o_phase_wave
+o_phase_step_noise[9] << CTR_adjust_phase_noise:CTR_adjust_phase_noise_unit.o_phase_wave
+o_gain_noise[0] << CTR_adjust_amp_noise:CTR_adjust_amp_noise_unit.o_gain_wave
+o_gain_noise[1] << CTR_adjust_amp_noise:CTR_adjust_amp_noise_unit.o_gain_wave
+o_gain_noise[2] << CTR_adjust_amp_noise:CTR_adjust_amp_noise_unit.o_gain_wave
+o_gain_noise[3] << CTR_adjust_amp_noise:CTR_adjust_amp_noise_unit.o_gain_wave
+o_ledr[0] << <GND>
+o_ledr[1] << o_sel_duty_cycle[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_ledr[2] << o_sel_duty_cycle[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_ledr[3] << o_sel_duty_cycle[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_ledr[4] << w_sel_wave[0].DB_MAX_OUTPUT_PORT_TYPE
+o_ledr[5] << w_sel_wave[1].DB_MAX_OUTPUT_PORT_TYPE
+o_ledr[6] << w_sel_wave[2].DB_MAX_OUTPUT_PORT_TYPE
+o_ledr[7] << o_lfsr_sin~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_ledr[8] << o_add_noise~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_ledr[9] << <GND>
+o_hex_0[0] << o_hex_0[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_0[1] << o_hex_0[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_0[2] << o_hex_0[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_0[3] << o_hex_0[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_0[4] << o_hex_0[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_0[5] << o_hex_0[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_0[6] << o_hex_0[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_1[0] << o_hex_1[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_1[1] << o_hex_1[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_1[2] << o_hex_1[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_1[3] << o_hex_1[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_1[4] << o_hex_1[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_1[5] << o_hex_1[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_1[6] << o_hex_1[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_2[0] << o_hex_2[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_2[1] << o_hex_2[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_2[2] << o_hex_2[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_2[3] << o_hex_2[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_2[4] << o_hex_2[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_2[5] << o_hex_2[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_2[6] << o_hex_2[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_3[0] << o_hex_3[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_3[1] << o_hex_3[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_3[2] << o_hex_3[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_3[3] << o_hex_3[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_3[4] << o_hex_3[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_3[5] << o_hex_3[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_3[6] << o_hex_3[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_4[0] << o_hex_4[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_4[1] << o_hex_4[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_4[2] << o_hex_4[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_4[3] << o_hex_4[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_4[4] << o_hex_4[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_4[5] << o_hex_4[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_4[6] << o_hex_4[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_5[0] << o_hex_5[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_5[1] << o_hex_5[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_5[2] << o_hex_5[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_5[3] << o_hex_5[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_5[4] << o_hex_5[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_5[5] << o_hex_5[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_5[6] << o_hex_5[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Top_gen_wave|BTN_detect_edge:BTN_detect_edge_0_unit
+i_clk => o_signal~reg0.CLK
+i_clk => w_p_signal.CLK
+i_rst_n => o_signal~reg0.ACLR
+i_rst_n => w_p_signal.ACLR
+i_pos_edge => o_signal.OUTPUTSELECT
+i_signal => o_signal.IN1
+i_signal => w_p_signal.DATAIN
+i_signal => o_signal.IN1
+o_signal <= o_signal~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Top_gen_wave|BTN_detect_edge:BTN_detect_edge_1_unit
+i_clk => o_signal~reg0.CLK
+i_clk => w_p_signal.CLK
+i_rst_n => o_signal~reg0.ACLR
+i_rst_n => w_p_signal.ACLR
+i_pos_edge => o_signal.OUTPUTSELECT
+i_signal => o_signal.IN1
+i_signal => w_p_signal.DATAIN
+i_signal => o_signal.IN1
+o_signal <= o_signal~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Top_gen_wave|BTN_detect_edge:BTN_detect_edge_2_unit
+i_clk => o_signal~reg0.CLK
+i_clk => w_p_signal.CLK
+i_rst_n => o_signal~reg0.ACLR
+i_rst_n => w_p_signal.ACLR
+i_pos_edge => o_signal.OUTPUTSELECT
+i_signal => o_signal.IN1
+i_signal => w_p_signal.DATAIN
+i_signal => o_signal.IN1
+o_signal <= o_signal~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Top_gen_wave|BTN_detect_edge:BTN_detect_edge_3_unit
+i_clk => o_signal~reg0.CLK
+i_clk => w_p_signal.CLK
+i_rst_n => o_signal~reg0.ACLR
+i_rst_n => w_p_signal.ACLR
+i_pos_edge => o_signal.OUTPUTSELECT
+i_signal => o_signal.IN1
+i_signal => w_p_signal.DATAIN
+i_signal => o_signal.IN1
+o_signal <= o_signal~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Top_gen_wave|CTR_step_amp:CTR_step_amp_unit
+i_clk => i_clk.IN2
+i_rst_n => i_rst_n.IN2
+i_btn_0 => i_btn_0.IN1
+i_btn_1 => i_btn_1.IN1
+i_en => w_en.IN1
+o_step[0] <= o_step[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_step[1] <= o_step[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_step[2] <= o_step[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_step[3] <= o_step[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_0[0] <= o_hex_0[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_0[1] <= o_hex_0[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_0[2] <= o_hex_0[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_0[3] <= o_hex_0[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_0[4] <= o_hex_0[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_0[5] <= o_hex_0[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_0[6] <= o_hex_0[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_1[0] <= o_hex_1[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_1[1] <= o_hex_1[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_1[2] <= o_hex_1[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_1[3] <= o_hex_1[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_1[4] <= o_hex_1[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_1[5] <= o_hex_1[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_1[6] <= o_hex_1[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Top_gen_wave|CTR_step_amp:CTR_step_amp_unit|BTN_detect_edge:BTN_DE_unit
+i_clk => o_signal~reg0.CLK
+i_clk => w_p_signal.CLK
+i_rst_n => o_signal~reg0.ACLR
+i_rst_n => w_p_signal.ACLR
+i_pos_edge => o_signal.OUTPUTSELECT
+i_signal => o_signal.IN1
+i_signal => w_p_signal.DATAIN
+i_signal => o_signal.IN1
+o_signal <= o_signal~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Top_gen_wave|CTR_step_amp:CTR_step_amp_unit|BTN_detect_edge:BTN_DE_unit_1
+i_clk => o_signal~reg0.CLK
+i_clk => w_p_signal.CLK
+i_rst_n => o_signal~reg0.ACLR
+i_rst_n => w_p_signal.ACLR
+i_pos_edge => o_signal.OUTPUTSELECT
+i_signal => o_signal.IN1
+i_signal => w_p_signal.DATAIN
+i_signal => o_signal.IN1
+o_signal <= o_signal~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Top_gen_wave|CTR_adjust_amp_wave:CTR_adjust_amp_wave_unit
+i_clk => i_clk.IN1
+i_rst_n => i_rst_n.IN1
+i_btn => i_btn.IN1
+i_en => w_en.IN1
+i_step[0] => Add0.IN4
+i_step[1] => Add0.IN3
+i_step[2] => Add0.IN2
+i_step[3] => Add0.IN1
+o_gain_wave[0] <= o_gain_wave[0].DB_MAX_OUTPUT_PORT_TYPE
+o_gain_wave[1] <= o_gain_wave[1].DB_MAX_OUTPUT_PORT_TYPE
+o_gain_wave[2] <= o_gain_wave[2].DB_MAX_OUTPUT_PORT_TYPE
+o_gain_wave[3] <= o_gain_wave[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_2[0] <= o_hex_2[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_2[1] <= o_hex_2[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_2[2] <= o_hex_2[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_2[3] <= o_hex_2[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_2[4] <= o_hex_2[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_2[5] <= o_hex_2[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_2[6] <= o_hex_2[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Top_gen_wave|CTR_adjust_amp_wave:CTR_adjust_amp_wave_unit|BTN_detect_edge:BTN_DE_unit
+i_clk => o_signal~reg0.CLK
+i_clk => w_p_signal.CLK
+i_rst_n => o_signal~reg0.ACLR
+i_rst_n => w_p_signal.ACLR
+i_pos_edge => o_signal.OUTPUTSELECT
+i_signal => o_signal.IN1
+i_signal => w_p_signal.DATAIN
+i_signal => o_signal.IN1
+o_signal <= o_signal~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Top_gen_wave|CTR_adjust_amp_wave:CTR_adjust_amp_wave_unit|seven_seg_anode_common:SEVEN_SEG_Unit
+bin[0] => Decoder0.IN3
+bin[1] => Decoder0.IN2
+bin[2] => Decoder0.IN1
+bin[3] => Decoder0.IN0
+seg[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Top_gen_wave|CTR_adjust_amp_noise:CTR_adjust_amp_noise_unit
+i_clk => i_clk.IN1
+i_rst_n => i_rst_n.IN1
+i_btn => i_btn.IN1
+i_en => w_en.IN1
+i_step[0] => Add0.IN4
+i_step[1] => Add0.IN3
+i_step[2] => Add0.IN2
+i_step[3] => Add0.IN1
+o_gain_wave[0] <= o_gain_wave[0].DB_MAX_OUTPUT_PORT_TYPE
+o_gain_wave[1] <= o_gain_wave[1].DB_MAX_OUTPUT_PORT_TYPE
+o_gain_wave[2] <= o_gain_wave[2].DB_MAX_OUTPUT_PORT_TYPE
+o_gain_wave[3] <= o_gain_wave[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_2[0] <= o_hex_2[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_2[1] <= o_hex_2[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_2[2] <= o_hex_2[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_2[3] <= o_hex_2[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_2[4] <= o_hex_2[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_2[5] <= o_hex_2[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_2[6] <= o_hex_2[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Top_gen_wave|CTR_adjust_amp_noise:CTR_adjust_amp_noise_unit|BTN_detect_edge:BTN_DE_unit
+i_clk => o_signal~reg0.CLK
+i_clk => w_p_signal.CLK
+i_rst_n => o_signal~reg0.ACLR
+i_rst_n => w_p_signal.ACLR
+i_pos_edge => o_signal.OUTPUTSELECT
+i_signal => o_signal.IN1
+i_signal => w_p_signal.DATAIN
+i_signal => o_signal.IN1
+o_signal <= o_signal~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Top_gen_wave|CTR_adjust_amp_noise:CTR_adjust_amp_noise_unit|seven_seg_anode_common:SEVEN_SEG_Unit
+bin[0] => Decoder0.IN3
+bin[1] => Decoder0.IN2
+bin[2] => Decoder0.IN1
+bin[3] => Decoder0.IN0
+seg[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Top_gen_wave|CTR_step_phase:CTR_step_phase_unit
+i_clk => i_clk.IN3
+i_rst_n => i_rst_n.IN3
+i_en => w_en.IN1
+i_en => always2.IN1
+i_btn_0 => i_btn_0.IN1
+i_btn_1 => i_btn_1.IN1
+o_step[0] <= o_step[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_step[1] <= o_step[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_step[2] <= o_step[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_step[3] <= o_step[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_step[4] <= o_step[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_step[5] <= o_step[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_step[6] <= o_step[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_step[7] <= o_step[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_0[0] <= CTR_sevenseg:SEG_UNIT.o_hex_0
+o_hex_0[1] <= CTR_sevenseg:SEG_UNIT.o_hex_0
+o_hex_0[2] <= CTR_sevenseg:SEG_UNIT.o_hex_0
+o_hex_0[3] <= CTR_sevenseg:SEG_UNIT.o_hex_0
+o_hex_0[4] <= CTR_sevenseg:SEG_UNIT.o_hex_0
+o_hex_0[5] <= CTR_sevenseg:SEG_UNIT.o_hex_0
+o_hex_0[6] <= CTR_sevenseg:SEG_UNIT.o_hex_0
+o_hex_1[0] <= CTR_sevenseg:SEG_UNIT.o_hex_1
+o_hex_1[1] <= CTR_sevenseg:SEG_UNIT.o_hex_1
+o_hex_1[2] <= CTR_sevenseg:SEG_UNIT.o_hex_1
+o_hex_1[3] <= CTR_sevenseg:SEG_UNIT.o_hex_1
+o_hex_1[4] <= CTR_sevenseg:SEG_UNIT.o_hex_1
+o_hex_1[5] <= CTR_sevenseg:SEG_UNIT.o_hex_1
+o_hex_1[6] <= CTR_sevenseg:SEG_UNIT.o_hex_1
+o_hex_2[0] <= CTR_sevenseg:SEG_UNIT.o_hex_2
+o_hex_2[1] <= CTR_sevenseg:SEG_UNIT.o_hex_2
+o_hex_2[2] <= CTR_sevenseg:SEG_UNIT.o_hex_2
+o_hex_2[3] <= CTR_sevenseg:SEG_UNIT.o_hex_2
+o_hex_2[4] <= CTR_sevenseg:SEG_UNIT.o_hex_2
+o_hex_2[5] <= CTR_sevenseg:SEG_UNIT.o_hex_2
+o_hex_2[6] <= CTR_sevenseg:SEG_UNIT.o_hex_2
+
+
+|Top_gen_wave|CTR_step_phase:CTR_step_phase_unit|BTN_detect_edge:BTN_DE_unit
+i_clk => o_signal~reg0.CLK
+i_clk => w_p_signal.CLK
+i_rst_n => o_signal~reg0.ACLR
+i_rst_n => w_p_signal.ACLR
+i_pos_edge => o_signal.OUTPUTSELECT
+i_signal => o_signal.IN1
+i_signal => w_p_signal.DATAIN
+i_signal => o_signal.IN1
+o_signal <= o_signal~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Top_gen_wave|CTR_step_phase:CTR_step_phase_unit|BTN_detect_edge:BTN_DE_unit_1
+i_clk => o_signal~reg0.CLK
+i_clk => w_p_signal.CLK
+i_rst_n => o_signal~reg0.ACLR
+i_rst_n => w_p_signal.ACLR
+i_pos_edge => o_signal.OUTPUTSELECT
+i_signal => o_signal.IN1
+i_signal => w_p_signal.DATAIN
+i_signal => o_signal.IN1
+o_signal <= o_signal~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Top_gen_wave|CTR_step_phase:CTR_step_phase_unit|CTR_sevenseg:SEG_UNIT
+i_clk => o_hex_2[0]~reg0.CLK
+i_clk => o_hex_2[1]~reg0.CLK
+i_clk => o_hex_2[2]~reg0.CLK
+i_clk => o_hex_2[3]~reg0.CLK
+i_clk => o_hex_2[4]~reg0.CLK
+i_clk => o_hex_2[5]~reg0.CLK
+i_clk => o_hex_2[6]~reg0.CLK
+i_clk => o_hex_1[0]~reg0.CLK
+i_clk => o_hex_1[1]~reg0.CLK
+i_clk => o_hex_1[2]~reg0.CLK
+i_clk => o_hex_1[3]~reg0.CLK
+i_clk => o_hex_1[4]~reg0.CLK
+i_clk => o_hex_1[5]~reg0.CLK
+i_clk => o_hex_1[6]~reg0.CLK
+i_clk => o_hex_0[0]~reg0.CLK
+i_clk => o_hex_0[1]~reg0.CLK
+i_clk => o_hex_0[2]~reg0.CLK
+i_clk => o_hex_0[3]~reg0.CLK
+i_clk => o_hex_0[4]~reg0.CLK
+i_clk => o_hex_0[5]~reg0.CLK
+i_clk => o_hex_0[6]~reg0.CLK
+i_rst_n => o_hex_2[0]~reg0.PRESET
+i_rst_n => o_hex_2[1]~reg0.ACLR
+i_rst_n => o_hex_2[2]~reg0.ACLR
+i_rst_n => o_hex_2[3]~reg0.ACLR
+i_rst_n => o_hex_2[4]~reg0.ACLR
+i_rst_n => o_hex_2[5]~reg0.ACLR
+i_rst_n => o_hex_2[6]~reg0.ACLR
+i_rst_n => o_hex_1[0]~reg0.PRESET
+i_rst_n => o_hex_1[1]~reg0.ACLR
+i_rst_n => o_hex_1[2]~reg0.ACLR
+i_rst_n => o_hex_1[3]~reg0.ACLR
+i_rst_n => o_hex_1[4]~reg0.ACLR
+i_rst_n => o_hex_1[5]~reg0.ACLR
+i_rst_n => o_hex_1[6]~reg0.ACLR
+i_rst_n => o_hex_0[0]~reg0.PRESET
+i_rst_n => o_hex_0[1]~reg0.ACLR
+i_rst_n => o_hex_0[2]~reg0.ACLR
+i_rst_n => o_hex_0[3]~reg0.ACLR
+i_rst_n => o_hex_0[4]~reg0.ACLR
+i_rst_n => o_hex_0[5]~reg0.ACLR
+i_rst_n => o_hex_0[6]~reg0.ACLR
+i_start => o_hex_2[0]~reg0.ENA
+i_start => o_hex_0[6]~reg0.ENA
+i_start => o_hex_0[5]~reg0.ENA
+i_start => o_hex_0[4]~reg0.ENA
+i_start => o_hex_0[3]~reg0.ENA
+i_start => o_hex_0[2]~reg0.ENA
+i_start => o_hex_0[1]~reg0.ENA
+i_start => o_hex_0[0]~reg0.ENA
+i_start => o_hex_1[6]~reg0.ENA
+i_start => o_hex_1[5]~reg0.ENA
+i_start => o_hex_1[4]~reg0.ENA
+i_start => o_hex_1[3]~reg0.ENA
+i_start => o_hex_1[2]~reg0.ENA
+i_start => o_hex_1[1]~reg0.ENA
+i_start => o_hex_1[0]~reg0.ENA
+i_start => o_hex_2[6]~reg0.ENA
+i_start => o_hex_2[5]~reg0.ENA
+i_start => o_hex_2[4]~reg0.ENA
+i_start => o_hex_2[3]~reg0.ENA
+i_start => o_hex_2[2]~reg0.ENA
+i_start => o_hex_2[1]~reg0.ENA
+i_mode[0] => Decoder0.IN2
+i_mode[0] => Decoder2.IN2
+i_mode[0] => Decoder6.IN2
+i_mode[1] => Decoder0.IN1
+i_mode[1] => Decoder1.IN1
+i_mode[1] => Decoder2.IN1
+i_mode[1] => Decoder3.IN1
+i_mode[1] => Decoder4.IN1
+i_mode[1] => Decoder5.IN1
+i_mode[1] => Decoder6.IN1
+i_mode[2] => Decoder0.IN0
+i_mode[2] => Decoder1.IN0
+i_mode[2] => Decoder2.IN0
+i_mode[2] => Decoder3.IN0
+i_mode[2] => Decoder4.IN0
+i_mode[2] => Decoder5.IN0
+i_mode[2] => Decoder6.IN0
+i_mode[2] => bin_2[3].IN1
+o_hex_0[0] <= o_hex_0[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_0[1] <= o_hex_0[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_0[2] <= o_hex_0[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_0[3] <= o_hex_0[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_0[4] <= o_hex_0[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_0[5] <= o_hex_0[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_0[6] <= o_hex_0[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_1[0] <= o_hex_1[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_1[1] <= o_hex_1[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_1[2] <= o_hex_1[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_1[3] <= o_hex_1[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_1[4] <= o_hex_1[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_1[5] <= o_hex_1[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_1[6] <= o_hex_1[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_2[0] <= o_hex_2[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_2[1] <= o_hex_2[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_2[2] <= o_hex_2[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_2[3] <= o_hex_2[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_2[4] <= o_hex_2[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_2[5] <= o_hex_2[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_hex_2[6] <= o_hex_2[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Top_gen_wave|CTR_step_phase:CTR_step_phase_unit|CTR_sevenseg:SEG_UNIT|seven_seg_anode_common:HEX_1_unit
+bin[0] => Decoder0.IN3
+bin[1] => Decoder0.IN2
+bin[2] => Decoder0.IN1
+bin[3] => Decoder0.IN0
+seg[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Top_gen_wave|CTR_step_phase:CTR_step_phase_unit|CTR_sevenseg:SEG_UNIT|seven_seg_anode_common:HEX_2_unit
+bin[0] => Decoder0.IN3
+bin[1] => Decoder0.IN2
+bin[2] => Decoder0.IN1
+bin[3] => Decoder0.IN0
+seg[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Top_gen_wave|CTR_adjust_phase_wave:CTR_adjust_phase_wave_unit
+i_clk => i_clk.IN1
+i_rst_n => i_rst_n.IN1
+i_en => w_en.IN1
+i_btn => i_btn.IN1
+i_step[0] => Add0.IN22
+i_step[1] => Add0.IN21
+i_step[2] => Add0.IN20
+i_step[3] => Add0.IN19
+i_step[4] => Add0.IN18
+i_step[5] => Add0.IN17
+i_step[6] => Add0.IN1
+i_step[6] => Add0.IN2
+i_step[6] => Add0.IN3
+i_step[6] => Add0.IN4
+i_step[7] => Add0.IN16
+o_phase_wave[0] <= o_phase_wave[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_phase_wave[1] <= o_phase_wave[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_phase_wave[2] <= o_phase_wave[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_phase_wave[3] <= o_phase_wave[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_phase_wave[4] <= o_phase_wave[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_phase_wave[5] <= o_phase_wave[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_phase_wave[6] <= o_phase_wave[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_phase_wave[7] <= o_phase_wave[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_phase_wave[8] <= o_phase_wave[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_phase_wave[9] <= o_phase_wave[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Top_gen_wave|CTR_adjust_phase_wave:CTR_adjust_phase_wave_unit|BTN_detect_edge:BTN_DE_unit
+i_clk => o_signal~reg0.CLK
+i_clk => w_p_signal.CLK
+i_rst_n => o_signal~reg0.ACLR
+i_rst_n => w_p_signal.ACLR
+i_pos_edge => o_signal.OUTPUTSELECT
+i_signal => o_signal.IN1
+i_signal => w_p_signal.DATAIN
+i_signal => o_signal.IN1
+o_signal <= o_signal~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Top_gen_wave|CTR_adjust_phase_noise:CTR_adjust_phase_noise_unit
+i_clk => i_clk.IN1
+i_rst_n => i_rst_n.IN1
+i_en => w_en.IN1
+i_btn => i_btn.IN1
+i_step[0] => Add0.IN22
+i_step[1] => Add0.IN21
+i_step[2] => Add0.IN20
+i_step[3] => Add0.IN19
+i_step[4] => Add0.IN18
+i_step[5] => Add0.IN17
+i_step[6] => Add0.IN1
+i_step[6] => Add0.IN2
+i_step[6] => Add0.IN3
+i_step[6] => Add0.IN4
+i_step[7] => Add0.IN16
+o_phase_wave[0] <= o_phase_wave[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_phase_wave[1] <= o_phase_wave[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_phase_wave[2] <= o_phase_wave[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_phase_wave[3] <= o_phase_wave[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_phase_wave[4] <= o_phase_wave[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_phase_wave[5] <= o_phase_wave[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_phase_wave[6] <= o_phase_wave[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_phase_wave[7] <= o_phase_wave[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_phase_wave[8] <= o_phase_wave[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_phase_wave[9] <= o_phase_wave[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Top_gen_wave|CTR_adjust_phase_noise:CTR_adjust_phase_noise_unit|BTN_detect_edge:BTN_DE_unit
+i_clk => o_signal~reg0.CLK
+i_clk => w_p_signal.CLK
+i_rst_n => o_signal~reg0.ACLR
+i_rst_n => w_p_signal.ACLR
+i_pos_edge => o_signal.OUTPUTSELECT
+i_signal => o_signal.IN1
+i_signal => w_p_signal.DATAIN
+i_signal => o_signal.IN1
+o_signal <= o_signal~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

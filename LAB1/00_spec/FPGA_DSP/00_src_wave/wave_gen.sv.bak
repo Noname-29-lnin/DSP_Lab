@@ -1,0 +1,135 @@
+module wave_gen #(
+    parameter WIDTH = 24  ,
+    parameter DEPTH = 1024
+)(
+    input  logic                              i_clk             ,
+    input  logic                              i_rst_n           ,
+
+    input  logic                              i_samp_tick       ,
+
+    input  logic                              i_add_noise       , // 0 - sóng thuần túy, 1 - sóng + nhiễu
+
+    input  logic        [                2:0] i_sel_wave        , // chọn loại sóng xuất
+    input  logic        [$clog2(DEPTH) - 1:0] i_wave_phase_step , // chỉnh bước nhảy của NCO của sóng - chỉnh tẩn số
+    input  logic        [                2:0] i_sel_duty_cycle  , // chọn duty cycle cho sóng vuông
+    input  logic signed [                3:0] i_gain_wave       , // lựa chọn độ lợi áp khôi phục của sóng
+
+    input  logic                              i_lfsr_sin        , // 0 - lfsr, 1 - hài bậc cao sóng sine
+    input  logic        [$clog2(DEPTH) - 1:0] i_wave_sine_step  , // chỉnh bước nhảy của NCO của nhiểu sin cao - chỉnh tẩn số
+    input  logic signed [                3:0] i_gain_noise      , // lựa chọn độ lợi áp khôi phục của nhiễu
+    
+    output logic signed [WIDTH         - 1:0] o_wave_out 
+);
+
+    logic        [$clog2(DEPTH) - 1:0] phase, phase_sine;
+    logic        [WIDTH         - 1:0] wave_sine, wave_square, wave_triangle, wave_sawtooth, wave_ecg, lfsr_noise, wave_sine_noise;
+    logic signed [WIDTH         - 1:0] wave_out ;
+    logic signed [WIDTH - 1 + 4    :0] wave_gain, noise_gain;
+
+    phase_accummulator #(
+        .DEPTH    (DEPTH),
+        .BEHAVIOR (1)
+    ) phase_acummulator_for_wave (
+        .i_clk        (i_clk),
+        .i_rst_n      (i_rst_n),
+        .i_tick       (i_samp_tick),
+        .i_count_value(i_wave_phase_step),
+        .o_phase_count(phase)
+    );
+
+    wave_sine #(
+        .WIDTH(WIDTH),
+        .DEPTH(DEPTH),
+        .HEX_LINK("../04_fir_cof/sine_wave_0.1.txt"),
+        .BEHAVIOR(0)
+    ) sine (
+        .i_clk        (i_clk),
+        //.i_rst_n      (i_rst_n),
+        .i_phase_count(phase),
+        .o_sine_wave  (wave_sine)
+    );
+
+    //sawtooth
+    assign wave_sawtooth = {4'b0, phase[$clog2(DEPTH) - 1:0], '0};
+
+    wave_triangle #(
+        .WIDTH(WIDTH)  ,
+        .DEPTH(DEPTH)
+    ) triangle (
+        .i_phase_count  (phase),
+        .o_triangle_wave(wave_triangle)
+    );
+
+    wave_square #(
+        .WIDTH   (WIDTH),
+        .DEPTH   (DEPTH),
+        .BEHAVIOR(0)
+    ) square (
+        .i_phase_count   (phase),
+        .i_sel_duty_cycle(i_sel_duty_cycle),
+        .o_square_wave   (wave_square)
+    );
+
+    wave_ecg #(
+        .WIDTH   (WIDTH),
+        .DEPTH   (DEPTH),
+        .HEX_LINK("../04_fir_cof/ecg_wave_0.1.txt") 
+    ) ecg (
+        .i_clk        (i_clk),
+        //.i_rst_n      (i_rst_n),
+        .i_phase_count(phase),
+        .o_ecg_wave   (wave_ecg)
+    );
+
+    lfsr #(
+        .LFSR_WIDTH(WIDTH)
+    ) white_noise (
+        .i_clk   (i_clk),
+        .i_rst_n (i_rst_n),
+        .i_en    (i_samp_tick),
+        .i_sel   (2'b00),                   
+        .o_noise (lfsr_noise)
+    );
+
+    phase_accummulator #(
+        .DEPTH    (DEPTH),
+        .BEHAVIOR (1)
+    ) phase_acummulator_for_sin_noise (
+        .i_clk        (i_clk),
+        .i_rst_n      (i_rst_n),
+        .i_tick       (i_samp_tick),
+        .i_count_value(i_wave_sine_step),
+        .o_phase_count(phase_sine)
+    );
+
+    wave_sine #(
+        .WIDTH(WIDTH),
+        .DEPTH(DEPTH),
+        .HEX_LINK("../04_fir_cof/sine_wave_0.1.txt"),
+        .BEHAVIOR(0)
+    ) sine_noise (
+        .i_clk        (i_clk),
+        //.i_rst_n      (i_rst_n),
+        .i_phase_count(phase_sine),
+        .o_sine_wave  (wave_sine_noise)
+    );
+
+    always_comb begin
+        case(i_sel_wave)
+            3'd0: wave_out = wave_sine      ;  
+            3'd1: wave_out = wave_square    ;
+            3'd2: wave_out = wave_triangle  ; 
+            3'd3: wave_out = wave_sawtooth  ;
+            3'd4: wave_out = wave_ecg       ;
+            3'd5: wave_out = '0             ; 
+            3'd6: wave_out = lfsr_noise     ;
+            3'd7: wave_out = wave_sine_noise;
+        endcase
+    end
+
+    assign wave_gain  = wave_out * i_gain_wave;
+    assign noise_gain = (i_lfsr_sin ? {{3{wave_sine_noise[WIDTH-1]}}, wave_sine_noise[WIDTH-1:3]} : lfsr_noise) * i_gain_noise;
+    assign o_wave_out = i_add_noise ? (wave_gain[WIDTH - 1 + 4:4] + noise_gain) : wave_gain[WIDTH - 1 + 4:4];
+
+
+endmodule

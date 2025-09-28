@@ -1,0 +1,5 @@
+\babel@toc {english}{}\relax 
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Serial realization of the proposed sorting framework.}}{7}{figure.caption.7}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Parallel realization of the proposed sorting framework.}}{10}{figure.caption.8}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Evaluating MergeSort: Pure Algorithm vs Framework-Integrated Serial Execution}}{19}{figure.caption.11}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Evaluating QuickSort: Pure Algorithm vs Framework-Integrated Serial Execution}}{20}{figure.caption.12}%

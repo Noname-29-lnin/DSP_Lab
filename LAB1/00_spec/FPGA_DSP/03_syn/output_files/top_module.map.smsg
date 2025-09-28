@@ -1,0 +1,3 @@
+Warning (10268): Verilog HDL information at i2c_trans.sv(39): always construct contains both blocking and non-blocking assignments File: E:/virtual_machine/Mount/DSP_on_FPGA - Copy/top_module/00_src_codec/i2c_trans.sv Line: 39
+Info (10281): Verilog HDL Declaration information at config_codec.sv(46): object "DONE" differs only in case from object "done" in the same scope File: E:/virtual_machine/Mount/DSP_on_FPGA - Copy/top_module/00_src_codec/config_codec.sv Line: 46
+Info (10281): Verilog HDL Declaration information at config_codec.sv(43): object "START" differs only in case from object "start" in the same scope File: E:/virtual_machine/Mount/DSP_on_FPGA - Copy/top_module/00_src_codec/config_codec.sv Line: 43
