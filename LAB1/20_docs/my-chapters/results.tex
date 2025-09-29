@@ -25,6 +25,27 @@
 	\caption{Basic waveforms and noise modulation: ECG output signal affected by frequency and amplitude variations of injected noise.}
 \end{figure}
 
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|c|m{3cm}|m{10cm}|c|}
+		\hline
+		\textbf{No.} & \textbf{Testcase} & \textbf{Description} & \textbf{Result} \\
+		\hline
+		1 & RESET & System reset, the output always zero & PASS \\
+		\hline
+		2 & Wave generation & Generation success of 5 types of wave: sine, square, triangle, sawtooth and ECG. 
+		These waves can adjust frequency and amplitude at the output. 
+		In the case of the square wave, it provides the ability to adjust duty cycle from 10\% to 90\%. & PASS \\
+		\hline
+		3 & Noise generation & Successful generation of white noise (using LFSR for modeling white noise) and one high-frequency sine wave (harmonic of sine wave). 
+		These waves can adjust frequency and amplitude at the output. & PASS \\
+		\hline
+		4 & Wave add noise & The system output can optionally add noise to the main wave, with selectable white noise or harmonic of sine wave. & PASS \\
+		\hline
+	\end{tabular}
+	\caption{Testcase results}
+\end{table}
+
 \subsection{Top module}
 
 \begin{figure}[H]

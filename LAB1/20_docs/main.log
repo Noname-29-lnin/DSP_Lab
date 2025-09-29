@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.8.10)  29 SEP 2025 15:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.8.10)  29 SEP 2025 15:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1672,7 +1672,7 @@ c-ti-cal ex-pe-ri-ence in hardware-
 
 
 
-<./my-chapters/my-images/logo_DEE.png, id=336, 76.03406pt x 75.28125pt>
+<./my-chapters/my-images/logo_DEE.png, id=338, 76.03406pt x 75.28125pt>
 File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
 <use ./my-chapters/my-images/logo_DEE.png>
 Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
@@ -1702,7 +1702,7 @@ been already used, duplicate ignored
 l.59 \include{./my-chapters/introduction.tex}
                                               [2]
 (my-chapters/theoritical_basic.tex
-<./my-chapters/my-images/theoretical_background/DE_10_board.png, id=349, 456.95
+<./my-chapters/my-images/theoretical_background/DE_10_board.png, id=351, 456.95
 718pt x 277.78781pt>
 File: ./my-chapters/my-images/theoretical_background/DE_10_board.png Graphic fi
 le (type png)
@@ -1728,7 +1728,7 @@ l.30 			\item 2
 
 
  <./my-chapters/my-images/theoretical_background/DE_10_board.png>]
-<./my-chapters/my-images/theoretical_background/DE_10_block_diagram.png, id=357
+<./my-chapters/my-images/theoretical_background/DE_10_block_diagram.png, id=359
 , 461.47406pt x 398.23781pt>
 File: ./my-chapters/my-images/theoretical_background/DE_10_block_diagram.png Gr
 aphic file (type png)
@@ -1778,7 +1778,7 @@ Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
 ne 161.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
 [7]
-<./my-chapters/my-images/theoretical_background/DDS_blockdiagram.png, id=379, 4
+<./my-chapters/my-images/theoretical_background/DDS_blockdiagram.png, id=381, 4
 11.78844pt x 178.41656pt>
 File: ./my-chapters/my-images/theoretical_background/DDS_blockdiagram.png Graph
 ic file (type png)
@@ -1786,7 +1786,7 @@ ic file (type png)
 Package pdftex.def Info: ./my-chapters/my-images/theoretical_background/DDS_blo
 ckdiagram.png  used on input line 166.
 (pdftex.def)             Requested size: 386.95897pt x 167.65984pt.
-<./my-chapters/my-images/theoretical_background/DDS_architecture.png, id=380, 4
+<./my-chapters/my-images/theoretical_background/DDS_architecture.png, id=382, 4
 28.35031pt x 228.855pt>
 File: ./my-chapters/my-images/theoretical_background/DDS_architecture.png Graph
 ic file (type png)
@@ -1802,7 +1802,7 @@ Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
 ne 181.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
 [8 <./my-chapters/my-images/theoretical_background/DDS_blockdiagram.png>]
-<./my-chapters/my-images/Gen_wave/hinh1.png, id=390, 232.4685pt x 227.6505pt>
+<./my-chapters/my-images/Gen_wave/hinh1.png, id=392, 232.4685pt x 227.6505pt>
 File: ./my-chapters/my-images/Gen_wave/hinh1.png Graphic file (type png)
 <use ./my-chapters/my-images/Gen_wave/hinh1.png>
 Package pdftex.def Info: ./my-chapters/my-images/Gen_wave/hinh1.png  used on in
@@ -1834,7 +1834,7 @@ Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
 ne 244.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
 [11]
-<./my-chapters/my-images/theoretical_background/WM8731_blockdiagram.png, id=410
+<./my-chapters/my-images/theoretical_background/WM8731_blockdiagram.png, id=412
 , 401.24907pt x 482.55281pt>
 File: ./my-chapters/my-images/theoretical_background/WM8731_blockdiagram.png Gr
 aphic file (type png)
@@ -1910,7 +1910,7 @@ Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
 ne 393.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
 [16]
-<./my-chapters/my-images/theoretical_background/TWI_communication.png, id=447, 
+<./my-chapters/my-images/theoretical_background/TWI_communication.png, id=449, 
 355.3275pt x 185.19188pt>
 File: ./my-chapters/my-images/theoretical_background/TWI_communication.png Grap
 hic file (type png)
@@ -1919,7 +1919,7 @@ Package pdftex.def Info: ./my-chapters/my-images/theoretical_background/TWI_com
 munication.png  used on input line 396.
 (pdftex.def)             Requested size: 338.58632pt x 176.471pt.
 <./my-chapters/my-images/theoretical_background/TWI_Messages are broken up into
- frames of data.png, id=448, 492.33937pt x 143.78719pt>
+ frames of data.png, id=450, 492.33937pt x 143.78719pt>
 File: ./my-chapters/my-images/theoretical_background/TWI_Messages are broken up
  into frames of data.png Graphic file (type png)
 <use ./my-chapters/my-images/theoretical_background/TWI_Messages are broken up 
@@ -1927,7 +1927,7 @@ into frames of data.png>
 Package pdftex.def Info: ./my-chapters/my-images/theoretical_background/TWI_Mes
 sages are broken up into frames of data.png  used on input line 407.
 (pdftex.def)             Requested size: 338.58632pt x 98.88855pt.
-<./my-chapters/my-images/theoretical_background/TWI_start_condition.png, id=449
+<./my-chapters/my-images/theoretical_background/TWI_start_condition.png, id=451
 , 338.76563pt x 152.06813pt>
 File: ./my-chapters/my-images/theoretical_background/TWI_start_condition.png Gr
 aphic file (type png)
@@ -1959,7 +1959,7 @@ Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
 ne 467.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
 [19]
-<./my-chapters/my-images/theoretical_background/TWI_protocol.png, id=476, 453.1
+<./my-chapters/my-images/theoretical_background/TWI_protocol.png, id=478, 453.1
 9313pt x 112.92188pt>
 File: ./my-chapters/my-images/theoretical_background/TWI_protocol.png Graphic f
 ile (type png)
@@ -1987,7 +1987,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 486.
 
-<./my-chapters/my-images/theoretical_background/I2S_mode.png, id=490, 496.10344
+<./my-chapters/my-images/theoretical_background/I2S_mode.png, id=492, 496.10344
 pt x 201.00093pt>
 File: ./my-chapters/my-images/theoretical_background/I2S_mode.png Graphic file 
 (type png)
@@ -2003,7 +2003,7 @@ Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
 ne 507.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
 [21 <./my-chapters/my-images/theoretical_background/I2S_mode.png>]
-<./my-chapters/my-images/theoretical_background/I2S_slave_mode.png, id=498, 461
+<./my-chapters/my-images/theoretical_background/I2S_slave_mode.png, id=500, 461
 .47406pt x 246.9225pt>
 File: ./my-chapters/my-images/theoretical_background/I2S_slave_mode.png Graphic
  file (type png)
@@ -2019,7 +2019,7 @@ Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
 ne 544.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
 [22 <./my-chapters/my-images/theoretical_background/I2S_slave_mode.png>]
-<./my-chapters/my-images/theoretical_background/noise_addnoise.png, id=505, 438
+<./my-chapters/my-images/theoretical_background/noise_addnoise.png, id=507, 438
 .8897pt x 203.25937pt>
 File: ./my-chapters/my-images/theoretical_background/noise_addnoise.png Graphic
  file (type png)
@@ -2033,7 +2033,7 @@ Overfull \hbox (7.09288pt too wide) in paragraph at lines 556--557
 m-bers, pseudo-noise se-quences,
  []
 
-<./my-chapters/my-images/theoretical_background/LFSR_Fibonacci.png, id=506, 380
+<./my-chapters/my-images/theoretical_background/LFSR_Fibonacci.png, id=508, 380
 .17032pt x 109.1578pt>
 File: ./my-chapters/my-images/theoretical_background/LFSR_Fibonacci.png Graphic
  file (type png)
@@ -2049,7 +2049,7 @@ Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
 ne 565.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
 [23 <./my-chapters/my-images/theoretical_background/noise_addnoise.png>]
-<./my-chapters/my-images/theoretical_background/LFSR_feedback.png, id=515, 327.
+<./my-chapters/my-images/theoretical_background/LFSR_feedback.png, id=517, 327.
 47343pt x 263.48438pt>
 File: ./my-chapters/my-images/theoretical_background/LFSR_feedback.png Graphic 
 file (type png)
@@ -2117,7 +2117,7 @@ ne 61.
 \openout2 = `./my-chapters/hardware_design.aux'.
 
  (my-chapters/hardware_design.tex
-<./my-chapters/my-diagrams/wave_sin.pdf, id=541, 585.68813pt x 177.66376pt>
+<./my-chapters/my-diagrams/wave_sin.pdf, id=543, 585.68813pt x 177.66376pt>
 File: ./my-chapters/my-diagrams/wave_sin.pdf Graphic file (type pdf)
 <use ./my-chapters/my-diagrams/wave_sin.pdf>
 Package pdftex.def Info: ./my-chapters/my-diagrams/wave_sin.pdf  used on input 
@@ -2128,7 +2128,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 10--11
  [][] 
  []
 
-<./my-chapters/my-diagrams/wave_square.pdf, id=542, 566.86781pt x 465.23813pt>
+<./my-chapters/my-diagrams/wave_square.pdf, id=544, 566.86781pt x 465.23813pt>
 File: ./my-chapters/my-diagrams/wave_square.pdf Graphic file (type pdf)
 <use ./my-chapters/my-diagrams/wave_square.pdf>
 Package pdftex.def Info: ./my-chapters/my-diagrams/wave_square.pdf  used on inp
@@ -2149,7 +2149,7 @@ ne 22.
 [28
 
  <./my-chapters/my-diagrams/wave_sin.pdf>]
-<./my-chapters/my-diagrams/wave_triangle.pdf, id=550, 565.36218pt x 216.81pt>
+<./my-chapters/my-diagrams/wave_triangle.pdf, id=552, 565.36218pt x 216.81pt>
 File: ./my-chapters/my-diagrams/wave_triangle.pdf Graphic file (type pdf)
 <use ./my-chapters/my-diagrams/wave_triangle.pdf>
 Package pdftex.def Info: ./my-chapters/my-diagrams/wave_triangle.pdf  used on i
@@ -2168,7 +2168,7 @@ Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
 ne 31.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
 [29 <./my-chapters/my-diagrams/wave_square.pdf>]
-<./my-chapters/my-diagrams/wave_sawtooth.pdf, id=558, 555.57562pt x 143.78719pt
+<./my-chapters/my-diagrams/wave_sawtooth.pdf, id=560, 555.57562pt x 143.78719pt
 >
 File: ./my-chapters/my-diagrams/wave_sawtooth.pdf Graphic file (type pdf)
 <use ./my-chapters/my-diagrams/wave_sawtooth.pdf>
@@ -2180,7 +2180,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 37--38
  [][] 
  []
 
-<./my-chapters/my-diagrams/wave_ecg.pdf, id=559, 566.115pt x 199.49532pt>
+<./my-chapters/my-diagrams/wave_ecg.pdf, id=561, 566.115pt x 199.49532pt>
 File: ./my-chapters/my-diagrams/wave_ecg.pdf Graphic file (type pdf)
 <use ./my-chapters/my-diagrams/wave_ecg.pdf>
 Package pdftex.def Info: ./my-chapters/my-diagrams/wave_ecg.pdf  used on input 
@@ -2200,7 +2200,7 @@ ne 49.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
 [30 <./my-chapters/my-diagrams/wave_triangle.pdf> <./my-chapters/my-diagrams/wa
 ve_sawtooth.pdf>]
-<./my-chapters/my-diagrams/wave_gen.pdf, id=569, 563.10374pt x 602.25pt>
+<./my-chapters/my-diagrams/wave_gen.pdf, id=571, 563.10374pt x 602.25pt>
 File: ./my-chapters/my-diagrams/wave_gen.pdf Graphic file (type pdf)
 <use ./my-chapters/my-diagrams/wave_gen.pdf>
 Package pdftex.def Info: ./my-chapters/my-diagrams/wave_gen.pdf  used on input 
@@ -2219,7 +2219,7 @@ Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
 ne 58.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
 [31 <./my-chapters/my-diagrams/wave_ecg.pdf>]
-<./my-chapters/my-diagrams/lfsr.pdf, id=577, 572.1375pt x 252.19218pt>
+<./my-chapters/my-diagrams/lfsr.pdf, id=579, 572.1375pt x 252.19218pt>
 File: ./my-chapters/my-diagrams/lfsr.pdf Graphic file (type pdf)
 <use ./my-chapters/my-diagrams/lfsr.pdf>
 Package pdftex.def Info: ./my-chapters/my-diagrams/lfsr.pdf  used on input line
@@ -2233,7 +2233,7 @@ Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
 ne 67.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
 [32 <./my-chapters/my-diagrams/wave_gen.pdf>]
-<./../00_spec/spec/UI_task.png, id=586, 1938.24126pt x 2490.30376pt>
+<./../00_spec/spec/UI_task.png, id=588, 1938.24126pt x 2490.30376pt>
 File: ./../00_spec/spec/UI_task.png Graphic file (type png)
 <use ./../00_spec/spec/UI_task.png>
 Package pdftex.def Info: ./../00_spec/spec/UI_task.png  used on input line 71.
@@ -2246,7 +2246,7 @@ Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
 ne 74.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
 [33 <./my-chapters/my-diagrams/lfsr.pdf>]
-<./../00_spec/spec/UI_rtl.png, id=594, 1610.015pt x 1749.53625pt>
+<./../00_spec/spec/UI_rtl.png, id=596, 1610.015pt x 1749.53625pt>
 File: ./../00_spec/spec/UI_rtl.png Graphic file (type png)
 <use ./../00_spec/spec/UI_rtl.png>
 Package pdftex.def Info: ./../00_spec/spec/UI_rtl.png  used on input line 79.
@@ -2271,7 +2271,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 83.
 
-<./my-chapters/my-diagrams/i2c_trans_reg_state.jpg, id=601, 1443.89438pt x 692.
+<./my-chapters/my-diagrams/i2c_trans_reg_state.jpg, id=603, 1443.89438pt x 692.
 5875pt>
 File: ./my-chapters/my-diagrams/i2c_trans_reg_state.jpg Graphic file (type jpg)
 
@@ -2287,7 +2287,7 @@ Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
 ne 90.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
 [35 <./../00_spec/spec/UI_rtl.png>]
-<./my-chapters/my-diagrams/i2c_trans.pdf, id=608, 572.1375pt x 224.33812pt>
+<./my-chapters/my-diagrams/i2c_trans.pdf, id=610, 572.1375pt x 224.33812pt>
 File: ./my-chapters/my-diagrams/i2c_trans.pdf Graphic file (type pdf)
 <use ./my-chapters/my-diagrams/i2c_trans.pdf>
 Package pdftex.def Info: ./my-chapters/my-diagrams/i2c_trans.pdf  used on input
@@ -2298,7 +2298,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 95--96
  [][] 
  []
 
-<./my-chapters/my-diagrams/config_codec_i2c_trans_i2c_reg_state.jpg, id=609, 14
+<./my-chapters/my-diagrams/config_codec_i2c_trans_i2c_reg_state.jpg, id=611, 14
 43.89438pt x 692.5875pt>
 File: ./my-chapters/my-diagrams/config_codec_i2c_trans_i2c_reg_state.jpg Graphi
 c file (type jpg)
@@ -2315,7 +2315,7 @@ ne 106.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
 [36 <./my-chapters/my-diagrams/i2c_trans_reg_state.jpg> <./my-chapters/my-diagr
 ams/i2c_trans.pdf>]
-<./my-chapters/my-diagrams/config_codec.pdf, id=617, 442.65375pt x 746.79pt>
+<./my-chapters/my-diagrams/config_codec.pdf, id=619, 442.65375pt x 746.79pt>
 File: ./my-chapters/my-diagrams/config_codec.pdf Graphic file (type pdf)
 <use ./my-chapters/my-diagrams/config_codec.pdf>
 Package pdftex.def Info: ./my-chapters/my-diagrams/config_codec.pdf  used on in
@@ -2329,7 +2329,7 @@ Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
 ne 114.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
 [37 <./my-chapters/my-diagrams/config_codec_i2c_trans_i2c_reg_state.jpg>]
-<./my-chapters/my-diagrams/codec_data_reg_state.jpg, id=623, 1573.37813pt x 513
+<./my-chapters/my-diagrams/codec_data_reg_state.jpg, id=625, 1573.37813pt x 513
 .41812pt>
 File: ./my-chapters/my-diagrams/codec_data_reg_state.jpg Graphic file (type jpg
 )
@@ -2345,7 +2345,7 @@ Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
 ne 122.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
 [38 <./my-chapters/my-diagrams/config_codec.pdf>]
-<./my-chapters/my-diagrams/codec_data.pdf, id=632, 575.90157pt x 263.48438pt>
+<./my-chapters/my-diagrams/codec_data.pdf, id=634, 575.90157pt x 263.48438pt>
 File: ./my-chapters/my-diagrams/codec_data.pdf Graphic file (type pdf)
 <use ./my-chapters/my-diagrams/codec_data.pdf>
 Package pdftex.def Info: ./my-chapters/my-diagrams/codec_data.pdf  used on inpu
@@ -2377,7 +2377,7 @@ ne 53.
 
 
 ])
-<./my-chapters/my-images/simulation/sin_add_noise_sin.jpg, id=699, 2502.34875pt
+<./my-chapters/my-images/simulation/sin_add_noise_sin.jpg, id=701, 2502.34875pt
  x 537.00626pt>
 File: ./my-chapters/my-images/simulation/sin_add_noise_sin.jpg Graphic file (ty
 pe jpg)
@@ -2393,7 +2393,7 @@ Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
 ne 15.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
 [41]
-<./my-chapters/my-images/simulation/duty_cycle.jpg, id=752, 2055.68pt x 768.872
+<./my-chapters/my-images/simulation/duty_cycle.jpg, id=754, 2055.68pt x 768.872
 5pt>
 File: ./my-chapters/my-images/simulation/duty_cycle.jpg Graphic file (type jpg)
 
@@ -2401,7 +2401,7 @@ File: ./my-chapters/my-images/simulation/duty_cycle.jpg Graphic file (type jpg)
 Package pdftex.def Info: ./my-chapters/my-images/simulation/duty_cycle.jpg  use
 d on input line 18.
 (pdftex.def)             Requested size: 435.32422pt x 162.81717pt.
-<./my-chapters/my-images/simulation/waveform_with_noise.jpg, id=753, 2055.68pt 
+<./my-chapters/my-images/simulation/waveform_with_noise.jpg, id=755, 2055.68pt 
 x 784.9325pt>
 File: ./my-chapters/my-images/simulation/waveform_with_noise.jpg Graphic file (
 type jpg)
@@ -2409,14 +2409,34 @@ type jpg)
 Package pdftex.def Info: ./my-chapters/my-images/simulation/waveform_with_noise
 .jpg  used on input line 24.
 (pdftex.def)             Requested size: 435.32422pt x 166.21805pt.
-<./my-chapters/my-diagrams/top_image.pdf, id=754, 587.79597pt x 354.72525pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 36--36
+[]|\OT1/cmr/m/n/12 Wave gen-er-a-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--40
+[]|\OT1/cmr/m/n/12 Noise gen-er-a-
+ []
+
+
+
+File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
+<use ./my-chapters/my-images/logo_DEE.png>
+Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
+ne 48.
+(pdftex.def)             Requested size: 9.676pt x 9.58012pt.
+[42 <./my-chapters/my-images/simulation/sin_add_noise_sin.jpg> <./my-chapters/m
+y-images/simulation/duty_cycle.jpg> <./my-chapters/my-images/simulation/wavefor
+m_with_noise.jpg>]
+<./my-chapters/my-diagrams/top_image.pdf, id=761, 587.79597pt x 354.72525pt>
 File: ./my-chapters/my-diagrams/top_image.pdf Graphic file (type pdf)
 <use ./my-chapters/my-diagrams/top_image.pdf>
 Package pdftex.def Info: ./my-chapters/my-diagrams/top_image.pdf  used on input
- line 34.
+ line 55.
 (pdftex.def)             Requested size: 483.69687pt x 291.90498pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 34--35
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 55--56
  [][] 
  []
 
@@ -2425,58 +2445,56 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 34--35
 File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
 <use ./my-chapters/my-images/logo_DEE.png>
 Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
-ne 37.
+ne 58.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
-[42 <./my-chapters/my-images/simulation/sin_add_noise_sin.jpg> <./my-chapters/m
-y-images/simulation/duty_cycle.jpg> <./my-chapters/my-images/simulation/wavefor
-m_with_noise.jpg>]
-<./my-chapters/my-images/Gen_wave/hinh2.jpg, id=760, 1280.785pt x 959.585pt>
+[43]
+<./my-chapters/my-images/Gen_wave/hinh2.jpg, id=767, 1280.785pt x 959.585pt>
 File: ./my-chapters/my-images/Gen_wave/hinh2.jpg Graphic file (type jpg)
 <use ./my-chapters/my-images/Gen_wave/hinh2.jpg>
 Package pdftex.def Info: ./my-chapters/my-images/Gen_wave/hinh2.jpg  used on in
-put line 42.
+put line 63.
 (pdftex.def)             Requested size: 435.32422pt x 326.15208pt.
 
 
 File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
 <use ./my-chapters/my-images/logo_DEE.png>
 Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
-ne 45.
+ne 66.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
-[43 <./my-chapters/my-diagrams/top_image.pdf>]
-<./my-chapters/my-images/Gen_wave/hinh5.jpg, id=768, 1280.785pt x 959.585pt>
+[44 <./my-chapters/my-diagrams/top_image.pdf>]
+<./my-chapters/my-images/Gen_wave/hinh5.jpg, id=776, 1280.785pt x 959.585pt>
 File: ./my-chapters/my-images/Gen_wave/hinh5.jpg Graphic file (type jpg)
 <use ./my-chapters/my-images/Gen_wave/hinh5.jpg>
 Package pdftex.def Info: ./my-chapters/my-images/Gen_wave/hinh5.jpg  used on in
-put line 48.
+put line 69.
 (pdftex.def)             Requested size: 435.32422pt x 326.15208pt.
 
 
 File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
 <use ./my-chapters/my-images/logo_DEE.png>
 Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
-ne 51.
+ne 72.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
-[44 <./my-chapters/my-images/Gen_wave/hinh2.jpg>]
-<./my-chapters/my-images/Gen_wave/hinh4.jpg, id=775, 1280.785pt x 959.585pt>
+[45 <./my-chapters/my-images/Gen_wave/hinh2.jpg>]
+<./my-chapters/my-images/Gen_wave/hinh4.jpg, id=782, 1280.785pt x 959.585pt>
 File: ./my-chapters/my-images/Gen_wave/hinh4.jpg Graphic file (type jpg)
 <use ./my-chapters/my-images/Gen_wave/hinh4.jpg>
 Package pdftex.def Info: ./my-chapters/my-images/Gen_wave/hinh4.jpg  used on in
-put line 54.
+put line 75.
 (pdftex.def)             Requested size: 435.32422pt x 326.15208pt.
 
 
 File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
 <use ./my-chapters/my-images/logo_DEE.png>
 Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
-ne 57.
+ne 78.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
-[45 <./my-chapters/my-images/Gen_wave/hinh5.jpg>]
-<./my-chapters/my-images/Gen_wave/hinh3.jpg, id=781, 1280.785pt x 959.585pt>
+[46 <./my-chapters/my-images/Gen_wave/hinh5.jpg>]
+<./my-chapters/my-images/Gen_wave/hinh3.jpg, id=788, 1280.785pt x 959.585pt>
 File: ./my-chapters/my-images/Gen_wave/hinh3.jpg Graphic file (type jpg)
 <use ./my-chapters/my-images/Gen_wave/hinh3.jpg>
 Package pdftex.def Info: ./my-chapters/my-images/Gen_wave/hinh3.jpg  used on in
-put line 60.
+put line 81.
 (pdftex.def)             Requested size: 435.32422pt x 326.15208pt.
 )
 
@@ -2485,17 +2503,17 @@ File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
 Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
 ne 62.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
-[46 <./my-chapters/my-images/Gen_wave/hinh4.jpg>]
+[47 <./my-chapters/my-images/Gen_wave/hinh4.jpg>]
 
 File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
 <use ./my-chapters/my-images/logo_DEE.png>
 Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
 ne 62.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
-[47 <./my-chapters/my-images/Gen_wave/hinh3.jpg>]
+[48 <./my-chapters/my-images/Gen_wave/hinh3.jpg>]
 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
-runsystem(latexminted cleantemp  --timestamp 20250929153454 FAD58DE7366495DB465
+runsystem(latexminted cleantemp  --timestamp 20250929155653 FAD58DE7366495DB465
 0CFEFAC2FCD61)...disabled (restricted).
 
 (main.aux (my-chapters/introduction.aux) (my-chapters/hardware_design.aux)
@@ -2508,8 +2526,8 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 521F8E405D2BEFCEEE7455BA633E7FBA;8594.
  ) 
 Here is how much of TeX's memory you used:
- 33532 strings out of 468134
- 662097 string characters out of 5430740
+ 33534 strings out of 468134
+ 662120 string characters out of 5430740
  2028289 words of memory out of 5000000
  61290 multiletter control sequences out of 15000+600000
  656371 words of font info for 115 fonts, out of 8000000 for 9000
@@ -2537,9 +2555,9 @@ e1/vntex/vnr/vnr12.pfb><C:/Users/nguye/AppData/Local/Programs/MiKTeX/fonts/type
 /vntex/vnr/vnti12.pfb><C:/Users/nguye/AppData/Local/Programs/MiKTeX/fonts/type1
 /vntex/vnr/vntt12.pfb><C:/Users/nguye/AppData/Local/Programs/MiKTeX/fonts/type1
 /vntex/vnr/vntt8.pfb>
-Output written on main.pdf (52 pages, 4758112 bytes).
+Output written on main.pdf (53 pages, 4760781 bytes).
 PDF statistics:
- 929 PDF objects out of 1000 (max. 8388607)
- 252 named destinations out of 1000 (max. 500000)
+ 938 PDF objects out of 1000 (max. 8388607)
+ 254 named destinations out of 1000 (max. 500000)
  554 words of extra memory for PDF output out of 10000 (max. 10000000)
 
