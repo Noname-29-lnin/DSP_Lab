@@ -1,39 +1,9 @@
-\documentclass{article}
-\usepackage[margin=2cm]{geometry}
+\documentclass{my-article}
 \usepackage{my-coverpage}
+
 \usepackage[utf8]{inputenc}
 \usepackage[T5]{fontenc}
 \usepackage[vietnamese]{babel}
-
-% =========================
-% Packages
-% =========================
-
-\usepackage{amsmath, amsfonts, amssymb}
-\usepackage{graphicx}
-\usepackage{float}
-\usepackage{caption}
-\usepackage{fancyhdr}
-\usepackage{lastpage}
-
-\usepackage{array}
-\usepackage{setspace}
-\usepackage{indentfirst}
-\usepackage{enumerate}  % gói cơ bản, hỗ trợ đổi kiểu số thứ tự
-\usepackage{enumitem}   % gói mở rộng, chỉnh cấu hình linh hoạt
-
-\usepackage[
-unicode,            % hỗ trợ tiếng Việt trong bookmark
-bookmarks=true,     % bật bookmark
-bookmarksopen=true, % mở bookmark theo cây
-bookmarksnumbered=true, % thêm số chương/mục vào bookmark
-pdfborder={0 0 0},  % bỏ khung đỏ quanh link
-colorlinks=true,    % dùng màu thay vì khung
-linkcolor=black,     % màu link nội bộ
-citecolor=black,      % màu link trích dẫn
-urlcolor=magenta    % màu link URL
-]{hyperref}
-
 % =========================
 % Cover page information
 % =========================
@@ -67,16 +37,17 @@ urlcolor=magenta    % màu link URL
 % =========================
 \begin{document}
 \pagestyle{empty}
-\MycoverProject % Cover page
+\MycoverFinalProject % Cover page
 \newpage
 \renewcommand{\arraystretch}{1.5} % tăng khoảng cách dòng (row height)
 \setlength{\parindent}{1cm}
 \onehalfspacing
 \setlength{\parskip}{6pt} 
-\pagestyle{fancy}
-
-
+\tableofcontents
+\listoffigures
+\listoftables
 \newpage
-\include{./my-chapters/theoritical_basic.tex}
-
+\pagestyle{fancy}
+\input{./my-chapters/theoritical_basic.tex}
+\input{./my-chapters/realization.tex}
 \end{document}

@@ -99,3 +99,61 @@ Ta thực hiện tích lũy pha như mọi sóng khác, lợi dụng hiện tư�
 	\caption{Sóng tam giác.}
 	\label{f: triangle_wave}
 \end{figure}
+
+\subsection{Giao thức $I_2 C$}
+\subsubsection{Cấu hình thanh ghi cho WM8731}
+
+Ta thực hiện cấu hình cho chip WM8731 để chip hoạt động theo yêu cầu của Lab và các thanh ghi cấu hình này sẽ được truyền đi thông qua giao thức $I_{2}C$.
+
+% ========================
+% Bảng dạng longtable
+% ========================
+\begin{longtable}{|>{\centering\arraybackslash}m{1.2cm}
+		|>{\centering\arraybackslash}m{1.5cm}
+		|>{\centering\arraybackslash}m{1.5cm}
+		|>{\raggedright\arraybackslash}m{3cm}
+		|>{\raggedright\arraybackslash}m{6cm}|}
+	\caption{Cấu hình thanh ghi cho WM8731} \label{tab:wm8731} \\ 
+	\hline
+	\textbf{Index} & \textbf{Address} & \textbf{Data} & \textbf{Thanh ghi} & \textbf{Chức năng} \\
+	\hline
+	\endfirsthead
+	
+	% ========================
+	% Header cho các trang tiếp theo
+	% ========================
+	\multicolumn{5}{c}%
+	{{\bfseries Bảng \thetable\ Cấu hình thanh ghi cho WM8731}} \\
+	\hline
+	\textbf{Index} & \textbf{Address} & \textbf{Data} & \textbf{Thanh ghi} & \textbf{Chức năng} \\
+	\endhead
+	
+	% ========================
+	% Footer cho các trang giữa
+	% ========================
+	\multicolumn{5}{r}{{Next page...}} \\
+	\endfoot
+	
+	% ========================
+	% Footer cho trang cuối
+	% ========================
+	\hline
+	\endlastfoot
+	
+	% ========================
+	% Nội dung bảng
+	% ========================
+	0  & 0x0F & 0x00 & Reset Register               & Reset toàn bộ codec về trạng thái mặc định \\ \hline
+	1  & 0x06 & 0x10 & Power Down Control           & Tắt MIC input, bật LINEOUT, LINEIN, ADC, DAC \\ \hline
+	2  & 0x02 & 0x79 & Left Headphone Out           & Volume tai nghe trái: 0 dB, bật Zero-Cross detect \\ \hline
+	3  & 0x03 & 0x79 & Right Headphone Out          & Volume tai nghe phải: 0 dB, bật Zero-Cross detect \\ \hline
+	4  & 0x00 & 0x17 & Left Line In                 & Volume line-in trái: 0 dB, không mute \\ \hline
+	5  & 0x01 & 0x17 & Right Line In                & Volume line-in phải: 0 dB, không mute \\ \hline
+	6  & 0x04 & 0x10 & Analog Audio Path Control    & Chọn LINEIN $\to$ ADC, tắt MIC, tắt bypass, bật DAC \\ \hline
+	7  & 0x05 & 0x00 & Digital Audio Path Control   & Tắt high-pass filter, tắt de-emphasis, tắt soft-mute DAC \\ \hline
+	8  & 0x07 & 0x01 & Digital Audio Interface Format & Chọn mode Left-justified, 24-bit, MSB first \\ \hline
+	9  & 0x08 & 0x01 & Sampling Control             & USB mode, MCLK=12 MHz, Fs=48 kHz \\ \hline
+	10 & 0x09 & 0x01 & Active Control               & Kích hoạt codec (ACTIVE=1) \\ \hline
+	11 & 0x06 & 0x02 & Power Down Control           & Giữ ADC, DAC, LINEIN, LINEOUT hoạt động; chỉ PD Microphone \\ \hline
+	
+\end{longtable}

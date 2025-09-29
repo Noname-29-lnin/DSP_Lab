@@ -1,0 +1,13 @@
+\babel@toc {vietnamese}{}\relax 
+\contentsline {section}{\numberline {1}Theoretical Background}{4}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Phase accumulator}{4}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Ý tưởng tạo các loại sóng}{5}{subsection.1.2}%
+\contentsline {subsubsection}{\numberline {1.2.1}Sóng Sin}{5}{subsubsection.1.2.1}%
+\contentsline {subsubsection}{\numberline {1.2.2}Sóng ECG}{7}{subsubsection.1.2.2}%
+\contentsline {subsubsection}{\numberline {1.2.3}Sóng vuông}{7}{subsubsection.1.2.3}%
+\contentsline {subsubsection}{\numberline {1.2.4}Sóng răng cưa}{8}{subsubsection.1.2.4}%
+\contentsline {subsubsection}{\numberline {1.2.5}Sóng tam giác}{9}{subsubsection.1.2.5}%
+\contentsline {subsection}{\numberline {1.3}Giao thức $I_2 C$}{9}{subsection.1.3}%
+\contentsline {subsubsection}{\numberline {1.3.1}Cấu hình thanh ghi cho WM8731}{9}{subsubsection.1.3.1}%
+\contentsline {section}{\numberline {2}Using SystemVerilog}{12}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Topmodule Waveform generator}{12}{subsection.2.1}%
