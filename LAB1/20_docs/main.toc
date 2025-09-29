@@ -1,16 +1,43 @@
 \babel@toc {vietnamese}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
-\contentsline {section}{\numberline {1}Hardware design and Implementation}{1}{section.1}%
-\contentsline {subsection}{\numberline {1.1}Module Waveform Generator}{1}{subsection.1.1}%
-\contentsline {subsubsection}{\numberline {1.1.1}Module Sine Waveform}{1}{subsubsection.1.1.1}%
-\contentsline {subsubsection}{\numberline {1.1.2}Module Square Waveform}{2}{subsubsection.1.1.2}%
-\contentsline {subsubsection}{\numberline {1.1.3}Module Triangle Waveform}{3}{subsubsection.1.1.3}%
-\contentsline {subsubsection}{\numberline {1.1.4}Module Sawtooth Waveform}{3}{subsubsection.1.1.4}%
-\contentsline {subsubsection}{\numberline {1.1.5}Module ECG Waveform}{4}{subsubsection.1.1.5}%
-\contentsline {subsubsection}{\numberline {1.1.6}Module Waveform Generator}{5}{subsubsection.1.1.6}%
-\contentsline {subsection}{\numberline {1.2}Module Noise}{6}{subsection.1.2}%
-\contentsline {subsection}{\numberline {1.3}Module Control value}{7}{subsection.1.3}%
-\contentsline {subsubsection}{\numberline {1.3.1}Module I$^{2}$C trans}{9}{subsubsection.1.3.1}%
-\contentsline {subsubsection}{\numberline {1.3.2}Module Audio Codec config}{10}{subsubsection.1.3.2}%
-\contentsline {subsubsection}{\numberline {1.3.3}Module Audio Codec data}{12}{subsubsection.1.3.3}%
+\contentsline {section}{\numberline {1}Introduction}{1}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Overview}{1}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Assigned Objectives}{1}{subsection.1.2}%
+\contentsline {section}{\numberline {2}Theoretical Background}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Introduction of the DE10-Standard Board}{3}{subsection.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}Layout and Components}{3}{subsubsection.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.2}Block Diagram of the DE10-Standard Board}{5}{subsubsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.2}Direct Digital Synthesis (DDS)}{7}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Phase accumulator and how to generate waveform}{9}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Concept of Waveform Generation}{10}{subsection.2.4}%
+\contentsline {subsubsection}{\numberline {2.4.1}Sine Wave}{10}{subsubsection.2.4.1}%
+\contentsline {subsubsection}{\numberline {2.4.2}ECG Waveform}{11}{subsubsection.2.4.2}%
+\contentsline {subsubsection}{\numberline {2.4.3}Square Wave}{11}{subsubsection.2.4.3}%
+\contentsline {subsubsection}{\numberline {2.4.4}Sawtooth Wave}{12}{subsubsection.2.4.4}%
+\contentsline {subsubsection}{\numberline {2.4.5}Triangle Wave}{12}{subsubsection.2.4.5}%
+\contentsline {subsection}{\numberline {2.5}Configuration for the WM8731 Audio Codec}{13}{subsection.2.5}%
+\contentsline {subsubsection}{\numberline {2.5.1}Audio Codec WM8731 Overview}{13}{subsubsection.2.5.1}%
+\contentsline {subsubsection}{\numberline {2.5.2}Register Configuration for WM8731}{15}{subsubsection.2.5.2}%
+\contentsline {subsubsection}{\numberline {2.5.3}I$^2$C Protocol}{16}{subsubsection.2.5.3}%
+\contentsline {subsubsection}{\numberline {2.5.4}$I^{2}S$ Communication Protocol}{21}{subsubsection.2.5.4}%
+\contentsline {subsection}{\numberline {2.6}Noise}{23}{subsection.2.6}%
+\contentsline {subsubsection}{\numberline {2.6.1}Linear Feedback Shift Register - LFSR}{23}{subsubsection.2.6.1}%
+\contentsline {subsubsection}{\numberline {2.6.2}Sine wave frequency}{26}{subsubsection.2.6.2}%
+\contentsline {section}{\numberline {3}Hardware design and Implementation}{28}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Module Waveform Generator}{28}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}Module Sine Waveform}{28}{subsubsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.2}Module Square Waveform}{29}{subsubsection.3.1.2}%
+\contentsline {subsubsection}{\numberline {3.1.3}Module Triangle Waveform}{30}{subsubsection.3.1.3}%
+\contentsline {subsubsection}{\numberline {3.1.4}Module Sawtooth Waveform}{30}{subsubsection.3.1.4}%
+\contentsline {subsubsection}{\numberline {3.1.5}Module ECG Waveform}{31}{subsubsection.3.1.5}%
+\contentsline {subsubsection}{\numberline {3.1.6}Module Waveform Generator}{32}{subsubsection.3.1.6}%
+\contentsline {subsection}{\numberline {3.2}Module Noise}{33}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Module Control value}{34}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Module I$^{2}$C trans}{36}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.2}Module Audio Codec config}{37}{subsubsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.3}Module Audio Codec data}{39}{subsubsection.3.3.3}%
+\contentsline {section}{\numberline {4}Hardware Implementation Results}{40}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Simulation}{40}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Top module}{41}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Measurement Waveform}{42}{subsection.4.3}%

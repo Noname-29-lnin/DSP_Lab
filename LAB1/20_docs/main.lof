@@ -1,18 +1,41 @@
 \babel@toc {vietnamese}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Block diagram for Module Sin\_Wave.}}{1}{figure.caption.1}%
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Block diagram for Module Square\_wave.}}{2}{figure.caption.2}%
-\contentsline {figure}{\numberline {1.3}{\ignorespaces Block diagram for Module Triangle\_wave.}}{3}{figure.caption.3}%
-\contentsline {figure}{\numberline {1.4}{\ignorespaces Block diagram for Module Sawtooth\_wave.}}{3}{figure.caption.4}%
-\contentsline {figure}{\numberline {1.5}{\ignorespaces Block diagram for Module ECG\_wave.}}{4}{figure.caption.5}%
-\contentsline {figure}{\numberline {1.6}{\ignorespaces Block diagram for Module Waveform Generator.}}{5}{figure.caption.6}%
-\contentsline {figure}{\numberline {1.7}{\ignorespaces Block diagram for Module LFSR.}}{6}{figure.caption.7}%
-\contentsline {figure}{\numberline {1.8}{\ignorespaces Communication operations between the user and the Control Value Module.}}{7}{figure.caption.8}%
-\contentsline {figure}{\numberline {1.9}{\ignorespaces Block diagram for Module Control value.}}{8}{figure.caption.9}%
-\contentsline {figure}{\numberline {1.10}{\ignorespaces FSM control Module I$^{2}$C trans.}}{9}{figure.caption.10}%
-\contentsline {figure}{\numberline {1.11}{\ignorespaces Block diagram for Module I$^{2}$C trans.}}{9}{figure.caption.11}%
-\contentsline {figure}{\numberline {1.12}{\ignorespaces FSM control Module Aduio Codec config.}}{10}{figure.caption.12}%
-\contentsline {figure}{\numberline {1.13}{\ignorespaces Block diagram for Module Audio Codec config.}}{11}{figure.caption.13}%
-\contentsline {figure}{\numberline {1.14}{\ignorespaces FSM control Module Aduio Codec data.}}{12}{figure.caption.14}%
-\contentsline {figure}{\numberline {1.15}{\ignorespaces Block diagram for Module Audio Codec data.}}{12}{figure.caption.15}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces DE10-Standard development board.}}{3}{figure.caption.1}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Block diagram of DE10-Standard.}}{5}{figure.caption.2}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Functional block diatram for DDS system.}}{8}{figure.caption.3}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Typical DDS architecture and signal path with DAC.}}{9}{figure.caption.4}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Digital phase wheel.}}{10}{figure.caption.5}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Block Diagram of the Integrated ADC/DAC Audio Codec in the WM8731.}}{13}{figure.caption.6}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Generalized I$^{2}$C Connection Diagram.}}{17}{figure.caption.8}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Messages are broken up into frames of data.}}{17}{figure.caption.9}%
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Start Condition And Stop Condition Transitions.}}{18}{figure.caption.10}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces 2-Wire Serial Interface of WM8731.}}{20}{figure.caption.12}%
+\contentsline {figure}{\numberline {2.11}{\ignorespaces I$^{2}$S mode.}}{21}{figure.caption.13}%
+\contentsline {figure}{\numberline {2.12}{\ignorespaces I$^{2}$S slave mode.}}{22}{figure.caption.14}%
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Noise-injected signal.}}{23}{figure.caption.15}%
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Fibonacci LFSR.}}{24}{figure.caption.16}%
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Generate a new bit using feedback from the tap bits.}}{25}{figure.caption.17}%
+\contentsline {figure}{\numberline {2.16}{\ignorespaces Complex Waveforms Due to Harmonics.}}{26}{figure.caption.18}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Block diagram for Module Sin\_Wave.}}{28}{figure.caption.19}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Block diagram for Module Square\_wave.}}{29}{figure.caption.20}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Block diagram for Module Triangle\_wave.}}{30}{figure.caption.21}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Block diagram for Module Sawtooth\_wave.}}{30}{figure.caption.22}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Block diagram for Module ECG\_wave.}}{31}{figure.caption.23}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Block diagram for Module Waveform Generator.}}{32}{figure.caption.24}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Block diagram for Module LFSR.}}{33}{figure.caption.25}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Communication operations between the user and the Control Value Module.}}{34}{figure.caption.26}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Block diagram for Module Control value.}}{35}{figure.caption.27}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces FSM control Module I$^{2}$C trans.}}{36}{figure.caption.28}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Block diagram for Module I$^{2}$C trans.}}{36}{figure.caption.29}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces FSM control Module Aduio Codec config.}}{37}{figure.caption.30}%
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Block diagram for Module Audio Codec config.}}{38}{figure.caption.31}%
+\contentsline {figure}{\numberline {3.14}{\ignorespaces FSM control Module Aduio Codec data.}}{39}{figure.caption.32}%
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Block diagram for Module Audio Codec data.}}{39}{figure.caption.33}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Demonstration of square waves with different duty cycles ranging from 10\% to 90\%.}}{40}{figure.caption.34}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Basic waveforms and noise modulation: ECG output signal affected by frequency and amplitude variations of injected noise.}}{40}{figure.caption.35}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Block diagram for Top module.}}{41}{figure.caption.36}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Sine waveform on Oscilloscope.}}{42}{figure.caption.37}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Triangle waveform on Oscilloscope.}}{43}{figure.caption.38}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Sawtooth waveform on Oscilloscope.}}{44}{figure.caption.39}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces ECG waveform on Oscilloscope.}}{45}{figure.caption.40}%
