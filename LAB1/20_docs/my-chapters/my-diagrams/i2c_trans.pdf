@@ -4761,3 +4761,73 @@ trailer
 startxref
 51666
 %%EOF
+1 0 obj
+<</Title (i2c_trans_1)
+/Creator (Nlview 6.6.13  2017-09-27 bk=1.3888 VDI=40 GEI=35)
+/CreationDate (D:20250929132947Z)
+/Producer (Concept Engineering GmbH)
+/Author (nguye)
+/ModDate (D:20250929133756+07'00')
+>>
+endobj
+2 0 obj
+<</Outlines 7 0 R
+/PageMode /UseThumbs
+/Type /Catalog
+/Pages 3 0 R
+/Metadata 91 0 R
+/ViewerPreferences <</DisplayDocTitle true
+>>
+>>
+endobj
+10 0 obj
+<</Type /Page
+/CropBox [22.5000 291.0000 592.5000 514.5000]
+/Parent 3 0 R
+/MediaBox [22.5000 291.0000 592.5000 514.5000]
+/Resources 5 0 R
+/Contents 11 0 R
+/Rotate 0
+>>
+endobj
+91 0 obj
+<</Type /Metadata
+/Length 1198
+/Subtype /XML
+>>
+stream
+<?xpacket begin="" id="W5M0MpCehiHzreSzNTczkc9d"?><x:xmpmeta x:xmptk="Nitro PDF Pro 14 (14.5.0.11)" xmlns:x="adobe:ns:meta/"><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><rdf:Description rdf:about="" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:pdf="http://ns.adobe.com/pdf/1.3/" xmlns:pdfaExtension="http://www.aiim.org/pdfa/ns/extension/" xmlns:pdfaProperty="http://www.aiim.org/pdfa/ns/property#" xmlns:pdfaSchema="http://www.aiim.org/pdfa/ns/schema#" xmlns:pdfaid="http://www.aiim.org/pdfa/ns/id/" xmlns:pdfuaid="http://www.aiim.org/pdfua/ns/id/" xmlns:pdfx="http://ns.adobe.com/pdfx/1.3/" xmlns:xmp="http://ns.adobe.com/xap/1.0/"><dc:title><rdf:Alt><rdf:li xml:lang="x-default">i2c_trans_1</rdf:li>
+</rdf:Alt>
+</dc:title>
+<dc:creator><rdf:Seq><rdf:li>nguye</rdf:li>
+</rdf:Seq>
+</dc:creator>
+<xmp:CreatorTool>Nlview 6.6.13  2017-09-27 bk=1.3888 VDI=40 GEI=35</xmp:CreatorTool>
+<pdf:Producer>Concept Engineering GmbH</pdf:Producer>
+<xmp:CreateDate>2025-09-29T13:29:47Z</xmp:CreateDate>
+<xmp:ModifyDate>2025-09-29T13:37:56+07:00</xmp:ModifyDate>
+<xmp:MetadataDate>2025-09-29T13:37:56+07:00</xmp:MetadataDate>
+</rdf:Description>
+</rdf:RDF>
+</x:xmpmeta>
+<?xpacket end="r"?>
+endstream
+endobj
+xref
+1 2
+0000053551 00000 n
+0000053784 00000 n
+10 1
+0000053942 00000 n
+91 1
+0000054136 00000 n
+trailer
+<</Info 1 0 R
+/Root 2 0 R
+/ID [<3969B9670476235050011CBD869ABF17> <3969B9670476235050011CBD869ABF17>]
+/Size 92
+/Prev 51666
+>>
+startxref
+55425
+%%EOF

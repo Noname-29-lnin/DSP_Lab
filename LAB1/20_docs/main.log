@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.8.10)  29 SEP 2025 13:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.8.10)  29 SEP 2025 13:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1044,7 +1044,7 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
-<./my-chapters/my-images/01_logobachkhoatoi.png, id=39, 471.9231pt x 478.9092pt
+<./my-chapters/my-images/01_logobachkhoatoi.png, id=55, 471.9231pt x 478.9092pt
 >
 File: ./my-chapters/my-images/01_logobachkhoatoi.png Graphic file (type png)
 <use ./my-chapters/my-images/01_logobachkhoatoi.png>
@@ -1074,7 +1074,7 @@ Overfull \hbox (2.19716pt too wide) in paragraph at lines 43--43
 
 
 
-<./my-chapters/my-images/bia.jpg, id=41, 301.125pt x 414.95026pt>
+<./my-chapters/my-images/bia.jpg, id=57, 301.125pt x 414.95026pt>
 File: ./my-chapters/my-images/bia.jpg Graphic file (type jpg)
 <use ./my-chapters/my-images/bia.jpg>
 Package pdftex.def Info: ./my-chapters/my-images/bia.jpg  used on input line 44
@@ -1088,7 +1088,9 @@ s/my-images/bia.jpg> <./my-chapters/my-images/01_logobachkhoatoi.png>]
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
- (main.lof)
+ (main.lof
+
+[2])
 \tf@lof=\write5
 \openout5 = `main.lof'.
 
@@ -1098,11 +1100,11 @@ s/my-images/bia.jpg> <./my-chapters/my-images/01_logobachkhoatoi.png>]
 
 
 
-[2]
+[3]
 \openout2 = `./my-chapters/hardware_design.aux'.
 
  (my-chapters/hardware_design.tex
-<./my-chapters/my-diagrams/wave_sin.pdf, id=82, 585.68813pt x 177.66376pt>
+<./my-chapters/my-diagrams/wave_sin.pdf, id=121, 585.68813pt x 177.66376pt>
 File: ./my-chapters/my-diagrams/wave_sin.pdf Graphic file (type pdf)
 <use ./my-chapters/my-diagrams/wave_sin.pdf>
 Package pdftex.def Info: ./my-chapters/my-diagrams/wave_sin.pdf  used on input 
@@ -1113,7 +1115,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 10--11
  [][] 
  []
 
-<./my-chapters/my-diagrams/wave_square.pdf, id=83, 566.86781pt x 465.23813pt>
+<./my-chapters/my-diagrams/wave_square.pdf, id=122, 566.86781pt x 465.23813pt>
 File: ./my-chapters/my-diagrams/wave_square.pdf Graphic file (type pdf)
 <use ./my-chapters/my-diagrams/wave_square.pdf>
 Package pdftex.def Info: ./my-chapters/my-diagrams/wave_square.pdf  used on inp
@@ -1135,7 +1137,7 @@ l.22
       [1
 
  <./my-chapters/my-diagrams/wave_sin.pdf>]
-<./my-chapters/my-diagrams/wave_triangle.pdf, id=92, 565.36218pt x 216.81pt>
+<./my-chapters/my-diagrams/wave_triangle.pdf, id=131, 565.36218pt x 216.81pt>
 File: ./my-chapters/my-diagrams/wave_triangle.pdf Graphic file (type pdf)
 <use ./my-chapters/my-diagrams/wave_triangle.pdf>
 Package pdftex.def Info: ./my-chapters/my-diagrams/wave_triangle.pdf  used on i
@@ -1155,8 +1157,8 @@ been already used, duplicate ignored
                    \relax 
 l.31 
       [2 <./my-chapters/my-diagrams/wave_square.pdf>]
-<./my-chapters/my-diagrams/wave_sawtooth.pdf, id=99, 555.57562pt x 143.78719pt>
-
+<./my-chapters/my-diagrams/wave_sawtooth.pdf, id=138, 555.57562pt x 143.78719pt
+>
 File: ./my-chapters/my-diagrams/wave_sawtooth.pdf Graphic file (type pdf)
 <use ./my-chapters/my-diagrams/wave_sawtooth.pdf>
 Package pdftex.def Info: ./my-chapters/my-diagrams/wave_sawtooth.pdf  used on i
@@ -1167,7 +1169,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 37--38
  [][] 
  []
 
-<./my-chapters/my-diagrams/wave_ecg.pdf, id=100, 566.115pt x 199.49532pt>
+<./my-chapters/my-diagrams/wave_ecg.pdf, id=139, 566.115pt x 199.49532pt>
 File: ./my-chapters/my-diagrams/wave_ecg.pdf Graphic file (type pdf)
 <use ./my-chapters/my-diagrams/wave_ecg.pdf>
 Package pdftex.def Info: ./my-chapters/my-diagrams/wave_ecg.pdf  used on input 
@@ -1180,9 +1182,15 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 46--47
 
 
 
-[3 <./my-chapters/my-diagrams/wave_triangle.pdf> <./my-chapters/my-diagrams/wav
-e_sawtooth.pdf>]
-<./my-chapters/my-diagrams/wave_gen.pdf, id=110, 563.10374pt x 602.25pt>
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.49 
+      [3 <./my-chapters/my-diagrams/wave_triangle.pdf> <./my-chapters/my-diagra
+ms/wave_sawtooth.pdf>]
+<./my-chapters/my-diagrams/wave_gen.pdf, id=148, 563.10374pt x 602.25pt>
 File: ./my-chapters/my-diagrams/wave_gen.pdf Graphic file (type pdf)
 <use ./my-chapters/my-diagrams/wave_gen.pdf>
 Package pdftex.def Info: ./my-chapters/my-diagrams/wave_gen.pdf  used on input 
@@ -1196,24 +1204,109 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 55--56
 
 
 [4 <./my-chapters/my-diagrams/wave_ecg.pdf>]
-<./../00_spec/spec/UI_task.png, id=118, 1938.24126pt x 2490.30376pt>
-File: ./../00_spec/spec/UI_task.png Graphic file (type png)
-<use ./../00_spec/spec/UI_task.png>
-Package pdftex.def Info: ./../00_spec/spec/UI_task.png  used on input line 63.
-(pdftex.def)             Requested size: 386.96115pt x 452.33922pt.
+<./my-chapters/my-diagrams/lfsr.pdf, id=157, 572.1375pt x 252.19218pt>
+File: ./my-chapters/my-diagrams/lfsr.pdf Graphic file (type pdf)
+<use ./my-chapters/my-diagrams/lfsr.pdf>
+Package pdftex.def Info: ./my-chapters/my-diagrams/lfsr.pdf  used on input line
+ 64.
+(pdftex.def)             Requested size: 386.95897pt x 170.5687pt.
 
 
 [5 <./my-chapters/my-diagrams/wave_gen.pdf>]
-<./../00_spec/spec/UI_rtl.png, id=127, 1610.015pt x 1749.53625pt>
+<./../00_spec/spec/UI_task.png, id=165, 1938.24126pt x 2490.30376pt>
+File: ./../00_spec/spec/UI_task.png Graphic file (type png)
+<use ./../00_spec/spec/UI_task.png>
+Package pdftex.def Info: ./../00_spec/spec/UI_task.png  used on input line 71.
+(pdftex.def)             Requested size: 386.96115pt x 452.33922pt.
+
+
+[6 <./my-chapters/my-diagrams/lfsr.pdf>]
+<./../00_spec/spec/UI_rtl.png, id=173, 1610.015pt x 1749.53625pt>
 File: ./../00_spec/spec/UI_rtl.png Graphic file (type png)
 <use ./../00_spec/spec/UI_rtl.png>
-Package pdftex.def Info: ./../00_spec/spec/UI_rtl.png  used on input line 69.
+Package pdftex.def Info: ./../00_spec/spec/UI_rtl.png  used on input line 79.
 (pdftex.def)             Requested size: 386.95897pt x 420.48459pt.
+
+
+[7 <./../00_spec/spec/UI_task.png>]
+LaTeX Font Info:    Calculating math sizes for size <13> on input line 83.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 83.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 83.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 83.
+
+<./my-chapters/my-diagrams/i2c_trans_reg_state.jpg, id=180, 1443.89438pt x 692.
+5875pt>
+File: ./my-chapters/my-diagrams/i2c_trans_reg_state.jpg Graphic file (type jpg)
+
+<use ./my-chapters/my-diagrams/i2c_trans_reg_state.jpg>
+Package pdftex.def Info: ./my-chapters/my-diagrams/i2c_trans_reg_state.jpg  use
+d on input line 87.
+(pdftex.def)             Requested size: 386.95897pt x 185.60614pt.
+
+
+[8 <./../00_spec/spec/UI_rtl.png>]
+<./my-chapters/my-diagrams/i2c_trans.pdf, id=187, 572.1375pt x 224.33812pt>
+File: ./my-chapters/my-diagrams/i2c_trans.pdf Graphic file (type pdf)
+<use ./my-chapters/my-diagrams/i2c_trans.pdf>
+Package pdftex.def Info: ./my-chapters/my-diagrams/i2c_trans.pdf  used on input
+ line 95.
+(pdftex.def)             Requested size: 483.69687pt x 189.66136pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 95--96
+ [][] 
+ []
+
+<./my-chapters/my-diagrams/config_codec_i2c_trans_i2c_reg_state.jpg, id=188, 14
+43.89438pt x 692.5875pt>
+File: ./my-chapters/my-diagrams/config_codec_i2c_trans_i2c_reg_state.jpg Graphi
+c file (type jpg)
+<use ./my-chapters/my-diagrams/config_codec_i2c_trans_i2c_reg_state.jpg>
+Package pdftex.def Info: ./my-chapters/my-diagrams/config_codec_i2c_trans_i2c_r
+eg_state.jpg  used on input line 103.
+(pdftex.def)             Requested size: 386.95897pt x 185.60614pt.
+
+
+[9 <./my-chapters/my-diagrams/i2c_trans_reg_state.jpg> <./my-chapters/my-diagra
+ms/i2c_trans.pdf>]
+<./my-chapters/my-diagrams/config_codec.pdf, id=197, 442.65375pt x 746.79pt>
+File: ./my-chapters/my-diagrams/config_codec.pdf Graphic file (type pdf)
+<use ./my-chapters/my-diagrams/config_codec.pdf>
+Package pdftex.def Info: ./my-chapters/my-diagrams/config_codec.pdf  used on in
+put line 111.
+(pdftex.def)             Requested size: 386.9766pt x 517.0063pt.
+
+
+[10 <./my-chapters/my-diagrams/config_codec_i2c_trans_i2c_reg_state.jpg>]
+<./my-chapters/my-diagrams/codec_data_reg_state.jpg, id=204, 1573.37813pt x 513
+.41812pt>
+File: ./my-chapters/my-diagrams/codec_data_reg_state.jpg Graphic file (type jpg
+)
+<use ./my-chapters/my-diagrams/codec_data_reg_state.jpg>
+Package pdftex.def Info: ./my-chapters/my-diagrams/codec_data_reg_state.jpg  us
+ed on input line 119.
+(pdftex.def)             Requested size: 386.95897pt x 126.27032pt.
+
+
+[11 <./my-chapters/my-diagrams/config_codec.pdf>]
+<./my-chapters/my-diagrams/codec_data.pdf, id=212, 575.90157pt x 263.48438pt>
+File: ./my-chapters/my-diagrams/codec_data.pdf Graphic file (type pdf)
+<use ./my-chapters/my-diagrams/codec_data.pdf>
+Package pdftex.def Info: ./my-chapters/my-diagrams/codec_data.pdf  used on inpu
+t line 127.
+(pdftex.def)             Requested size: 386.95897pt x 177.0442pt.
 )
 
-[6 <./../00_spec/spec/UI_task.png>]
-
-[7 <./../00_spec/spec/UI_rtl.png>]
+[12 <./my-chapters/my-diagrams/codec_data_reg_state.jpg> <./my-chapters/my-diag
+rams/codec_data.pdf>]
 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
 (main.aux (my-chapters/hardware_design.aux))
@@ -1222,26 +1315,28 @@ LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-07-20>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 2EA1A032DDFE1CB88BBC0C6C50EAE7DD;1929.
+(rerunfilecheck)             Checksum: 0BFE5E8DEF56264057C1E01F100803E5;2716.
  ) 
 Here is how much of TeX's memory you used:
- 16317 strings out of 468134
- 264454 string characters out of 5430740
- 693243 words of memory out of 5000000
- 44637 multiletter control sequences out of 15000+600000
- 645855 words of font info for 88 fonts, out of 8000000 for 9000
+ 16411 strings out of 468134
+ 267762 string characters out of 5430740
+ 693260 words of memory out of 5000000
+ 44711 multiletter control sequences out of 15000+600000
+ 650204 words of font info for 105 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 90i,11n,93p,394b,472s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,11n,93p,394b,596s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/nguye/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmbx12.pfb><C:/Users/nguye/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmr12.pfb><C:/Users/nguye/AppData/Local/Programs/MiKTeX/fonts/type1/pu
-blic/amsfonts/cm/cmti12.pfb><C:/Users/nguye/AppData/Local/Programs/MiKTeX/fonts
-/type1/vntex/vnr/vnbx12.pfb><C:/Users/nguye/AppData/Local/Programs/MiKTeX/fonts
-/type1/vntex/vnr/vnr12.pfb><C:/Users/nguye/AppData/Local/Programs/MiKTeX/fonts/
-type1/vntex/vnr/vnr17.pfb>
-Output written on main.pdf (9 pages, 977068 bytes).
+blic/amsfonts/cm/cmr8.pfb><C:/Users/nguye/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/amsfonts/cm/cmr9.pfb><C:/Users/nguye/AppData/Local/Programs/MiKTeX/
+fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/nguye/AppData/Local/Program
+s/MiKTeX/fonts/type1/vntex/vnr/vnbx12.pfb><C:/Users/nguye/AppData/Local/Program
+s/MiKTeX/fonts/type1/vntex/vnr/vnr12.pfb><C:/Users/nguye/AppData/Local/Programs
+/MiKTeX/fonts/type1/vntex/vnr/vnr17.pfb>
+Output written on main.pdf (15 pages, 1427645 bytes).
 PDF statistics:
- 173 PDF objects out of 1000 (max. 8388607)
- 25 named destinations out of 1000 (max. 500000)
- 123 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 265 PDF objects out of 1000 (max. 8388607)
+ 41 named destinations out of 1000 (max. 500000)
+ 190 words of extra memory for PDF output out of 10000 (max. 10000000)
 

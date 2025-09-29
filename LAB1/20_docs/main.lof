@@ -7,5 +7,12 @@
 \contentsline {figure}{\numberline {1.4}{\ignorespaces Block diagram for Module Sawtooth\_wave.}}{3}{figure.caption.4}%
 \contentsline {figure}{\numberline {1.5}{\ignorespaces Block diagram for Module ECG\_wave.}}{4}{figure.caption.5}%
 \contentsline {figure}{\numberline {1.6}{\ignorespaces Block diagram for Module Waveform Generator.}}{5}{figure.caption.6}%
-\contentsline {figure}{\numberline {1.7}{\ignorespaces Communication operations between the user and the Control Value Module.}}{6}{figure.caption.7}%
-\contentsline {figure}{\numberline {1.8}{\ignorespaces Block diagram for Module Control value.}}{7}{figure.caption.8}%
+\contentsline {figure}{\numberline {1.7}{\ignorespaces Block diagram for Module LFSR.}}{6}{figure.caption.7}%
+\contentsline {figure}{\numberline {1.8}{\ignorespaces Communication operations between the user and the Control Value Module.}}{7}{figure.caption.8}%
+\contentsline {figure}{\numberline {1.9}{\ignorespaces Block diagram for Module Control value.}}{8}{figure.caption.9}%
+\contentsline {figure}{\numberline {1.10}{\ignorespaces FSM control Module I$^{2}$C trans.}}{9}{figure.caption.10}%
+\contentsline {figure}{\numberline {1.11}{\ignorespaces Block diagram for Module I$^{2}$C trans.}}{9}{figure.caption.11}%
+\contentsline {figure}{\numberline {1.12}{\ignorespaces FSM control Module Aduio Codec config.}}{10}{figure.caption.12}%
+\contentsline {figure}{\numberline {1.13}{\ignorespaces Block diagram for Module Audio Codec config.}}{11}{figure.caption.13}%
+\contentsline {figure}{\numberline {1.14}{\ignorespaces FSM control Module Aduio Codec data.}}{12}{figure.caption.14}%
+\contentsline {figure}{\numberline {1.15}{\ignorespaces Block diagram for Module Audio Codec data.}}{12}{figure.caption.15}%

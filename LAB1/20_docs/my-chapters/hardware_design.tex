@@ -56,6 +56,14 @@
 	\caption{Block diagram for Module Waveform Generator.}
 \end{figure}
 
+\subsection{Module Noise}
+\begin{figure}[H]
+	\centering
+	\fbox{%
+		\includegraphics[width=.8\linewidth]{./my-chapters/my-diagrams/lfsr.pdf}
+	}
+	\caption{Block diagram for Module LFSR.}
+\end{figure}
 \subsection{Module Control value}
 
 \begin{figure}[H]
@@ -66,7 +74,56 @@
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=.8\linewidth]{./../00_spec/spec/UI_rtl.png}
+	\fbox{%
+		\includegraphics[width=.8\linewidth]{./../00_spec/spec/UI_rtl.png}
+	}
 	\caption{Block diagram for Module Control value.}
 \end{figure}
 
+\subsubsection{Module I$^{2}$C trans}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.8\linewidth]{./my-chapters/my-diagrams/i2c_trans_reg_state.jpg}
+	\caption{FSM control Module I$^{2}$C trans.}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\fbox{%
+		\includegraphics[width=\linewidth]{./my-chapters/my-diagrams/i2c_trans.pdf}%
+	}
+	\caption{Block diagram for Module I$^{2}$C trans.}
+\end{figure}
+
+\subsubsection{Module Audio Codec config}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.8\linewidth]{./my-chapters/my-diagrams/config_codec_i2c_trans_i2c_reg_state.jpg}
+	\caption{FSM control Module Aduio Codec config.}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\fbox{%
+		\includegraphics[width=.8\linewidth, height=0.8\textheight]{./my-chapters/my-diagrams/config_codec.pdf}
+	}
+	\caption{Block diagram for Module Audio Codec config.}
+\end{figure}
+
+\subsubsection{Module Audio Codec data}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.8\linewidth]{./my-chapters/my-diagrams/codec_data_reg_state.jpg}
+	\caption{FSM control Module Aduio Codec data.}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\fbox{%
+		\includegraphics[width=.8\linewidth]{./my-chapters/my-diagrams/codec_data.pdf}
+	}
+	\caption{Block diagram for Module Audio Codec data.}
+\end{figure}
