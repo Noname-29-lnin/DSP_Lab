@@ -3,10 +3,14 @@
 
 \usepackage[utf8]{inputenc}
 \usepackage[T5]{fontenc}
-\usepackage[vietnamese]{babel}
+\usepackage[vietnamese, english]{babel}
+
+\usepackage{textcomp}
 % =========================
 % Cover page information
 % =========================
+
+\selectlanguage{vietnamese}
 \NameUpperUniname{Vietnam National University Ho Chi Minh City}
 \NameUniname{Ho Chi Minh City University of Technology}
 \NameDeptname{Faculty of Electrical and Electronics Engineering}
@@ -31,7 +35,6 @@
 %--- Header and footer
 \fancyhf{}
 \fancyhead[L]{\leftmark}
-\fancyfoot[R]{\thepage | \pageref{LastPage}}
 % =========================
 % Document
 % =========================
@@ -39,6 +42,7 @@
 \pagestyle{empty}
 \MycoverFinalProject % Cover page
 \newpage
+\selectlanguage{english}
 \renewcommand{\arraystretch}{1.5} % tăng khoảng cách dòng (row height)
 \setlength{\parindent}{1cm}
 \onehalfspacing
@@ -48,6 +52,9 @@
 \listoftables
 \newpage
 \pagestyle{fancy}
+\MycountPages{number}
+\fancyhead[R]{Supervisor: Nguyen Tuan Hung}
+\fancyfoot[L]{DSP on FPGA}
+%\include{./my-chapters/introduction.tex}
 \input{./my-chapters/theoritical_basic.tex}
-\input{./my-chapters/realization.tex}
 \end{document}

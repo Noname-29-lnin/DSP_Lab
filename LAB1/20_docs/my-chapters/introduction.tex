@@ -1,0 +1,23 @@
+\section{Introduction}
+
+\subsection{Overview}
+
+In the field of digital electronics and signal processing, FPGA (Field Programmable Gate Array) technology provides strong capabilities for high-speed and parallel execution of signal processing tasks. The topic\textbf{ “Design and Implementation of a Waveform Generator on the DE10 FPGA Kit”} is chosen with the main objective of creating a configurable test signal source, which is very important in digital signal processing experiments and applications.
+
+The waveform generator is designed to produce signals with adjustable frequency, amplitude, and waveform type (such as sine, square, and triangle). This flexibility makes the system a reusable tool for testing and validating digital circuits and signal processing modules. In real engineering practice, having a programmable waveform generator on FPGA helps simulate real-world input signals and evaluate system performance under different conditions.
+
+Implementing the waveform generator on FPGA also gives practical experience in hardware-level digital design. Students can apply knowledge of HDL programming (Verilog or VHDL), modular system design, and timing analysis. At the same time, they can practice functional verification of digital systems and learn how to combine theory with real hardware implementation.
+
+This project not only strengthens understanding of digital signal processing concepts but also develops essential skills for embedded system and FPGA-based design careers.
+
+\subsection{Assigned Objectives}
+
+\begin{itemize}[label=-]
+	\item Survey the hardware used in the project; read and study the datasheets of all selected components.
+	\item Implement a top-level system architecture, then decompose it into modular blocks, each responsible for a specific function.
+	\item Study the I²C protocol for WM8731 configuration and the I²S audio protocol for streaming audio data.
+	\item Implement the waveform-generation logic for each waveform type, then provide run-time controls for amplitude, frequency, and duty cycle.
+	\item Extend the system by injecting noise into the waveform.
+	\item Develop comprehensive testbenches to verify and simulate each module’s functionality.
+	\item Deploy and validate the design on the target development kit (hardware-in-the-loop) and confirm that measured results match simulation.
+\end{itemize}

@@ -1,8 +1,15 @@
 \babel@toc {vietnamese}{}\relax 
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Bánh xe pha.}}{4}{figure.caption.1}%
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Sóng Sin khi đổ KIT.}}{6}{figure.caption.2}%
-\contentsline {figure}{\numberline {1.3}{\ignorespaces Sóng ECG khi đổ KIT.}}{7}{figure.caption.3}%
-\contentsline {figure}{\numberline {1.4}{\ignorespaces Sóng Răng cưa.}}{8}{figure.caption.4}%
-\contentsline {figure}{\numberline {1.5}{\ignorespaces Sóng tam giác.}}{9}{figure.caption.5}%
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Các chức năng thực hiển bởi người dùng.}}{12}{figure.caption.6}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Sơ đồ khối của bộ điều khiển module Waveform Generator.}}{13}{figure.caption.7}%
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\contentsline {figure}{\numberline {1.1}{\ignorespaces DE10-Standard development board.}}{1}{figure.caption.1}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Block diagram of DE10-Standard.}}{3}{figure.caption.2}%
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Functional block diatram for DDS system.}}{6}{figure.caption.3}%
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Typical DDS architecture and signal path with DAC.}}{7}{figure.caption.4}%
+\contentsline {figure}{\numberline {1.5}{\ignorespaces Digital phase wheel.}}{8}{figure.caption.5}%
+\contentsline {figure}{\numberline {1.6}{\ignorespaces Block Diagram of the Integrated ADC/DAC Audio Codec in the WM8731.}}{11}{figure.caption.6}%
+\contentsline {figure}{\numberline {1.7}{\ignorespaces Generalized I$^{2}$C Connection Diagram.}}{15}{figure.caption.8}%
+\contentsline {figure}{\numberline {1.8}{\ignorespaces Messages are broken up into frames of data.}}{15}{figure.caption.9}%
+\contentsline {figure}{\numberline {1.9}{\ignorespaces Start Condition And Stop Condition Transitions.}}{16}{figure.caption.10}%
+\contentsline {figure}{\numberline {1.10}{\ignorespaces 2-Wire Serial Interface of WM8731.}}{18}{figure.caption.12}%
+\contentsline {figure}{\numberline {1.11}{\ignorespaces I$^{2}$S mode.}}{19}{figure.caption.13}%
+\contentsline {figure}{\numberline {1.12}{\ignorespaces I$^{2}$S slave mode.}}{20}{figure.caption.14}%

@@ -74,13 +74,13 @@
 
 % --- Subsubsection ---
 \titleformat{\subsubsection}
-  {\normalfont\normalsize\itshape}
+  {\normalfont\fontsize{13}{14}\selectfont\itshape}
   {\thesubsubsection}
   {0.5em}
   {}
-% \titleformat{\section}
-%             {\normalfont\Large\bfseries}
-%             {Chương \thesection}{1em}{}
+\titleformat{\section}
+            {\normalfont\Large\bfseries}
+            {Chapter \thesection. }{1em}{}
 % =====================
 % Setup page
 % =====================
