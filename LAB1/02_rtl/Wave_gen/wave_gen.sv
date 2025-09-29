@@ -37,10 +37,10 @@ module wave_gen #(
         .o_phase_count(phase)
     );
 
-    wave_sine #(
+    wave_sin #(
         .WIDTH(WIDTH),
         .DEPTH(DEPTH),
-        .HEX_LINK("../04_fir_cof/sine_wave_0.1.txt"),
+        .HEX_LINK("./sin_wave.txt"),
         .BEHAVIOR(0)
     ) sine (
         .i_clk        (i_clk),
@@ -73,7 +73,7 @@ module wave_gen #(
     wave_ecg #(
         .WIDTH   (WIDTH),
         .DEPTH   (DEPTH),
-        .HEX_LINK("../04_fir_cof/ecg_wave_0.1.txt") 
+        .HEX_LINK("./ecg_wave.txt") 
     ) ecg (
         .i_clk        (i_clk),
         //.i_rst_n      (i_rst_n),
@@ -101,10 +101,10 @@ module wave_gen #(
         .o_phase_count(phase_sine)
     );
 
-    wave_sine #(
+    wave_sin #(
         .WIDTH(WIDTH),
         .DEPTH(DEPTH),
-        .HEX_LINK("../04_fir_cof/sine_wave_0.1.txt"),
+        .HEX_LINK("./sin_wave.txt"),
         .BEHAVIOR(0)
     ) sine_noise (
         .i_clk        (i_clk),

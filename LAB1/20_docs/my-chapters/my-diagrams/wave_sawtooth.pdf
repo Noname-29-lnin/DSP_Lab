@@ -1,0 +1,1176 @@
+%PDF-1.4
+1 0 obj
+<<
+  /Title    (wave_sawtooth_1)
+  /Author   (nguye)
+  /Producer (Concept Engineering GmbH)
+  /Creator  (Nlview 6.6.13  2017-09-27 bk=1.3888 VDI=40 GEI=35)
+  /CreationDate (D:20250929130259)
+>>
+endobj
+2 0 obj
+<<
+  /Type     /Catalog
+  /Pages    3 0 R
+  /Outlines 7 0 R
+  /PageMode /UseThumbs
+  /ViewerPreferences << /DisplayDocTitle true >>
+>>
+endobj
+4 0 obj
+<<
+  /Type     /Font
+  /Subtype  /Type1
+  /Name     /F1
+  /BaseFont /Helvetica
+  /Encoding /MacRomanEncoding
+>>
+endobj
+5 0 obj
+<<
+  /ExtGState  6 0 R
+  /Font       << /F1 4 0 R >>
+  /ColorSpace << /PCS [/Pattern /DeviceRGB] >>
+  /Pattern    8 0 R
+  /XObject    9 0 R
+>>
+endobj
+%
+% Nlview page 1
+% (user space scaling 0.496329)
+%
+10 0 obj
+<<
+  /Type      /Page
+  /Parent    3 0 R
+  /Resources 5 0 R
+  /Contents  11 0 R
+  /MediaBox  [0 0 612 792]
+  /Rotate    0
+>>
+endobj
+11 0 obj
+<<
+  /Length 6955
+>>
+stream
+1 0 0 1 0 312.604 cm
+1 0 0 1 28.8 28.8 cm
+0.496329 0 0 -0.496329 0 0 cm
+1 0 0 1 0 -220 cm
+0 0 1117 220 re
+W n
+/GS gs
+1 0 0 1 191 0 cm
+q
+1.000 1.000 1.000 rg
+/GSa0 gs
+-191 0 1116 221 re
+f
+Q
+q
+0.000 0.000 0.000 rg
+/GSa150 gs
+163 25 m
+557 25 l
+557 25 l
+560 26 l
+563 27 l
+564 30 l
+565 33 l
+565 33 l
+565 207 l
+565 207 l
+564 210 l
+563 213 l
+560 214 l
+557 215 l
+557 215 l
+163 215 l
+163 215 l
+160 214 l
+157 213 l
+156 210 l
+155 207 l
+155 207 l
+155 33 l
+155 33 l
+156 30 l
+157 27 l
+160 26 l
+h f
+Q
+q
+0.863 0.902 0.863 rg
+/GSa0 gs
+158 20 m
+552 20 l
+552 20 l
+555 21 l
+558 22 l
+559 25 l
+560 28 l
+560 28 l
+560 202 l
+560 202 l
+559 205 l
+558 208 l
+555 209 l
+552 210 l
+552 210 l
+158 210 l
+158 210 l
+155 209 l
+152 208 l
+151 205 l
+150 202 l
+150 202 l
+150 28 l
+150 28 l
+151 25 l
+152 22 l
+155 21 l
+h f
+Q
+[] 0 d
+1 w
+0.176 0.176 0.176 RG
+/GSA0 gs
+158 20 m
+552 20 l
+S
+560 28 m
+560.002 27.8889 560.002 27.7778 560 27.6667 c
+559.908 23.3404 556.326 19.908 552 20 c
+S
+560 28 m
+560 202 l
+S
+552 210 m
+552.111 210.002 552.222 210.002 552.333 210 c
+556.66 209.908 560.092 206.326 560 202 c
+S
+552 210 m
+158 210 l
+S
+150 202 m
+149.998 202.111 149.998 202.222 150 202.333 c
+150.092 206.66 153.674 210.092 158 210 c
+S
+150 202 m
+150 28 l
+S
+158 20 m
+157.889 19.9976 157.778 19.9976 157.667 20 c
+153.34 20.092 149.908 23.6738 150 28 c
+S
+3 w
+155 31 m
+167 31 l
+S
+1 w
+153 23 16 16 re
+S
+q
+0.000 0.000 0.000 rg
+/GSa0 gs
+1 0 0 1 355 18 cm
+BT
+/F1 12 Tf
+1 0 0 -1 0 0 Tm
+-141.054 2.484 Td
+(phase_accummulator:phase_acummulator_for_wave) Tj
+ET
+Q
+0.024 0.278 0.435 RG
+140 100 m
+150 100 l
+S
+q
+0.024 0.278 0.435 rg
+/GSa0 gs
+1 0 0 1 148 98 cm
+BT
+/F1 10 Tf
+1 0 0 -1 0 0 Tm
+-20 2.07 Td
+(i_clk) Tj
+ET
+Q
+140 180 m
+150 180 l
+S
+q
+0.024 0.278 0.435 rg
+/GSa0 gs
+1 0 0 1 148 178 cm
+BT
+/F1 10 Tf
+1 0 0 -1 0 0 Tm
+-30.01 2.07 Td
+(i_rst_n) Tj
+ET
+Q
+140 120 m
+150 120 l
+S
+q
+0.024 0.278 0.435 rg
+/GSa0 gs
+1 0 0 1 148 118 cm
+BT
+/F1 10 Tf
+1 0 0 -1 0 0 Tm
+-22.78 2.07 Td
+(i_tick) Tj
+ET
+Q
+3 w
+140 80 m
+150 80 l
+S
+q
+0.024 0.278 0.435 rg
+/GSa0 gs
+1 0 0 1 148 78 cm
+BT
+/F1 10 Tf
+1 0 0 -1 0 0 Tm
+-83.94 2.07 Td
+(i_count_value[9..0]) Tj
+ET
+Q
+570 110 m
+560 110 l
+S
+q
+0.024 0.278 0.435 rg
+/GSa0 gs
+1 0 0 1 566 108 cm
+BT
+/F1 10 Tf
+1 0 0 -1 0 0 Tm
+0 2.07 Td
+(o_phase_count[9..0]) Tj
+ET
+Q
+1 w
+160 100 m
+150 100 l
+S
+160 180 m
+150 180 l
+S
+160 120 m
+150 120 l
+S
+3 w
+160 80 m
+150 80 l
+S
+550 110 m
+560 110 l
+S
+1 w
+0.000 0.000 1.000 RG
+-10 100 m
+-17 107 l
+-31 107 l
+-31 93 l
+-17 93 l
+h S
+q
+0.000 0.000 0.000 rg
+/GSa0 gs
+1 0 0 1 -35 100 cm
+BT
+/F1 12 Tf
+1 0 0 -1 0 0 Tm
+-36.012 -4.308 Td
+(i_rst_n) Tj
+ET
+Q
+-10 120 m
+-17 127 l
+-31 127 l
+-31 113 l
+-17 113 l
+h S
+q
+0.000 0.000 0.000 rg
+/GSa0 gs
+1 0 0 1 -35 120 cm
+BT
+/F1 12 Tf
+1 0 0 -1 0 0 Tm
+-63.348 -4.308 Td
+(i_samp_tick) Tj
+ET
+Q
+3 w
+-10 80 m
+-17 87 l
+-31 87 l
+-31 73 l
+-17 73 l
+h S
+q
+0.000 0.000 0.000 rg
+/GSa0 gs
+1 0 0 1 -35 80 cm
+BT
+/F1 12 Tf
+1 0 0 -1 0 0 Tm
+-132.744 -4.308 Td
+(i_wave_phase_step[9..0]) Tj
+ET
+Q
+740 80 m
+740 73 l
+754 73 l
+761 80 l
+754 87 l
+740 87 l
+h S
+q
+0.000 0.000 0.000 rg
+/GSa0 gs
+1 0 0 1 769 80 cm
+BT
+/F1 12 Tf
+1 0 0 -1 0 0 Tm
+0 -4.308 Td
+(o_sawtooth_wave[27..0]) Tj
+ET
+Q
+q
+0.000 0.000 0.000 rg
+/GSa150 gs
+438 68 60 100 re
+f
+Q
+q
+0.278 0.467 0.467 rg
+/GSa0 gs
+434 64 60 100 re
+f
+Q
+1 w
+0.176 0.176 0.176 RG
+434 64 60 100 re
+S
+q
+0.451 0.675 0.675 rg
+/GSa0 gs
+430 60 60 100 re
+f
+Q
+430 60 60 100 re
+S
+430 103 m
+437 100 l
+430 97 l
+S
+q
+0.000 0.000 0.000 rg
+/GSa0 gs
+1 0 0 1 460 58 cm
+BT
+/F1 12 Tf
+1 0 0 -1 0 0 Tm
+-40.026 2.484 Td
+(reg_count[9..0]) Tj
+ET
+Q
+3 w
+0.024 0.278 0.435 RG
+420 80 m
+430 80 l
+S
+q
+0.024 0.278 0.435 rg
+/GSa0 gs
+1 0 0 1 432 80 cm
+BT
+/F1 10 Tf
+1 0 0 -1 0 0 Tm
+0 -3.59 Td
+(D) Tj
+ET
+Q
+420 100 m
+430 100 l
+S
+q
+0.024 0.278 0.435 rg
+/GSa0 gs
+1 0 0 1 439 100 cm
+BT
+/F1 10 Tf
+1 0 0 -1 0 0 Tm
+0 -3.59 Td
+(CLK) Tj
+ET
+Q
+453 163 m
+453 161.343 451.657 160 450 160 c
+448.343 160 447 161.343 447 163 c
+447 164.657 448.343 166 450 166 c
+451.657 166 453 164.657 453 163 c
+S
+450 170 m
+450 166 l
+S
+q
+0.024 0.278 0.435 rg
+/GSa0 gs
+1 0 0 1 447 158 cm
+BT
+/F1 10 Tf
+1 0 0 -1 0 0 Tm
+0 2.07 Td
+(CLRN) Tj
+ET
+Q
+420 120 m
+430 120 l
+S
+q
+0.024 0.278 0.435 rg
+/GSa0 gs
+1 0 0 1 432 120 cm
+BT
+/F1 10 Tf
+1 0 0 -1 0 0 Tm
+0 -3.59 Td
+(ENA) Tj
+ET
+Q
+420 140 m
+430 140 l
+S
+q
+0.024 0.278 0.435 rg
+/GSa0 gs
+1 0 0 1 432 140 cm
+BT
+/F1 10 Tf
+1 0 0 -1 0 0 Tm
+0 -3.59 Td
+(SCLR) Tj
+ET
+Q
+q
+0.024 0.278 0.435 rg
+/GSa0 gs
+1 0 0 1 428 139 cm
+BT
+/F1 12 Tf
+1 0 0 -1 0 0 Tm
+-29.352 2.484 Td
+(10'h0) Tj
+ET
+Q
+500 110 m
+490 110 l
+S
+q
+0.024 0.278 0.435 rg
+/GSa0 gs
+1 0 0 1 488 110 cm
+BT
+/F1 10 Tf
+1 0 0 -1 0 0 Tm
+-7.78 -3.59 Td
+(Q) Tj
+ET
+Q
+q
+0.000 0.000 0.000 rg
+/GSa150 gs
+295 65 m
+295 53.9543 286.046 45 275 45 c
+263.954 45 255 53.9543 255 65 c
+255 76.0457 263.954 85 275 85 c
+286.046 85 295 76.0457 295 65 c
+f
+Q
+q
+0.451 0.675 0.675 rg
+/GSa0 gs
+290 60 m
+290 48.9543 281.046 40 270 40 c
+258.954 40 250 48.9543 250 60 c
+250 71.0457 258.954 80 270 80 c
+281.046 80 290 71.0457 290 60 c
+f
+Q
+1 w
+0.176 0.176 0.176 RG
+290 60 m
+290 48.9543 281.046 40 270 40 c
+258.954 40 250 48.9543 250 60 c
+250 71.0457 258.954 80 270 80 c
+281.046 80 290 71.0457 290 60 c
+S
+250 40 m
+256 46 l
+S
+250 60 m
+250 60 l
+S
+250 80 m
+256 74 l
+S
+290 60 m
+290 60 l
+S
+q
+0.176 0.176 0.176 rg
+/GSa0 gs
+1 0 0 1 270 60 cm
+BT
+/F1 12 Tf
+1 0 0 -1 0 0 Tm
+-3.504 -4.308 Td
+(+) Tj
+ET
+Q
+q
+0.000 0.000 0.000 rg
+/GSa0 gs
+1 0 0 1 265 38 cm
+BT
+/F1 12 Tf
+1 0 0 -1 0 0 Tm
+0 2.484 Td
+(Add0) Tj
+ET
+Q
+0.024 0.278 0.435 RG
+240 40 m
+250 40 l
+S
+q
+0.024 0.278 0.435 rg
+/GSa0 gs
+1 0 0 1 248 39 cm
+BT
+/F1 10 Tf
+1 0 0 -1 0 0 Tm
+-17.22 2.07 Td
+(CIN) Tj
+ET
+Q
+q
+0.024 0.278 0.435 rg
+/GSa0 gs
+1 0 0 1 227 39 cm
+BT
+/F1 12 Tf
+1 0 0 -1 0 0 Tm
+-22.68 2.484 Td
+(1'h0) Tj
+ET
+Q
+3 w
+240 60 m
+250 60 l
+S
+q
+0.024 0.278 0.435 rg
+/GSa0 gs
+1 0 0 1 248 59 cm
+BT
+/F1 10 Tf
+1 0 0 -1 0 0 Tm
+-28.91 2.07 Td
+(A[9..0]) Tj
+ET
+Q
+240 80 m
+250 80 l
+S
+q
+0.024 0.278 0.435 rg
+/GSa0 gs
+1 0 0 1 248 79 cm
+BT
+/F1 10 Tf
+1 0 0 -1 0 0 Tm
+-28.91 2.07 Td
+(B[9..0]) Tj
+ET
+Q
+300 60 m
+290 60 l
+S
+q
+0.024 0.278 0.435 rg
+/GSa0 gs
+1 0 0 1 296 59 cm
+BT
+/F1 10 Tf
+1 0 0 -1 0 0 Tm
+0 2.07 Td
+(OUT[9..0]) Tj
+ET
+Q
+1 w
+0.000 0.000 1.000 RG
+-10 60 m
+-17 67 l
+-31 67 l
+-31 53 l
+-17 53 l
+h S
+q
+0.000 0.000 0.000 rg
+/GSa0 gs
+1 0 0 1 -35 60 cm
+BT
+/F1 12 Tf
+1 0 0 -1 0 0 Tm
+-24 -4.308 Td
+(i_clk) Tj
+ET
+Q
+3 w
+0.176 0.176 0.176 RG
+702 100 m
+718 100 l
+S
+705 103 m
+715 103 l
+S
+708 106 m
+712 106 l
+S
+740 80 m
+715 80 l
+S
+0.000 0.000 0.000 RG
+715 80 m
+710 85 l
+S
+0.176 0.176 0.176 RG
+710 85 m
+710 100 l
+S
+1 w
+-10 60 m
+30 60 l
+30 100 l
+140 100 l
+S
+-10 100 m
+10 100 l
+10 180 l
+140 180 l
+S
+-10 120 m
+140 120 l
+S
+3 w
+-10 80 m
+140 80 l
+S
+570 110 m
+690 110 l
+690 85 l
+S
+0.000 0.000 0.000 RG
+690 85 m
+695 80 l
+S
+0.176 0.176 0.176 RG
+695 80 m
+740 80 l
+S
+300 60 m
+370 60 l
+370 80 l
+420 80 l
+S
+1 w
+160 100 m
+420 100 l
+S
+160 180 m
+450 180 l
+450 170 l
+S
+160 120 m
+420 120 l
+S
+3 w
+160 80 m
+240 80 l
+S
+240 60 m
+180 60 l
+180 200 l
+530 200 l
+530 110 l
+500 110 l
+S
+530 110 m
+550 110 l
+S
+q
+0.176 0.176 0.176 rg
+/GSa0 gs
+527 107 7 7 re
+f
+Q
+q
+0.000 0.000 0.000 rg
+/GSa0 gs
+1 0 0 1 691 85 cm
+0 -1 1 0 0 0 cm
+BT
+/F1 10 Tf
+1 0 0 -1 0 0 Tm
+-13.9 -7.18 Td
+(9:0) Tj
+ET
+Q
+endstream
+endobj
+3 0 obj
+<<
+  /Type    /Pages
+  /Kids
+  [
+  10 0 R
+  ]
+  /Count   1
+  /ProcSet [ /PDF /Text ]
+>>
+endobj
+6 0 obj
+<<
+  /GS << /Type /ExtGState
+         /LC    0
+         /LJ    0
+         /ML    4.0
+         /ca    1.0
+         /CA    1.0
+         /AIS   false
+         /SMask /None
+  >>
+  /GSa0 << /Type /ExtGState /ca 1 >>
+  /GSA0 << /Type /ExtGState /CA 1 >>
+  /GSa150 << /Type /ExtGState /ca 0.411765 >>
+>>
+endobj
+14 0 obj
+<<
+  /Title  (phase_accummulator:phase_acummulator_for_wave_2 phase_accummulator:phase_acummulator_for_wave_2)
+  /C      [0.0 0.0 0.4]
+  /Dest   [10 0 R /FitR 155 343 449 448]
+  /Parent 13 0 R
+  /Next   15 0 R
+>>
+endobj
+15 0 obj
+<<
+  /Title  (phase_accummulator:phase_acummulator_for_wave_2|Add0_13 Add0_13)
+  /C      [0.0 0.0 0.4]
+  /Dest   [10 0 R /FitR 225 408 291 438]
+  /Parent 13 0 R
+  /Prev   14 0 R
+  /Next   16 0 R
+>>
+endobj
+16 0 obj
+<<
+  /Title  (phase_accummulator:phase_acummulator_for_wave_2|reg_count[9..0]_39 reg_count[9..0]_39)
+  /C      [0.0 0.0 0.4]
+  /Dest   [10 0 R /FitR 321 366 371 428]
+  /Parent 13 0 R
+  /Prev   15 0 R
+>>
+endobj
+13 0 obj
+<<
+  /Title  (instances)
+  /C      [0.0 0.4 0.0]
+  /F      1
+  /Parent 12 0 R
+  /First  14 0 R
+  /Last   16 0 R
+  /Count  3
+  /Next   17 0 R
+>>
+endobj
+18 0 obj
+<<
+  /Title  (i_clk40 input)
+  /C      [0.0 0.0 0.4]
+  /Dest   [10 0 R /FitR 94 416 119 424]
+  /Parent 17 0 R
+  /Next   19 0 R
+>>
+endobj
+19 0 obj
+<<
+  /Title  (i_rst_n41 input)
+  /C      [0.0 0.0 0.4]
+  /Dest   [10 0 R /FitR 88 396 119 404]
+  /Parent 17 0 R
+  /Prev   18 0 R
+  /Next   20 0 R
+>>
+endobj
+20 0 obj
+<<
+  /Title  (i_samp_tick42 input)
+  /C      [0.0 0.0 0.4]
+  /Dest   [10 0 R /FitR 74 387 119 395]
+  /Parent 17 0 R
+  /Prev   19 0 R
+>>
+endobj
+17 0 obj
+<<
+  /Title  (ports)
+  /C      [0.0 0.4 0.0]
+  /F      1
+  /Parent 12 0 R
+  /First  18 0 R
+  /Last   20 0 R
+  /Count  3
+  /Prev   13 0 R
+  /Next   21 0 R
+>>
+endobj
+22 0 obj
+<<
+  /Title  (i_wave_phase_step[9..0]81 input)
+  /C      [0.0 0.0 0.4]
+  /Dest   [10 0 R /FitR 40 405 120 415]
+  /Parent 21 0 R
+  /Next   23 0 R
+>>
+endobj
+23 0 obj
+<<
+  /Title  (o_sawtooth_wave[27..0]82 output)
+  /C      [0.0 0.0 0.4]
+  /Dest   [10 0 R /FitR 489 405 569 415]
+  /Parent 21 0 R
+  /Prev   22 0 R
+>>
+endobj
+21 0 obj
+<<
+  /Title  (portBuses)
+  /C      [0.0 0.4 0.0]
+  /F      1
+  /Parent 12 0 R
+  /First  22 0 R
+  /Last   23 0 R
+  /Count  2
+  /Prev   17 0 R
+  /Next   24 0 R
+>>
+endobj
+25 0 obj
+<<
+  /Title  (OUT0_48)
+  /C      [0.0 0.0 0.4]
+  /Dest   [10 0 R /FitR 118 400 193 421]
+  /Parent 24 0 R
+  /Next   26 0 R
+>>
+endobj
+26 0 obj
+<<
+  /Title  (OUT0_49)
+  /C      [0.0 0.0 0.4]
+  /Dest   [10 0 R /FitR 118 360 193 401]
+  /Parent 24 0 R
+  /Prev   25 0 R
+  /Next   27 0 R
+>>
+endobj
+27 0 obj
+<<
+  /Title  (OUT0_50)
+  /C      [0.0 0.0 0.4]
+  /Dest   [10 0 R /FitR 118 391 193 391]
+  /Parent 24 0 R
+  /Prev   26 0 R
+  /Next   28 0 R
+>>
+endobj
+28 0 obj
+<<
+  /Title  (phase_accummulator:phase_acummulator_for_wave_2|OUT0_21)
+  /C      [0.0 0.0 0.4]
+  /Dest   [10 0 R /FitR 203 400 332 400]
+  /Parent 24 0 R
+  /Prev   27 0 R
+  /Next   29 0 R
+>>
+endobj
+29 0 obj
+<<
+  /Title  (phase_accummulator:phase_acummulator_for_wave_2|OUT0_22)
+  /C      [0.0 0.0 0.4]
+  /Dest   [10 0 R /FitR 202 360 347 366]
+  /Parent 24 0 R
+  /Prev   28 0 R
+  /Next   30 0 R
+>>
+endobj
+30 0 obj
+<<
+  /Title  (phase_accummulator:phase_acummulator_for_wave_2|OUT0_23)
+  /C      [0.0 0.0 0.4]
+  /Dest   [10 0 R /FitR 203 391 332 391]
+  /Parent 24 0 R
+  /Prev   29 0 R
+>>
+endobj
+24 0 obj
+<<
+  /Title  (nets)
+  /C      [0.0 0.4 0.0]
+  /F      1
+  /Parent 12 0 R
+  /First  25 0 R
+  /Last   30 0 R
+  /Count  6
+  /Prev   21 0 R
+  /Next   31 0 R
+>>
+endobj
+32 0 obj
+<<
+  /Title  (@DATAIN_88,DATAIN_87,DATAIN_86)
+  /C      [0.0 0.0 0.4]
+  /Dest   [10 0 R /FitR 475 400 490 410]
+  /Parent 31 0 R
+  /Next   33 0 R
+>>
+endobj
+33 0 obj
+<<
+  /Title  (OUT0_89)
+  /C      [0.0 0.0 0.4]
+  /Dest   [10 0 R /FitR 118 410 193 410]
+  /Parent 31 0 R
+  /Prev   32 0 R
+  /Next   34 0 R
+>>
+endobj
+34 0 obj
+<<
+  /Title  (o_phase_count[9..0]_90)
+  /C      [0.0 0.0 0.4]
+  /Dest   [10 0 R /FitR 405 394 490 410]
+  /Parent 31 0 R
+  /Prev   33 0 R
+  /Next   35 0 R
+>>
+endobj
+35 0 obj
+<<
+  /Title  (o_phase_count[9..0]_90)
+  /C      [0.0 0.0 0.4]
+  /Dest   [10 0 R /FitR 466 401 472 408]
+  /Parent 31 0 R
+  /Prev   34 0 R
+  /Next   36 0 R
+>>
+endobj
+36 0 obj
+<<
+  /Title  (phase_accummulator:phase_acummulator_for_wave_2|OUT0_46)
+  /C      [0.0 0.0 0.4]
+  /Dest   [10 0 R /FitR 203 410 242 410]
+  /Parent 31 0 R
+  /Prev   35 0 R
+  /Next   37 0 R
+>>
+endobj
+37 0 obj
+<<
+  /Title  (phase_accummulator:phase_acummulator_for_wave_2|OUT0_47)
+  /C      [0.0 0.0 0.4]
+  /Dest   [10 0 R /FitR 211 349 396 422]
+  /Parent 31 0 R
+  /Prev   36 0 R
+  /Next   38 0 R
+>>
+endobj
+38 0 obj
+<<
+  /Title  (phase_accummulator:phase_acummulator_for_wave_2|OUT[9..0]_45)
+  /C      [0.0 0.0 0.4]
+  /Dest   [10 0 R /FitR 271 409 333 422]
+  /Parent 31 0 R
+  /Prev   37 0 R
+>>
+endobj
+31 0 obj
+<<
+  /Title  (netBundles)
+  /C      [0.0 0.4 0.0]
+  /F      1
+  /Parent 12 0 R
+  /First  32 0 R
+  /Last   38 0 R
+  /Count  7
+  /Prev   24 0 R
+>>
+endobj
+12 0 obj
+<<
+  /Title  (Nlview page 1)
+  /C      [0.4 0.0 0.0]
+  /Dest   [10 0 R /Fit]
+  /Parent 7 0 R
+  /First  13 0 R
+  /Last   31 0 R
+  /Count  5
+>>
+endobj
+8 0 obj
+<<
+>>
+endobj
+9 0 obj
+<<
+>>
+endobj
+7 0 obj
+<<
+  /Type  /Outline
+  /First 12 0 R
+  /Last  12 0 R
+  /Count 1
+>>
+endobj
+xref
+0 39
+0000000000 65535 f 
+0000000009 00000 n 
+0000000218 00000 n 
+0000007855 00000 n 
+0000000368 00000 n 
+0000000495 00000 n 
+0000007958 00000 n 
+0000013099 00000 n 
+0000013057 00000 n 
+0000013078 00000 n 
+0000000705 00000 n 
+0000000846 00000 n 
+0000012899 00000 n 
+0000008932 00000 n 
+0000008270 00000 n 
+0000008499 00000 n 
+0000008713 00000 n 
+0000009555 00000 n 
+0000009092 00000 n 
+0000009238 00000 n 
+0000009403 00000 n 
+0000010057 00000 n 
+0000009728 00000 n 
+0000009892 00000 n 
+0000011292 00000 n 
+0000010234 00000 n 
+0000010375 00000 n 
+0000010533 00000 n 
+0000010691 00000 n 
+0000010897 00000 n 
+0000011103 00000 n 
+0000012738 00000 n 
+0000011464 00000 n 
+0000011628 00000 n 
+0000011786 00000 n 
+0000011959 00000 n 
+0000012132 00000 n 
+0000012338 00000 n 
+0000012544 00000 n 
+trailer
+<<
+  /Size 39
+  /Info 1 0 R
+  /Root 2 0 R
+>>
+startxref
+13181
+%%EOF
+1 0 obj
+<</ModDate (D:20250929130743+07'00')
+/Creator (Nlview 6.6.13  2017-09-27 bk=1.3888 VDI=40 GEI=35)
+/Producer (Concept Engineering GmbH)
+/CreationDate (D:20250929130259Z)
+/Title (wave_sawtooth_1)
+/Author (nguye)
+>>
+endobj
+2 0 obj
+<</Type /Catalog
+/PageMode /UseThumbs
+/ViewerPreferences <</DisplayDocTitle true
+>>
+/Outlines 7 0 R
+/Pages 3 0 R
+/Metadata 40 0 R
+>>
+endobj
+10 0 obj
+<</Type /Page
+/Resources 5 0 R
+/Rotate 0
+/Contents 11 0 R
+/CropBox [25.5000 328.5000 579.0000 471.7500]
+/Parent 3 0 R
+/MediaBox [25.5000 328.5000 579.0000 471.7500]
+>>
+endobj
+40 0 obj
+<</Length 1202
+/Type /Metadata
+/Subtype /XML
+>>
+stream
+<?xpacket begin="" id="W5M0MpCehiHzreSzNTczkc9d"?><x:xmpmeta x:xmptk="Nitro PDF Pro 14 (14.5.0.11)" xmlns:x="adobe:ns:meta/"><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><rdf:Description rdf:about="" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:pdf="http://ns.adobe.com/pdf/1.3/" xmlns:pdfaExtension="http://www.aiim.org/pdfa/ns/extension/" xmlns:pdfaProperty="http://www.aiim.org/pdfa/ns/property#" xmlns:pdfaSchema="http://www.aiim.org/pdfa/ns/schema#" xmlns:pdfaid="http://www.aiim.org/pdfa/ns/id/" xmlns:pdfuaid="http://www.aiim.org/pdfua/ns/id/" xmlns:pdfx="http://ns.adobe.com/pdfx/1.3/" xmlns:xmp="http://ns.adobe.com/xap/1.0/"><dc:title><rdf:Alt><rdf:li xml:lang="x-default">wave_sawtooth_1</rdf:li>
+</rdf:Alt>
+</dc:title>
+<dc:creator><rdf:Seq><rdf:li>nguye</rdf:li>
+</rdf:Seq>
+</dc:creator>
+<xmp:CreatorTool>Nlview 6.6.13  2017-09-27 bk=1.3888 VDI=40 GEI=35</xmp:CreatorTool>
+<pdf:Producer>Concept Engineering GmbH</pdf:Producer>
+<xmp:CreateDate>2025-09-29T13:02:59Z</xmp:CreateDate>
+<xmp:ModifyDate>2025-09-29T13:07:43+07:00</xmp:ModifyDate>
+<xmp:MetadataDate>2025-09-29T13:07:43+07:00</xmp:MetadataDate>
+</rdf:Description>
+</rdf:RDF>
+</x:xmpmeta>
+<?xpacket end="r"?>
+endstream
+endobj
+xref
+1 2
+0000014046 00000 n
+0000014283 00000 n
+10 1
+0000014441 00000 n
+40 1
+0000014635 00000 n
+trailer
+<</Root 2 0 R
+/Size 41
+/ID [<68498D2D6A6DBDDDF389AAFA88279D6E> <68498D2D6A6DBDDDF389AAFA88279D6E>]
+/Info 1 0 R
+/Prev 13181
+>>
+startxref
+15928
+%%EOF

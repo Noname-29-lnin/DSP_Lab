@@ -1,7 +1,7 @@
 module wave_ecg #(
     parameter WIDTH    = 24  ,
     parameter DEPTH    = 1024,
-    parameter HEX_LINK = "../04_fir_cof/ecg_wave_0.1.txt"
+    parameter HEX_LINK = "./ecg_wave.txt"
 )(
     input  logic                       i_clk        ,
     //input  logic                       i_rst_n      ,

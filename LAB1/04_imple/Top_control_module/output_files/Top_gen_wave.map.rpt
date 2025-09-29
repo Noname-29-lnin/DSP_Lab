@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Top_gen_wave
-Sun Sep 28 00:10:00 2025
+Mon Sep 29 13:20:42 2025
 Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
 
 
@@ -70,7 +70,7 @@ on the Quartus Prime software download page.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sun Sep 28 00:10:00 2025           ;
+; Analysis & Synthesis Status     ; Successful - Mon Sep 29 13:20:42 2025           ;
 ; Quartus Prime Version           ; 24.1std.0 Build 1077 03/04/2025 SC Lite Edition ;
 ; Revision Name                   ; Top_gen_wave                                    ;
 ; Top-level Entity Name           ; Top_gen_wave                                    ;
@@ -194,22 +194,22 @@ on the Quartus Prime software download page.
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                      ;
-+---------------------------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path                  ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                 ; Library ;
-+---------------------------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------+---------+
-; ../../02_rtl/Top_module/Top_gen_wave.sv           ; yes             ; User SystemVerilog HDL File  ; /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv           ;         ;
-; ../../02_rtl/Top_module/seven_seg_anode_common.sv ; yes             ; User SystemVerilog HDL File  ; /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/seven_seg_anode_common.sv ;         ;
-; ../../02_rtl/Top_module/CTR_step_phase.sv         ; yes             ; User SystemVerilog HDL File  ; /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/CTR_step_phase.sv         ;         ;
-; ../../02_rtl/Top_module/CTR_step_amp.sv           ; yes             ; User SystemVerilog HDL File  ; /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/CTR_step_amp.sv           ;         ;
-; ../../02_rtl/Top_module/CTR_sevenseg.sv           ; yes             ; User SystemVerilog HDL File  ; /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/CTR_sevenseg.sv           ;         ;
-; ../../02_rtl/Top_module/CTR_adjust_phase_wave.sv  ; yes             ; User SystemVerilog HDL File  ; /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/CTR_adjust_phase_wave.sv  ;         ;
-; ../../02_rtl/Top_module/CTR_adjust_phase_noise.sv ; yes             ; User SystemVerilog HDL File  ; /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/CTR_adjust_phase_noise.sv ;         ;
-; ../../02_rtl/Top_module/CTR_adjust_amp_wave.sv    ; yes             ; User SystemVerilog HDL File  ; /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/CTR_adjust_amp_wave.sv    ;         ;
-; ../../02_rtl/Top_module/CTR_adjust_amp_noise.sv   ; yes             ; User SystemVerilog HDL File  ; /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/CTR_adjust_amp_noise.sv   ;         ;
-; ../../02_rtl/Top_module/BTN_detect_edge.sv        ; yes             ; User SystemVerilog HDL File  ; /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/BTN_detect_edge.sv        ;         ;
-+---------------------------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                               ;
++---------------------------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path                  ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                          ; Library ;
++---------------------------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------+---------+
+; ../../02_rtl/Top_module/Top_gen_wave.sv           ; yes             ; User SystemVerilog HDL File  ; C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv           ;         ;
+; ../../02_rtl/Top_module/seven_seg_anode_common.sv ; yes             ; User SystemVerilog HDL File  ; C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Top_module/seven_seg_anode_common.sv ;         ;
+; ../../02_rtl/Top_module/CTR_step_phase.sv         ; yes             ; User SystemVerilog HDL File  ; C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Top_module/CTR_step_phase.sv         ;         ;
+; ../../02_rtl/Top_module/CTR_step_amp.sv           ; yes             ; User SystemVerilog HDL File  ; C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Top_module/CTR_step_amp.sv           ;         ;
+; ../../02_rtl/Top_module/CTR_sevenseg.sv           ; yes             ; User SystemVerilog HDL File  ; C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Top_module/CTR_sevenseg.sv           ;         ;
+; ../../02_rtl/Top_module/CTR_adjust_phase_wave.sv  ; yes             ; User SystemVerilog HDL File  ; C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Top_module/CTR_adjust_phase_wave.sv  ;         ;
+; ../../02_rtl/Top_module/CTR_adjust_phase_noise.sv ; yes             ; User SystemVerilog HDL File  ; C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Top_module/CTR_adjust_phase_noise.sv ;         ;
+; ../../02_rtl/Top_module/CTR_adjust_amp_wave.sv    ; yes             ; User SystemVerilog HDL File  ; C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Top_module/CTR_adjust_amp_wave.sv    ;         ;
+; ../../02_rtl/Top_module/CTR_adjust_amp_noise.sv   ; yes             ; User SystemVerilog HDL File  ; C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Top_module/CTR_adjust_amp_noise.sv   ;         ;
+; ../../02_rtl/Top_module/BTN_detect_edge.sv        ; yes             ; User SystemVerilog HDL File  ; C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Top_module/BTN_detect_edge.sv        ;         ;
++---------------------------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------------+
@@ -423,7 +423,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output    ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------+
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |Top_gen_wave|o_hex_2[1]~reg0 ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |Top_gen_wave|o_hex_2[0]~reg0 ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------+
 
 
@@ -704,73 +704,73 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
-    Info: Processing started: Sun Sep 28 00:09:53 2025
+    Info: Processing started: Mon Sep 29 13:20:33 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Top_gen_wave -c Top_gen_wave
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv
-    Info (12023): Found entity 1: Top_gen_wave File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/seven_seg_anode_common.sv
-    Info (12023): Found entity 1: seven_seg_anode_common File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/seven_seg_anode_common.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/CTR_step_phase.sv
-    Info (12023): Found entity 1: CTR_step_phase File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/CTR_step_phase.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/CTR_step_amp.sv
-    Info (12023): Found entity 1: CTR_step_amp File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/CTR_step_amp.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/CTR_sevenseg.sv
-    Info (12023): Found entity 1: CTR_sevenseg File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/CTR_sevenseg.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/CTR_adjust_phase_wave.sv
-    Info (12023): Found entity 1: CTR_adjust_phase_wave File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/CTR_adjust_phase_wave.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/CTR_adjust_phase_noise.sv
-    Info (12023): Found entity 1: CTR_adjust_phase_noise File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/CTR_adjust_phase_noise.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/CTR_adjust_amp_wave.sv
-    Info (12023): Found entity 1: CTR_adjust_amp_wave File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/CTR_adjust_amp_wave.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/CTR_adjust_amp_noise.sv
-    Info (12023): Found entity 1: CTR_adjust_amp_noise File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/CTR_adjust_amp_noise.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/BTN_detect_edge.sv
-    Info (12023): Found entity 1: BTN_detect_edge File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/BTN_detect_edge.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /document_forme/project_tiny/cource_report/dsp_lab/lab1/02_rtl/top_module/top_gen_wave.sv
+    Info (12023): Found entity 1: Top_gen_wave File: C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /document_forme/project_tiny/cource_report/dsp_lab/lab1/02_rtl/top_module/seven_seg_anode_common.sv
+    Info (12023): Found entity 1: seven_seg_anode_common File: C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Top_module/seven_seg_anode_common.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /document_forme/project_tiny/cource_report/dsp_lab/lab1/02_rtl/top_module/ctr_step_phase.sv
+    Info (12023): Found entity 1: CTR_step_phase File: C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Top_module/CTR_step_phase.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /document_forme/project_tiny/cource_report/dsp_lab/lab1/02_rtl/top_module/ctr_step_amp.sv
+    Info (12023): Found entity 1: CTR_step_amp File: C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Top_module/CTR_step_amp.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /document_forme/project_tiny/cource_report/dsp_lab/lab1/02_rtl/top_module/ctr_sevenseg.sv
+    Info (12023): Found entity 1: CTR_sevenseg File: C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Top_module/CTR_sevenseg.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /document_forme/project_tiny/cource_report/dsp_lab/lab1/02_rtl/top_module/ctr_adjust_phase_wave.sv
+    Info (12023): Found entity 1: CTR_adjust_phase_wave File: C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Top_module/CTR_adjust_phase_wave.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /document_forme/project_tiny/cource_report/dsp_lab/lab1/02_rtl/top_module/ctr_adjust_phase_noise.sv
+    Info (12023): Found entity 1: CTR_adjust_phase_noise File: C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Top_module/CTR_adjust_phase_noise.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /document_forme/project_tiny/cource_report/dsp_lab/lab1/02_rtl/top_module/ctr_adjust_amp_wave.sv
+    Info (12023): Found entity 1: CTR_adjust_amp_wave File: C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Top_module/CTR_adjust_amp_wave.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /document_forme/project_tiny/cource_report/dsp_lab/lab1/02_rtl/top_module/ctr_adjust_amp_noise.sv
+    Info (12023): Found entity 1: CTR_adjust_amp_noise File: C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Top_module/CTR_adjust_amp_noise.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /document_forme/project_tiny/cource_report/dsp_lab/lab1/02_rtl/top_module/btn_detect_edge.sv
+    Info (12023): Found entity 1: BTN_detect_edge File: C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Top_module/BTN_detect_edge.sv Line: 3
 Info (12127): Elaborating entity "Top_gen_wave" for the top level hierarchy
-Warning (10034): Output port "o_ledr[9]" at Top_gen_wave.sv(28) has no driver File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 28
-Warning (10034): Output port "o_ledr[0]" at Top_gen_wave.sv(28) has no driver File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 28
-Info (12128): Elaborating entity "BTN_detect_edge" for hierarchy "BTN_detect_edge:BTN_detect_edge_0_unit" File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 82
-Info (12128): Elaborating entity "CTR_step_amp" for hierarchy "CTR_step_amp:CTR_step_amp_unit" File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 134
-Info (12128): Elaborating entity "CTR_adjust_amp_wave" for hierarchy "CTR_adjust_amp_wave:CTR_adjust_amp_wave_unit" File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 146
-Info (12128): Elaborating entity "seven_seg_anode_common" for hierarchy "CTR_adjust_amp_wave:CTR_adjust_amp_wave_unit|seven_seg_anode_common:SEVEN_SEG_Unit" File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/CTR_adjust_amp_wave.sv Line: 38
-Info (12128): Elaborating entity "CTR_adjust_amp_noise" for hierarchy "CTR_adjust_amp_noise:CTR_adjust_amp_noise_unit" File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 158
-Info (12128): Elaborating entity "CTR_step_phase" for hierarchy "CTR_step_phase:CTR_step_phase_unit" File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 173
-Info (12128): Elaborating entity "CTR_sevenseg" for hierarchy "CTR_step_phase:CTR_step_phase_unit|CTR_sevenseg:SEG_UNIT" File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/CTR_step_phase.sv Line: 86
-Info (12128): Elaborating entity "CTR_adjust_phase_wave" for hierarchy "CTR_adjust_phase_wave:CTR_adjust_phase_wave_unit" File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 185
-Warning (10230): Verilog HDL assignment warning at CTR_adjust_phase_wave.sv(43): truncated value with size 32 to match size of target (10) File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/CTR_adjust_phase_wave.sv Line: 43
-Info (12128): Elaborating entity "CTR_adjust_phase_noise" for hierarchy "CTR_adjust_phase_noise:CTR_adjust_phase_noise_unit" File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 197
-Warning (10230): Verilog HDL assignment warning at CTR_adjust_phase_noise.sv(43): truncated value with size 32 to match size of target (10) File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/CTR_adjust_phase_noise.sv Line: 43
+Warning (10034): Output port "o_ledr[9]" at Top_gen_wave.sv(28) has no driver File: C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 28
+Warning (10034): Output port "o_ledr[0]" at Top_gen_wave.sv(28) has no driver File: C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 28
+Info (12128): Elaborating entity "BTN_detect_edge" for hierarchy "BTN_detect_edge:BTN_detect_edge_0_unit" File: C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 82
+Info (12128): Elaborating entity "CTR_step_amp" for hierarchy "CTR_step_amp:CTR_step_amp_unit" File: C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 134
+Info (12128): Elaborating entity "CTR_adjust_amp_wave" for hierarchy "CTR_adjust_amp_wave:CTR_adjust_amp_wave_unit" File: C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 146
+Info (12128): Elaborating entity "seven_seg_anode_common" for hierarchy "CTR_adjust_amp_wave:CTR_adjust_amp_wave_unit|seven_seg_anode_common:SEVEN_SEG_Unit" File: C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Top_module/CTR_adjust_amp_wave.sv Line: 38
+Info (12128): Elaborating entity "CTR_adjust_amp_noise" for hierarchy "CTR_adjust_amp_noise:CTR_adjust_amp_noise_unit" File: C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 158
+Info (12128): Elaborating entity "CTR_step_phase" for hierarchy "CTR_step_phase:CTR_step_phase_unit" File: C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 173
+Info (12128): Elaborating entity "CTR_sevenseg" for hierarchy "CTR_step_phase:CTR_step_phase_unit|CTR_sevenseg:SEG_UNIT" File: C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Top_module/CTR_step_phase.sv Line: 86
+Info (12128): Elaborating entity "CTR_adjust_phase_wave" for hierarchy "CTR_adjust_phase_wave:CTR_adjust_phase_wave_unit" File: C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 185
+Warning (10230): Verilog HDL assignment warning at CTR_adjust_phase_wave.sv(43): truncated value with size 32 to match size of target (10) File: C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Top_module/CTR_adjust_phase_wave.sv Line: 43
+Info (12128): Elaborating entity "CTR_adjust_phase_noise" for hierarchy "CTR_adjust_phase_noise:CTR_adjust_phase_noise_unit" File: C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 197
+Warning (10230): Verilog HDL assignment warning at CTR_adjust_phase_noise.sv(43): truncated value with size 32 to match size of target (10) File: C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Top_module/CTR_adjust_phase_noise.sv Line: 43
 Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "o_ledr[0]" is stuck at GND File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 28
-    Warning (13410): Pin "o_ledr[9]" is stuck at GND File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 28
-    Warning (13410): Pin "o_hex_0[0]" is stuck at VCC File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 243
-    Warning (13410): Pin "o_hex_0[3]" is stuck at VCC File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 243
-    Warning (13410): Pin "o_hex_0[4]" is stuck at VCC File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 243
-    Warning (13410): Pin "o_hex_0[5]" is stuck at VCC File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 243
-    Warning (13410): Pin "o_hex_0[6]" is stuck at VCC File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 243
-    Warning (13410): Pin "o_hex_1[0]" is stuck at VCC File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 243
-    Warning (13410): Pin "o_hex_1[1]" is stuck at VCC File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 243
-    Warning (13410): Pin "o_hex_1[2]" is stuck at VCC File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 243
-    Warning (13410): Pin "o_hex_1[3]" is stuck at VCC File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 243
-    Warning (13410): Pin "o_hex_1[4]" is stuck at VCC File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 243
-    Warning (13410): Pin "o_hex_1[5]" is stuck at VCC File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 243
-    Warning (13410): Pin "o_hex_3[0]" is stuck at VCC File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 243
+    Warning (13410): Pin "o_ledr[0]" is stuck at GND File: C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 28
+    Warning (13410): Pin "o_ledr[9]" is stuck at GND File: C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 28
+    Warning (13410): Pin "o_hex_0[0]" is stuck at VCC File: C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 243
+    Warning (13410): Pin "o_hex_0[3]" is stuck at VCC File: C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 243
+    Warning (13410): Pin "o_hex_0[4]" is stuck at VCC File: C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 243
+    Warning (13410): Pin "o_hex_0[5]" is stuck at VCC File: C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 243
+    Warning (13410): Pin "o_hex_0[6]" is stuck at VCC File: C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 243
+    Warning (13410): Pin "o_hex_1[0]" is stuck at VCC File: C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 243
+    Warning (13410): Pin "o_hex_1[1]" is stuck at VCC File: C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 243
+    Warning (13410): Pin "o_hex_1[2]" is stuck at VCC File: C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 243
+    Warning (13410): Pin "o_hex_1[3]" is stuck at VCC File: C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 243
+    Warning (13410): Pin "o_hex_1[4]" is stuck at VCC File: C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 243
+    Warning (13410): Pin "o_hex_1[5]" is stuck at VCC File: C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 243
+    Warning (13410): Pin "o_hex_3[0]" is stuck at VCC File: C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 243
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 1 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "i_sw[0]" File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 15
+    Warning (15610): No output dependent on input pin "i_sw[0]" File: C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 15
 Info (21057): Implemented 250 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 15 input pins
     Info (21059): Implemented 88 output pins
     Info (21061): Implemented 147 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 23 warnings
-    Info: Peak virtual memory: 467 megabytes
-    Info: Processing ended: Sun Sep 28 00:10:00 2025
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:17
+    Info: Peak virtual memory: 4851 megabytes
+    Info: Processing ended: Mon Sep 29 13:20:42 2025
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:19
 
 

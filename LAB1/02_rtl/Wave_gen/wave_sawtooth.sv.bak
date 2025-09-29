@@ -1,0 +1,27 @@
+module wave_sawtooth #(
+    parameter WIDTH = 24  ,
+    parameter DEPTH = 1024
+)(
+    input logic                              i_clk             ,
+    input logic                              i_rst_n           ,
+    input logic                              i_samp_tick       ,
+    input logic [$clog2(DEPTH) - 1:0]        i_wave_phase_step ,
+    output logic signed [WIDTH - 1 + 4    :0] o_triangle_wave
+);
+
+    logic        [$clog2(DEPTH) - 1:0] phase;
+
+    phase_accummulator #(
+        .DEPTH    (DEPTH),
+        .BEHAVIOR (1)
+    ) phase_acummulator_for_wave (
+        .i_clk        (i_clk),
+        .i_rst_n      (i_rst_n),
+        .i_tick       (i_samp_tick),
+        .i_count_value(i_wave_phase_step),
+        .o_phase_count(phase)
+    );
+    //sawtooth
+    assign o_sawtooth_wave = {4'b0, phase[$clog2(DEPTH) - 1:0], '0};
+
+endmodule

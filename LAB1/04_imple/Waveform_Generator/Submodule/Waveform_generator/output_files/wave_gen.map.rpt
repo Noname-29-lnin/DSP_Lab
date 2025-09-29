@@ -1,0 +1,753 @@
+Analysis & Synthesis report for wave_gen
+Mon Sep 29 13:17:05 2025
+Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Analysis & Synthesis DSP Block Usage Summary
+  9. General Register Statistics
+ 10. Inverted Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Parameter Settings for User Entity Instance: Top-level Entity: |wave_gen
+ 13. Parameter Settings for User Entity Instance: phase_accummulator:phase_acummulator_for_wave
+ 14. Parameter Settings for User Entity Instance: wave_sin:sine
+ 15. Parameter Settings for User Entity Instance: wave_sin:sine|adder_flex_no_carry:mirror_sine
+ 16. Parameter Settings for User Entity Instance: wave_sin:sine|adder_flex_no_carry:two_compiment
+ 17. Parameter Settings for User Entity Instance: wave_sin:sine|single_port_ram:sine_rom
+ 18. Parameter Settings for User Entity Instance: wave_triangle:triangle
+ 19. Parameter Settings for User Entity Instance: wave_triangle:triangle|adder_flex_no_carry:mirror_sawtooth
+ 20. Parameter Settings for User Entity Instance: wave_square:square
+ 21. Parameter Settings for User Entity Instance: wave_square:square|compare_great_than:duty_90_t
+ 22. Parameter Settings for User Entity Instance: wave_square:square|compare_great_than:duty_80_t
+ 23. Parameter Settings for User Entity Instance: wave_square:square|compare_great_than:duty_66_t
+ 24. Parameter Settings for User Entity Instance: wave_ecg:ecg
+ 25. Parameter Settings for User Entity Instance: wave_ecg:ecg|single_port_ram:ecg_rom
+ 26. Parameter Settings for User Entity Instance: lfsr:white_noise
+ 27. Parameter Settings for User Entity Instance: phase_accummulator:phase_acummulator_for_sin_noise
+ 28. Parameter Settings for User Entity Instance: wave_sin:sine_noise
+ 29. Parameter Settings for User Entity Instance: wave_sin:sine_noise|adder_flex_no_carry:mirror_sine
+ 30. Parameter Settings for User Entity Instance: wave_sin:sine_noise|adder_flex_no_carry:two_compiment
+ 31. Parameter Settings for User Entity Instance: wave_sin:sine_noise|single_port_ram:sine_rom
+ 32. Port Connectivity Checks: "wave_ecg:ecg|single_port_ram:ecg_rom"
+ 33. Port Connectivity Checks: "wave_square:square|compare_great_than:duty_66_t"
+ 34. Port Connectivity Checks: "wave_square:square|compare_great_than:duty_80_t"
+ 35. Port Connectivity Checks: "wave_square:square|compare_great_than:duty_90_t"
+ 36. Port Connectivity Checks: "wave_triangle:triangle|adder_flex_no_carry:mirror_sawtooth"
+ 37. Port Connectivity Checks: "wave_sin:sine|single_port_ram:sine_rom"
+ 38. Port Connectivity Checks: "wave_sin:sine|adder_flex_no_carry:two_compiment"
+ 39. Port Connectivity Checks: "wave_sin:sine|adder_flex_no_carry:mirror_sine"
+ 40. Post-Synthesis Netlist Statistics for Top Partition
+ 41. Elapsed Time Per Partition
+ 42. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2025  Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Altera and sold by Altera or its authorized distributors.  Please
+refer to the Altera Software License Subscription Agreements 
+on the Quartus Prime software download page.
+
+
+
++-----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                      ;
++---------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Mon Sep 29 13:17:05 2025           ;
+; Quartus Prime Version           ; 24.1std.0 Build 1077 03/04/2025 SC Lite Edition ;
+; Revision Name                   ; wave_gen                                        ;
+; Top-level Entity Name           ; wave_gen                                        ;
+; Family                          ; Cyclone V                                       ;
+; Logic utilization (in ALMs)     ; N/A                                             ;
+; Total registers                 ; 70                                              ;
+; Total pins                      ; 63                                              ;
+; Total virtual pins              ; 0                                               ;
+; Total block memory bits         ; 0                                               ;
+; Total DSP Blocks                ; 2                                               ;
+; Total HSSI RX PCSs              ; 0                                               ;
+; Total HSSI PMA RX Deserializers ; 0                                               ;
+; Total HSSI TX PCSs              ; 0                                               ;
+; Total HSSI PMA TX Serializers   ; 0                                               ;
+; Total PLLs                      ; 0                                               ;
+; Total DLLs                      ; 0                                               ;
++---------------------------------+-------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CSXFC6D6F31C6     ;                    ;
+; Top-level entity name                                                           ; wave_gen           ; wave_gen           ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processor 3            ;   0.0%      ;
+;     Processor 4            ;   0.0%      ;
++----------------------------+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                           ;
++----------------------------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path                   ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                     ; Library ;
++----------------------------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------------+---------+
+; ../../../../02_rtl/Wave_gen/wave_triangle.sv       ; yes             ; User SystemVerilog HDL File  ; C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Wave_gen/wave_triangle.sv       ;         ;
+; ../../../../02_rtl/Wave_gen/wave_square.sv         ; yes             ; User SystemVerilog HDL File  ; C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Wave_gen/wave_square.sv         ;         ;
+; ../../../../02_rtl/Wave_gen/wave_sin.sv            ; yes             ; User SystemVerilog HDL File  ; C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Wave_gen/wave_sin.sv            ;         ;
+; ../../../../02_rtl/Wave_gen/wave_gen.sv            ; yes             ; User SystemVerilog HDL File  ; C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Wave_gen/wave_gen.sv            ;         ;
+; ../../../../02_rtl/Wave_gen/wave_ecg.sv            ; yes             ; User SystemVerilog HDL File  ; C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Wave_gen/wave_ecg.sv            ;         ;
+; ../../../../02_rtl/Wave_gen/single_port_RAM.sv     ; yes             ; User SystemVerilog HDL File  ; C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Wave_gen/single_port_RAM.sv     ;         ;
+; ../../../../02_rtl/Wave_gen/phase_accummulator.sv  ; yes             ; User SystemVerilog HDL File  ; C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Wave_gen/phase_accummulator.sv  ;         ;
+; ../../../../02_rtl/Wave_gen/lfsr.sv                ; yes             ; User SystemVerilog HDL File  ; C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Wave_gen/lfsr.sv                ;         ;
+; ../../../../02_rtl/Wave_gen/compare_great_than.sv  ; yes             ; User SystemVerilog HDL File  ; C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Wave_gen/compare_great_than.sv  ;         ;
+; ../../../../02_rtl/Wave_gen/adder_flex_no_carry.sv ; yes             ; User SystemVerilog HDL File  ; C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Wave_gen/adder_flex_no_carry.sv ;         ;
++----------------------------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------------+---------+
+
+
++------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                                    ;
++---------------------------------------------+--------------------------------------------------+
+; Resource                                    ; Usage                                            ;
++---------------------------------------------+--------------------------------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 797                                              ;
+;                                             ;                                                  ;
+; Combinational ALUT usage for logic          ; 893                                              ;
+;     -- 7 input functions                    ; 38                                               ;
+;     -- 6 input functions                    ; 658                                              ;
+;     -- 5 input functions                    ; 36                                               ;
+;     -- 4 input functions                    ; 40                                               ;
+;     -- <=3 input functions                  ; 121                                              ;
+;                                             ;                                                  ;
+; Dedicated logic registers                   ; 70                                               ;
+;                                             ;                                                  ;
+; I/O pins                                    ; 63                                               ;
+;                                             ;                                                  ;
+; Total DSP Blocks                            ; 2                                                ;
+;                                             ;                                                  ;
+; Maximum fan-out node                        ; wave_ecg:ecg|single_port_ram:ecg_rom|addr_reg[1] ;
+; Maximum fan-out                             ; 260                                              ;
+; Total fan-out                               ; 5274                                             ;
+; Average fan-out                             ; 4.83                                             ;
++---------------------------------------------+--------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                            ;
++---------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------+---------------------+--------------+
+; Compilation Hierarchy Node                              ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                    ; Entity Name         ; Library Name ;
++---------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------+---------------------+--------------+
+; |wave_gen                                               ; 893 (158)           ; 70 (0)                    ; 0                 ; 2          ; 63   ; 0            ; |wave_gen                                                                              ; wave_gen            ; work         ;
+;    |lfsr:white_noise|                                   ; 2 (2)               ; 24 (24)                   ; 0                 ; 0          ; 0    ; 0            ; |wave_gen|lfsr:white_noise                                                             ; lfsr                ; work         ;
+;    |phase_accummulator:phase_acummulator_for_sin_noise| ; 18 (18)             ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |wave_gen|phase_accummulator:phase_acummulator_for_sin_noise                           ; phase_accummulator  ; work         ;
+;    |phase_accummulator:phase_acummulator_for_wave|      ; 18 (18)             ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |wave_gen|phase_accummulator:phase_acummulator_for_wave                                ; phase_accummulator  ; work         ;
+;    |wave_ecg:ecg|                                       ; 427 (0)             ; 10 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |wave_gen|wave_ecg:ecg                                                                 ; wave_ecg            ; work         ;
+;       |single_port_ram:ecg_rom|                         ; 427 (427)           ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |wave_gen|wave_ecg:ecg|single_port_ram:ecg_rom                                         ; single_port_ram     ; work         ;
+;    |wave_sin:sine_noise|                                ; 131 (14)            ; 8 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |wave_gen|wave_sin:sine_noise                                                          ; wave_sin            ; work         ;
+;       |adder_flex_no_carry:two_compiment|               ; 19 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |wave_gen|wave_sin:sine_noise|adder_flex_no_carry:two_compiment                        ; adder_flex_no_carry ; work         ;
+;          |cla_4:gen_loop[0].add4|                       ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |wave_gen|wave_sin:sine_noise|adder_flex_no_carry:two_compiment|cla_4:gen_loop[0].add4 ; cla_4               ; work         ;
+;          |cla_4:gen_loop[1].add4|                       ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |wave_gen|wave_sin:sine_noise|adder_flex_no_carry:two_compiment|cla_4:gen_loop[1].add4 ; cla_4               ; work         ;
+;          |cla_4:gen_loop[2].add4|                       ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |wave_gen|wave_sin:sine_noise|adder_flex_no_carry:two_compiment|cla_4:gen_loop[2].add4 ; cla_4               ; work         ;
+;          |cla_4:gen_loop[3].add4|                       ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |wave_gen|wave_sin:sine_noise|adder_flex_no_carry:two_compiment|cla_4:gen_loop[3].add4 ; cla_4               ; work         ;
+;          |cla_4:gen_loop[4].add4|                       ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |wave_gen|wave_sin:sine_noise|adder_flex_no_carry:two_compiment|cla_4:gen_loop[4].add4 ; cla_4               ; work         ;
+;          |cla_4_n:add|                                  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |wave_gen|wave_sin:sine_noise|adder_flex_no_carry:two_compiment|cla_4_n:add            ; cla_4_n             ; work         ;
+;       |single_port_ram:sine_rom|                        ; 98 (98)             ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |wave_gen|wave_sin:sine_noise|single_port_ram:sine_rom                                 ; single_port_ram     ; work         ;
+;    |wave_sin:sine|                                      ; 130 (13)            ; 8 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |wave_gen|wave_sin:sine                                                                ; wave_sin            ; work         ;
+;       |adder_flex_no_carry:two_compiment|               ; 18 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |wave_gen|wave_sin:sine|adder_flex_no_carry:two_compiment                              ; adder_flex_no_carry ; work         ;
+;          |cla_4:gen_loop[0].add4|                       ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |wave_gen|wave_sin:sine|adder_flex_no_carry:two_compiment|cla_4:gen_loop[0].add4       ; cla_4               ; work         ;
+;          |cla_4:gen_loop[1].add4|                       ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |wave_gen|wave_sin:sine|adder_flex_no_carry:two_compiment|cla_4:gen_loop[1].add4       ; cla_4               ; work         ;
+;          |cla_4:gen_loop[2].add4|                       ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |wave_gen|wave_sin:sine|adder_flex_no_carry:two_compiment|cla_4:gen_loop[2].add4       ; cla_4               ; work         ;
+;          |cla_4:gen_loop[3].add4|                       ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |wave_gen|wave_sin:sine|adder_flex_no_carry:two_compiment|cla_4:gen_loop[3].add4       ; cla_4               ; work         ;
+;          |cla_4:gen_loop[4].add4|                       ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |wave_gen|wave_sin:sine|adder_flex_no_carry:two_compiment|cla_4:gen_loop[4].add4       ; cla_4               ; work         ;
+;       |single_port_ram:sine_rom|                        ; 99 (99)             ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |wave_gen|wave_sin:sine|single_port_ram:sine_rom                                       ; single_port_ram     ; work         ;
+;    |wave_square:square|                                 ; 9 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |wave_gen|wave_square:square                                                           ; wave_square         ; work         ;
+;       |compare_great_than:duty_66_t|                    ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |wave_gen|wave_square:square|compare_great_than:duty_66_t                              ; compare_great_than  ; work         ;
+;       |compare_great_than:duty_80_t|                    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |wave_gen|wave_square:square|compare_great_than:duty_80_t                              ; compare_great_than  ; work         ;
+;       |compare_great_than:duty_90_t|                    ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |wave_gen|wave_square:square|compare_great_than:duty_90_t                              ; compare_great_than  ; work         ;
++---------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------+---------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-----------------------------------------------+
+; Analysis & Synthesis DSP Block Usage Summary  ;
++---------------------------------+-------------+
+; Statistic                       ; Number Used ;
++---------------------------------+-------------+
+; Independent 27x27               ; 2           ;
+; Total number of DSP blocks      ; 2           ;
+;                                 ;             ;
+; Fixed Point Signed Multiplier   ; 1           ;
+; Fixed Point Unsigned Multiplier ; 1           ;
++---------------------------------+-------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 70    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 16    ;
+; Number of registers using Asynchronous Clear ; 44    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 43    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; lfsr:white_noise|p_noise[0]            ; 4       ;
+; Total number of inverted registers = 1 ;         ;
++----------------------------------------+---------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; 8:1                ; 5 bits    ; 25 LEs        ; 20 LEs               ; 5 LEs                  ; No         ; |wave_gen|Mux23            ;
+; 8:1                ; 7 bits    ; 35 LEs        ; 28 LEs               ; 7 LEs                  ; No         ; |wave_gen|Mux22            ;
+; 7:1                ; 3 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |wave_gen|Mux14            ;
+; 8:1                ; 9 bits    ; 45 LEs        ; 45 LEs               ; 0 LEs                  ; No         ; |wave_gen|Mux4             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |wave_gen ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; WIDTH          ; 24    ; Signed Integer                                  ;
+; DEPTH          ; 1024  ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: phase_accummulator:phase_acummulator_for_wave ;
++----------------+-------+-------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                              ;
++----------------+-------+-------------------------------------------------------------------+
+; DEPTH          ; 1024  ; Signed Integer                                                    ;
+; BEHAVIOR       ; 1     ; Signed Integer                                                    ;
++----------------+-------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: wave_sin:sine ;
++----------------+----------------+--------------------------+
+; Parameter Name ; Value          ; Type                     ;
++----------------+----------------+--------------------------+
+; WIDTH          ; 24             ; Signed Integer           ;
+; DEPTH          ; 1024           ; Signed Integer           ;
+; HEX_LINK       ; ./sin_wave.txt ; String                   ;
+; BEHAVIOR       ; 0              ; Signed Integer           ;
++----------------+----------------+--------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: wave_sin:sine|adder_flex_no_carry:mirror_sine ;
++----------------+-------+-------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                              ;
++----------------+-------+-------------------------------------------------------------------+
+; WIDTH          ; 8     ; Signed Integer                                                    ;
++----------------+-------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: wave_sin:sine|adder_flex_no_carry:two_compiment ;
++----------------+-------+---------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                ;
++----------------+-------+---------------------------------------------------------------------+
+; WIDTH          ; 24    ; Signed Integer                                                      ;
++----------------+-------+---------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: wave_sin:sine|single_port_ram:sine_rom ;
++----------------+----------------+---------------------------------------------------+
+; Parameter Name ; Value          ; Type                                              ;
++----------------+----------------+---------------------------------------------------+
+; DATA_WIDTH     ; 24             ; Signed Integer                                    ;
+; ADDR_WIDTH     ; 8              ; Signed Integer                                    ;
+; HEX_LINK       ; ./sin_wave.txt ; String                                            ;
++----------------+----------------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: wave_triangle:triangle ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; WIDTH          ; 24    ; Signed Integer                             ;
+; DEPTH          ; 1024  ; Signed Integer                             ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: wave_triangle:triangle|adder_flex_no_carry:mirror_sawtooth ;
++----------------+-------+--------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                           ;
++----------------+-------+--------------------------------------------------------------------------------+
+; WIDTH          ; 9     ; Signed Integer                                                                 ;
++----------------+-------+--------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: wave_square:square ;
++----------------+-------+----------------------------------------+
+; Parameter Name ; Value ; Type                                   ;
++----------------+-------+----------------------------------------+
+; WIDTH          ; 24    ; Signed Integer                         ;
+; DEPTH          ; 1024  ; Signed Integer                         ;
+; BEHAVIOR       ; 0     ; Signed Integer                         ;
++----------------+-------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: wave_square:square|compare_great_than:duty_90_t ;
++----------------+-------+---------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                ;
++----------------+-------+---------------------------------------------------------------------+
+; WIDTH          ; 10    ; Signed Integer                                                      ;
++----------------+-------+---------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: wave_square:square|compare_great_than:duty_80_t ;
++----------------+-------+---------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                ;
++----------------+-------+---------------------------------------------------------------------+
+; WIDTH          ; 10    ; Signed Integer                                                      ;
++----------------+-------+---------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: wave_square:square|compare_great_than:duty_66_t ;
++----------------+-------+---------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                ;
++----------------+-------+---------------------------------------------------------------------+
+; WIDTH          ; 10    ; Signed Integer                                                      ;
++----------------+-------+---------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: wave_ecg:ecg ;
++----------------+----------------+-------------------------+
+; Parameter Name ; Value          ; Type                    ;
++----------------+----------------+-------------------------+
+; WIDTH          ; 24             ; Signed Integer          ;
+; DEPTH          ; 1024           ; Signed Integer          ;
+; HEX_LINK       ; ./ecg_wave.txt ; String                  ;
++----------------+----------------+-------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: wave_ecg:ecg|single_port_ram:ecg_rom ;
++----------------+----------------+-------------------------------------------------+
+; Parameter Name ; Value          ; Type                                            ;
++----------------+----------------+-------------------------------------------------+
+; DATA_WIDTH     ; 24             ; Signed Integer                                  ;
+; ADDR_WIDTH     ; 10             ; Signed Integer                                  ;
+; HEX_LINK       ; ./ecg_wave.txt ; String                                          ;
++----------------+----------------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lfsr:white_noise ;
++----------------+-------+--------------------------------------+
+; Parameter Name ; Value ; Type                                 ;
++----------------+-------+--------------------------------------+
+; LFSR_WIDTH     ; 24    ; Signed Integer                       ;
++----------------+-------+--------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: phase_accummulator:phase_acummulator_for_sin_noise ;
++----------------+-------+------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                   ;
++----------------+-------+------------------------------------------------------------------------+
+; DEPTH          ; 1024  ; Signed Integer                                                         ;
+; BEHAVIOR       ; 1     ; Signed Integer                                                         ;
++----------------+-------+------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: wave_sin:sine_noise ;
++----------------+----------------+--------------------------------+
+; Parameter Name ; Value          ; Type                           ;
++----------------+----------------+--------------------------------+
+; WIDTH          ; 24             ; Signed Integer                 ;
+; DEPTH          ; 1024           ; Signed Integer                 ;
+; HEX_LINK       ; ./sin_wave.txt ; String                         ;
+; BEHAVIOR       ; 0              ; Signed Integer                 ;
++----------------+----------------+--------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: wave_sin:sine_noise|adder_flex_no_carry:mirror_sine ;
++----------------+-------+-------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                    ;
++----------------+-------+-------------------------------------------------------------------------+
+; WIDTH          ; 8     ; Signed Integer                                                          ;
++----------------+-------+-------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: wave_sin:sine_noise|adder_flex_no_carry:two_compiment ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; WIDTH          ; 24    ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: wave_sin:sine_noise|single_port_ram:sine_rom ;
++----------------+----------------+---------------------------------------------------------+
+; Parameter Name ; Value          ; Type                                                    ;
++----------------+----------------+---------------------------------------------------------+
+; DATA_WIDTH     ; 24             ; Signed Integer                                          ;
+; ADDR_WIDTH     ; 8              ; Signed Integer                                          ;
+; HEX_LINK       ; ./sin_wave.txt ; String                                                  ;
++----------------+----------------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------+
+; Port Connectivity Checks: "wave_ecg:ecg|single_port_ram:ecg_rom" ;
++--------+-------+----------+--------------------------------------+
+; Port   ; Type  ; Severity ; Details                              ;
++--------+-------+----------+--------------------------------------+
+; i_wren ; Input ; Info     ; Stuck at GND                         ;
++--------+-------+----------+--------------------------------------+
+
+
++-----------------------------------------------------------------------------+
+; Port Connectivity Checks: "wave_square:square|compare_great_than:duty_66_t" ;
++-----------+-------+----------+----------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                      ;
++-----------+-------+----------+----------------------------------------------+
+; i_b[1..0] ; Input ; Info     ; Stuck at GND                                 ;
+; i_b[9]    ; Input ; Info     ; Stuck at GND                                 ;
+; i_b[8]    ; Input ; Info     ; Stuck at VCC                                 ;
+; i_b[7]    ; Input ; Info     ; Stuck at GND                                 ;
+; i_b[6]    ; Input ; Info     ; Stuck at VCC                                 ;
+; i_b[5]    ; Input ; Info     ; Stuck at GND                                 ;
+; i_b[4]    ; Input ; Info     ; Stuck at VCC                                 ;
+; i_b[3]    ; Input ; Info     ; Stuck at GND                                 ;
+; i_b[2]    ; Input ; Info     ; Stuck at VCC                                 ;
++-----------+-------+----------+----------------------------------------------+
+
+
++-----------------------------------------------------------------------------+
+; Port Connectivity Checks: "wave_square:square|compare_great_than:duty_80_t" ;
++-----------+-------+----------+----------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                      ;
++-----------+-------+----------+----------------------------------------------+
+; i_b[7..6] ; Input ; Info     ; Stuck at VCC                                 ;
+; i_b[1..0] ; Input ; Info     ; Stuck at VCC                                 ;
+; i_b[9..8] ; Input ; Info     ; Stuck at GND                                 ;
+; i_b[5..4] ; Input ; Info     ; Stuck at GND                                 ;
+; i_b[3]    ; Input ; Info     ; Stuck at VCC                                 ;
+; i_b[2]    ; Input ; Info     ; Stuck at GND                                 ;
++-----------+-------+----------+----------------------------------------------+
+
+
++-----------------------------------------------------------------------------+
+; Port Connectivity Checks: "wave_square:square|compare_great_than:duty_90_t" ;
++-----------+-------+----------+----------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                      ;
++-----------+-------+----------+----------------------------------------------+
+; i_b[6..5] ; Input ; Info     ; Stuck at VCC                                 ;
+; i_b[9..7] ; Input ; Info     ; Stuck at GND                                 ;
+; i_b[4..3] ; Input ; Info     ; Stuck at GND                                 ;
+; i_b[2]    ; Input ; Info     ; Stuck at VCC                                 ;
+; i_b[1]    ; Input ; Info     ; Stuck at GND                                 ;
+; i_b[0]    ; Input ; Info     ; Stuck at VCC                                 ;
++-----------+-------+----------+----------------------------------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "wave_triangle:triangle|adder_flex_no_carry:mirror_sawtooth" ;
++--------+-------+----------+------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                    ;
++--------+-------+----------+------------------------------------------------------------+
+; i_a    ; Input ; Info     ; Stuck at VCC                                               ;
+; i_b[8] ; Input ; Info     ; Stuck at VCC                                               ;
+; i_cin  ; Input ; Info     ; Stuck at VCC                                               ;
++--------+-------+----------+------------------------------------------------------------+
+
+
++--------------------------------------------------------------------+
+; Port Connectivity Checks: "wave_sin:sine|single_port_ram:sine_rom" ;
++--------+-------+----------+----------------------------------------+
+; Port   ; Type  ; Severity ; Details                                ;
++--------+-------+----------+----------------------------------------+
+; i_wren ; Input ; Info     ; Stuck at GND                           ;
++--------+-------+----------+----------------------------------------+
+
+
++-----------------------------------------------------------------------------+
+; Port Connectivity Checks: "wave_sin:sine|adder_flex_no_carry:two_compiment" ;
++------------+-------+----------+---------------------------------------------+
+; Port       ; Type  ; Severity ; Details                                     ;
++------------+-------+----------+---------------------------------------------+
+; i_b[23..1] ; Input ; Info     ; Stuck at GND                                ;
+; i_cin      ; Input ; Info     ; Stuck at GND                                ;
++------------+-------+----------+---------------------------------------------+
+
+
++---------------------------------------------------------------------------+
+; Port Connectivity Checks: "wave_sin:sine|adder_flex_no_carry:mirror_sine" ;
++-------+-------+----------+------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                        ;
++-------+-------+----------+------------------------------------------------+
+; i_a   ; Input ; Info     ; Stuck at VCC                                   ;
+; i_cin ; Input ; Info     ; Stuck at VCC                                   ;
++-------+-------+----------+------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 70                          ;
+;     CLR               ; 1                           ;
+;     ENA CLR           ; 43                          ;
+;     SLD               ; 16                          ;
+;     plain             ; 10                          ;
+; arriav_lcell_comb     ; 893                         ;
+;     arith             ; 44                          ;
+;         2 data inputs ; 44                          ;
+;     extend            ; 38                          ;
+;         7 data inputs ; 38                          ;
+;     normal            ; 811                         ;
+;         1 data inputs ; 17                          ;
+;         2 data inputs ; 8                           ;
+;         3 data inputs ; 52                          ;
+;         4 data inputs ; 40                          ;
+;         5 data inputs ; 36                          ;
+;         6 data inputs ; 658                         ;
+; arriav_mac            ; 2                           ;
+; boundary_port         ; 63                          ;
+;                       ;                             ;
+; Max LUT depth         ; 8.00                        ;
+; Average LUT depth     ; 4.52                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
+    Info: Processing started: Mon Sep 29 13:16:55 2025
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off wave_gen -c wave_gen
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file /document_forme/project_tiny/cource_report/dsp_lab/lab1/02_rtl/wave_gen/wave_triangle.sv
+    Info (12023): Found entity 1: wave_triangle File: C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Wave_gen/wave_triangle.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /document_forme/project_tiny/cource_report/dsp_lab/lab1/02_rtl/wave_gen/wave_square.sv
+    Info (12023): Found entity 1: wave_square File: C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Wave_gen/wave_square.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /document_forme/project_tiny/cource_report/dsp_lab/lab1/02_rtl/wave_gen/wave_sin.sv
+    Info (12023): Found entity 1: wave_sin File: C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Wave_gen/wave_sin.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /document_forme/project_tiny/cource_report/dsp_lab/lab1/02_rtl/wave_gen/wave_gen.sv
+    Info (12023): Found entity 1: wave_gen File: C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Wave_gen/wave_gen.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /document_forme/project_tiny/cource_report/dsp_lab/lab1/02_rtl/wave_gen/wave_ecg.sv
+    Info (12023): Found entity 1: wave_ecg File: C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Wave_gen/wave_ecg.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /document_forme/project_tiny/cource_report/dsp_lab/lab1/02_rtl/wave_gen/single_port_ram.sv
+    Info (12023): Found entity 1: single_port_ram File: C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Wave_gen/single_port_RAM.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /document_forme/project_tiny/cource_report/dsp_lab/lab1/02_rtl/wave_gen/phase_accummulator.sv
+    Info (12023): Found entity 1: phase_accummulator File: C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Wave_gen/phase_accummulator.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /document_forme/project_tiny/cource_report/dsp_lab/lab1/02_rtl/wave_gen/lfsr.sv
+    Info (12023): Found entity 1: lfsr File: C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Wave_gen/lfsr.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /document_forme/project_tiny/cource_report/dsp_lab/lab1/02_rtl/wave_gen/compare_great_than.sv
+    Info (12023): Found entity 1: compare_great_than File: C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Wave_gen/compare_great_than.sv Line: 1
+Info (12021): Found 6 design units, including 6 entities, in source file /document_forme/project_tiny/cource_report/dsp_lab/lab1/02_rtl/wave_gen/adder_flex_no_carry.sv
+    Info (12023): Found entity 1: adder_flex_no_carry File: C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Wave_gen/adder_flex_no_carry.sv Line: 1
+    Info (12023): Found entity 2: fa_1 File: C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Wave_gen/adder_flex_no_carry.sv Line: 92
+    Info (12023): Found entity 3: cla_2 File: C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Wave_gen/adder_flex_no_carry.sv Line: 105
+    Info (12023): Found entity 4: cla_3 File: C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Wave_gen/adder_flex_no_carry.sv Line: 129
+    Info (12023): Found entity 5: cla_4 File: C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Wave_gen/adder_flex_no_carry.sv Line: 155
+    Info (12023): Found entity 6: cla_4_n File: C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Wave_gen/adder_flex_no_carry.sv Line: 184
+Info (12127): Elaborating entity "wave_gen" for the top level hierarchy
+Info (12128): Elaborating entity "phase_accummulator" for hierarchy "phase_accummulator:phase_acummulator_for_wave" File: C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Wave_gen/wave_gen.sv Line: 38
+Info (12128): Elaborating entity "wave_sin" for hierarchy "wave_sin:sine" File: C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Wave_gen/wave_gen.sv Line: 50
+Info (12128): Elaborating entity "adder_flex_no_carry" for hierarchy "wave_sin:sine|adder_flex_no_carry:mirror_sine" File: C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Wave_gen/wave_sin.sv Line: 40
+Info (12128): Elaborating entity "cla_4" for hierarchy "wave_sin:sine|adder_flex_no_carry:mirror_sine|cla_4:gen_loop[0].add4" File: C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Wave_gen/adder_flex_no_carry.sv Line: 55
+Info (12128): Elaborating entity "cla_4_n" for hierarchy "wave_sin:sine|adder_flex_no_carry:mirror_sine|cla_4_n:add" File: C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Wave_gen/adder_flex_no_carry.sv Line: 85
+Info (12128): Elaborating entity "adder_flex_no_carry" for hierarchy "wave_sin:sine|adder_flex_no_carry:two_compiment" File: C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Wave_gen/wave_sin.sv Line: 49
+Info (12128): Elaborating entity "single_port_ram" for hierarchy "wave_sin:sine|single_port_ram:sine_rom" File: C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Wave_gen/wave_sin.sv Line: 63
+Warning (10850): Verilog HDL warning at single_port_RAM.sv(16): number of words (1024) in memory file does not match the number of elements in the address range [0:255] File: C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Wave_gen/single_port_RAM.sv Line: 16
+Info (12128): Elaborating entity "wave_triangle" for hierarchy "wave_triangle:triangle" File: C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Wave_gen/wave_gen.sv Line: 61
+Info (12128): Elaborating entity "adder_flex_no_carry" for hierarchy "wave_triangle:triangle|adder_flex_no_carry:mirror_sawtooth" File: C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Wave_gen/wave_triangle.sv Line: 22
+Info (12128): Elaborating entity "fa_1" for hierarchy "wave_triangle:triangle|adder_flex_no_carry:mirror_sawtooth|fa_1:add" File: C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Wave_gen/adder_flex_no_carry.sv Line: 64
+Info (12128): Elaborating entity "wave_square" for hierarchy "wave_square:square" File: C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Wave_gen/wave_gen.sv Line: 71
+Info (12128): Elaborating entity "compare_great_than" for hierarchy "wave_square:square|compare_great_than:duty_90_t" File: C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Wave_gen/wave_square.sv Line: 44
+Info (12128): Elaborating entity "wave_ecg" for hierarchy "wave_ecg:ecg" File: C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Wave_gen/wave_gen.sv Line: 82
+Info (12128): Elaborating entity "single_port_ram" for hierarchy "wave_ecg:ecg|single_port_ram:ecg_rom" File: C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Wave_gen/wave_ecg.sv Line: 22
+Info (12128): Elaborating entity "lfsr" for hierarchy "lfsr:white_noise" File: C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/Wave_gen/wave_gen.sv Line: 91
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 990 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 39 input pins
+    Info (21059): Implemented 24 output pins
+    Info (21061): Implemented 925 logic cells
+    Info (21062): Implemented 2 DSP elements
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 4851 megabytes
+    Info: Processing ended: Mon Sep 29 13:17:05 2025
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:22
+
+

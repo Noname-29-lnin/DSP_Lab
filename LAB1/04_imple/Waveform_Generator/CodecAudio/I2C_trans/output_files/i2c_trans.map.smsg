@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at i2c_trans.sv(39): always construct contains both blocking and non-blocking assignments File: C:/Document_forme/project_tiny/Cource_report/DSP_Lab/LAB1/02_rtl/CoDec/i2c_trans.sv Line: 39

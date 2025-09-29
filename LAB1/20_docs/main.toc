@@ -6,3 +6,7 @@
 \contentsline {subsubsection}{\numberline {1.1.1}Module Sine Waveform}{1}{subsubsection.1.1.1}%
 \contentsline {subsubsection}{\numberline {1.1.2}Module Square Waveform}{2}{subsubsection.1.1.2}%
 \contentsline {subsubsection}{\numberline {1.1.3}Module Triangle Waveform}{3}{subsubsection.1.1.3}%
+\contentsline {subsubsection}{\numberline {1.1.4}Module Sawtooth Waveform}{3}{subsubsection.1.1.4}%
+\contentsline {subsubsection}{\numberline {1.1.5}Module ECG Waveform}{4}{subsubsection.1.1.5}%
+\contentsline {subsubsection}{\numberline {1.1.6}Module Waveform Generator}{5}{subsubsection.1.1.6}%
+\contentsline {subsection}{\numberline {1.2}Module Control value}{6}{subsection.1.2}%

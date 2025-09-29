@@ -1,0 +1,261 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "o_wave_out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "o_wave_out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "o_wave_out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "o_wave_out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "o_wave_out[4]",
+					"strict" : false
+				},
+				{
+					"name" : "o_wave_out[5]",
+					"strict" : false
+				},
+				{
+					"name" : "o_wave_out[6]",
+					"strict" : false
+				},
+				{
+					"name" : "o_wave_out[7]",
+					"strict" : false
+				},
+				{
+					"name" : "o_wave_out[8]",
+					"strict" : false
+				},
+				{
+					"name" : "o_wave_out[9]",
+					"strict" : false
+				},
+				{
+					"name" : "o_wave_out[10]",
+					"strict" : false
+				},
+				{
+					"name" : "o_wave_out[11]",
+					"strict" : false
+				},
+				{
+					"name" : "o_wave_out[12]",
+					"strict" : false
+				},
+				{
+					"name" : "o_wave_out[13]",
+					"strict" : false
+				},
+				{
+					"name" : "o_wave_out[14]",
+					"strict" : false
+				},
+				{
+					"name" : "o_wave_out[15]",
+					"strict" : false
+				},
+				{
+					"name" : "o_wave_out[16]",
+					"strict" : false
+				},
+				{
+					"name" : "o_wave_out[17]",
+					"strict" : false
+				},
+				{
+					"name" : "o_wave_out[18]",
+					"strict" : false
+				},
+				{
+					"name" : "o_wave_out[19]",
+					"strict" : false
+				},
+				{
+					"name" : "o_wave_out[20]",
+					"strict" : false
+				},
+				{
+					"name" : "o_wave_out[21]",
+					"strict" : false
+				},
+				{
+					"name" : "o_wave_out[22]",
+					"strict" : false
+				},
+				{
+					"name" : "o_wave_out[23]",
+					"strict" : false
+				},
+				{
+					"name" : "i_add_noise",
+					"strict" : false
+				},
+				{
+					"name" : "i_sel_wave[0]",
+					"strict" : false
+				},
+				{
+					"name" : "i_sel_wave[1]",
+					"strict" : false
+				},
+				{
+					"name" : "i_sel_wave[2]",
+					"strict" : false
+				},
+				{
+					"name" : "i_sel_duty_cycle[2]",
+					"strict" : false
+				},
+				{
+					"name" : "i_sel_duty_cycle[1]",
+					"strict" : false
+				},
+				{
+					"name" : "i_sel_duty_cycle[0]",
+					"strict" : false
+				},
+				{
+					"name" : "i_gain_wave[0]",
+					"strict" : false
+				},
+				{
+					"name" : "i_gain_wave[1]",
+					"strict" : false
+				},
+				{
+					"name" : "i_gain_wave[2]",
+					"strict" : false
+				},
+				{
+					"name" : "i_gain_wave[3]",
+					"strict" : false
+				},
+				{
+					"name" : "i_clk",
+					"strict" : false
+				},
+				{
+					"name" : "i_samp_tick",
+					"strict" : false
+				},
+				{
+					"name" : "i_rst_n",
+					"strict" : false
+				},
+				{
+					"name" : "i_lfsr_sin",
+					"strict" : false
+				},
+				{
+					"name" : "i_gain_noise[0]",
+					"strict" : false
+				},
+				{
+					"name" : "i_gain_noise[1]",
+					"strict" : false
+				},
+				{
+					"name" : "i_gain_noise[2]",
+					"strict" : false
+				},
+				{
+					"name" : "i_gain_noise[3]",
+					"strict" : false
+				},
+				{
+					"name" : "i_wave_phase_step[0]",
+					"strict" : false
+				},
+				{
+					"name" : "i_wave_sine_step[9]",
+					"strict" : false
+				},
+				{
+					"name" : "i_wave_phase_step[9]",
+					"strict" : false
+				},
+				{
+					"name" : "i_wave_phase_step[1]",
+					"strict" : false
+				},
+				{
+					"name" : "i_wave_phase_step[2]",
+					"strict" : false
+				},
+				{
+					"name" : "i_wave_phase_step[3]",
+					"strict" : false
+				},
+				{
+					"name" : "i_wave_phase_step[4]",
+					"strict" : false
+				},
+				{
+					"name" : "i_wave_phase_step[5]",
+					"strict" : false
+				},
+				{
+					"name" : "i_wave_phase_step[6]",
+					"strict" : false
+				},
+				{
+					"name" : "i_wave_phase_step[7]",
+					"strict" : false
+				},
+				{
+					"name" : "i_wave_phase_step[8]",
+					"strict" : false
+				},
+				{
+					"name" : "i_wave_sine_step[0]",
+					"strict" : false
+				},
+				{
+					"name" : "i_wave_sine_step[8]",
+					"strict" : false
+				},
+				{
+					"name" : "i_wave_sine_step[1]",
+					"strict" : false
+				},
+				{
+					"name" : "i_wave_sine_step[2]",
+					"strict" : false
+				},
+				{
+					"name" : "i_wave_sine_step[3]",
+					"strict" : false
+				},
+				{
+					"name" : "i_wave_sine_step[4]",
+					"strict" : false
+				},
+				{
+					"name" : "i_wave_sine_step[5]",
+					"strict" : false
+				},
+				{
+					"name" : "i_wave_sine_step[6]",
+					"strict" : false
+				},
+				{
+					"name" : "i_wave_sine_step[7]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
