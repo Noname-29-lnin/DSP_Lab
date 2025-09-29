@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.8.10)  29 SEP 2025 12:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.8.10)  29 SEP 2025 12:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -952,7 +952,7 @@ Package babel Info: 'vietnamese' activates 'vietnamese' shorthands.
 tex.def
 File: l3backend-pdftex.def 2025-06-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count342
-) (main.aux)
+) (main.aux (my-chapters/hardware_design.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
@@ -989,11 +989,11 @@ LaTeX Font Info:    ... okay on input line 41.
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
 * \textwidth=483.69687pt
-* \textheight=641.23584pt
+* \textheight=646.23584pt
 * \oddsidemargin=-15.36449pt
 * \evensidemargin=-15.36449pt
 * \topmargin=-15.36449pt
-* \headheight=35.0pt
+* \headheight=30.0pt
 * \headsep=25.0pt
 * \topskip=12.0pt
 * \footskip=30.0pt
@@ -1044,7 +1044,7 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
-<./my-chapters/my-images/01_logobachkhoatoi.png, id=71, 471.9231pt x 478.9092pt
+<./my-chapters/my-images/01_logobachkhoatoi.png, id=23, 471.9231pt x 478.9092pt
 >
 File: ./my-chapters/my-images/01_logobachkhoatoi.png Graphic file (type png)
 <use ./my-chapters/my-images/01_logobachkhoatoi.png>
@@ -1074,7 +1074,7 @@ Overfull \hbox (2.19716pt too wide) in paragraph at lines 43--43
 
 
 
-<./my-chapters/my-images/bia.jpg, id=73, 301.125pt x 414.95026pt>
+<./my-chapters/my-images/bia.jpg, id=25, 301.125pt x 414.95026pt>
 File: ./my-chapters/my-images/bia.jpg Graphic file (type jpg)
 <use ./my-chapters/my-images/bia.jpg>
 Package pdftex.def Info: ./my-chapters/my-images/bia.jpg  used on input line 44
@@ -1088,9 +1088,7 @@ s/my-images/bia.jpg> <./my-chapters/my-images/01_logobachkhoatoi.png>]
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
- (main.lof
-
-[2])
+ (main.lof)
 \tf@lof=\write5
 \openout5 = `main.lof'.
 
@@ -1100,15 +1098,32 @@ s/my-images/bia.jpg> <./my-chapters/my-images/01_logobachkhoatoi.png>]
 
 
 
-[3] (my-chapters/theoritical_basic.tex
-<./my-chapters/my-images/theoretical_background/DE_10_board.png, id=142, 456.95
-718pt x 277.78781pt>
-File: ./my-chapters/my-images/theoretical_background/DE_10_board.png Graphic fi
-le (type png)
-<use ./my-chapters/my-images/theoretical_background/DE_10_board.png>
-Package pdftex.def Info: ./my-chapters/my-images/theoretical_background/DE_10_b
-oard.png  used on input line 9.
-(pdftex.def)             Requested size: 338.58632pt x 205.83525pt.
+[2]
+\openout2 = `./my-chapters/hardware_design.aux'.
+
+ (my-chapters/hardware_design.tex
+<./my-chapters/my-diagrams/wave_sin.pdf, id=52, 585.68813pt x 177.66376pt>
+File: ./my-chapters/my-diagrams/wave_sin.pdf Graphic file (type pdf)
+<use ./my-chapters/my-diagrams/wave_sin.pdf>
+Package pdftex.def Info: ./my-chapters/my-diagrams/wave_sin.pdf  used on input 
+line 10.
+(pdftex.def)             Requested size: 483.69687pt x 146.73163pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 10--11
+ [][] 
+ []
+
+<./my-chapters/my-diagrams/wave_square.pdf, id=53, 566.86781pt x 465.23813pt>
+File: ./my-chapters/my-diagrams/wave_square.pdf Graphic file (type pdf)
+<use ./my-chapters/my-diagrams/wave_square.pdf>
+Package pdftex.def Info: ./my-chapters/my-diagrams/wave_square.pdf  used on inp
+ut line 19.
+(pdftex.def)             Requested size: 483.69687pt x 396.98764pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 19--20
+ [][] 
+ []
+
 
 
 
@@ -1116,250 +1131,61 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.30 			\item 2
-               4-bit CD-quality audio CODEC with line-in, line-out, and micr...
-[1 <./my-chapters/my-images/theoretical_background/DE_10_board.png>]
-<./my-chapters/my-images/theoretical_background/DE_10_block_diagram.png, id=151
-, 461.47406pt x 398.23781pt>
-File: ./my-chapters/my-images/theoretical_background/DE_10_block_diagram.png Gr
-aphic file (type png)
-<use ./my-chapters/my-images/theoretical_background/DE_10_block_diagram.png>
-Package pdftex.def Info: ./my-chapters/my-images/theoretical_background/DE_10_b
-lock_diagram.png  used on input line 59.
-(pdftex.def)             Requested size: 338.58632pt x 292.18779pt.
+l.22 
+      [1
 
+ <./my-chapters/my-diagrams/wave_sin.pdf>]
+<./my-chapters/my-diagrams/wave_triangle.pdf, id=62, 565.36218pt x 216.81pt>
+File: ./my-chapters/my-diagrams/wave_triangle.pdf Graphic file (type pdf)
+<use ./my-chapters/my-diagrams/wave_triangle.pdf>
+Package pdftex.def Info: ./my-chapters/my-diagrams/wave_triangle.pdf  used on i
+nput line 28.
+(pdftex.def)             Requested size: 483.69687pt x 185.49687pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 28--29
+ [][] 
+ []
+
+)
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.63 
-      [2]
+l.59 \include{./my-chapters/hardware_design.tex}
+                                                 [2 <./my-chapters/my-diagrams/
+wave_square.pdf>]
 
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.82 	\end{itemize}
-                    [3 <./my-chapters/my-images/theoretical_background/DE_10_bl
-ock_diagram.png>]
-
-[4]
-
-[5]
-<./my-chapters/my-images/theoretical_background/DDS_blockdiagram.png, id=174, 4
-11.78844pt x 178.41656pt>
-File: ./my-chapters/my-images/theoretical_background/DDS_blockdiagram.png Graph
-ic file (type png)
-<use ./my-chapters/my-images/theoretical_background/DDS_blockdiagram.png>
-Package pdftex.def Info: ./my-chapters/my-images/theoretical_background/DDS_blo
-ckdiagram.png  used on input line 166.
-(pdftex.def)             Requested size: 386.95897pt x 167.65984pt.
-<./my-chapters/my-images/theoretical_background/DDS_architecture.png, id=175, 4
-28.35031pt x 228.855pt>
-File: ./my-chapters/my-images/theoretical_background/DDS_architecture.png Graph
-ic file (type png)
-<use ./my-chapters/my-images/theoretical_background/DDS_architecture.png>
-Package pdftex.def Info: ./my-chapters/my-images/theoretical_background/DDS_arc
-hitecture.png  used on input line 177.
-(pdftex.def)             Requested size: 386.95897pt x 206.74281pt.
-
-
-[6 <./my-chapters/my-images/theoretical_background/DDS_blockdiagram.png>]
-<./my-chapters/my-images/Gen_wave/hinh1.png, id=184, 232.4685pt x 227.6505pt>
-File: ./my-chapters/my-images/Gen_wave/hinh1.png Graphic file (type png)
-<use ./my-chapters/my-images/Gen_wave/hinh1.png>
-Package pdftex.def Info: ./my-chapters/my-images/Gen_wave/hinh1.png  used on in
-put line 202.
-(pdftex.def)             Requested size: 290.22107pt x 284.24283pt.
-
-
-[7 <./my-chapters/my-images/theoretical_background/DDS_architecture.png>]
-
-[8 <./my-chapters/my-images/Gen_wave/hinh1.png>]
-
-LaTeX Warning: Command \textquoteright invalid in math mode on input line 243.
-
-
-
-[9]
-<./my-chapters/my-images/theoretical_background/WM8731_blockdiagram.png, id=204
-, 401.24907pt x 482.55281pt>
-File: ./my-chapters/my-images/theoretical_background/WM8731_blockdiagram.png Gr
-aphic file (type png)
-<use ./my-chapters/my-images/theoretical_background/WM8731_blockdiagram.png>
-Package pdftex.def Info: ./my-chapters/my-images/theoretical_background/WM8731_
-blockdiagram.png  used on input line 260.
-(pdftex.def)             Requested size: 338.58632pt x 407.2192pt.
-
-
-[10]
-Overfull \hbox (25.86526pt too wide) in paragraph at lines 272--273
-[]\T5/cmr/m/n/12 24-bit ADC and DAC us-ing sigma-delta ar-chi-tec-ture with dig
--i-tal dec-i-ma-tion/interpolation
- []
-
-
-
-[11 <./my-chapters/my-images/theoretical_background/WM8731_blockdiagram.png>]
-Overfull \hbox (9.14717pt too wide) in paragraph at lines 283--295
- [][] 
- []
-
-LaTeX Font Info:    Trying to load font information for T5+cmtt on input line 2
-96.
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/vntex\t5cmtt.fd
-File: t5cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-
-[12]
-Overfull \hbox (4.4524pt too wide) in paragraph at lines 331--331
- []|\T5/cmr/bx/n/12 Address| 
- []
-
-
-Overfull \hbox (4.4524pt too wide) in paragraph at lines 341--341
- []|\T5/cmr/bx/n/12 Address| 
- []
-
-[13]
-LaTeX Font Info:    Calculating math sizes for size <13> on input line 373.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 373.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 373.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 373.
-
-
-
-[14]
-<./my-chapters/my-images/theoretical_background/TWI_communication.png, id=241, 
-355.3275pt x 185.19188pt>
-File: ./my-chapters/my-images/theoretical_background/TWI_communication.png Grap
-hic file (type png)
-<use ./my-chapters/my-images/theoretical_background/TWI_communication.png>
-Package pdftex.def Info: ./my-chapters/my-images/theoretical_background/TWI_com
-munication.png  used on input line 396.
-(pdftex.def)             Requested size: 338.58632pt x 176.471pt.
-<./my-chapters/my-images/theoretical_background/TWI_Messages are broken up into
- frames of data.png, id=242, 492.33937pt x 143.78719pt>
-File: ./my-chapters/my-images/theoretical_background/TWI_Messages are broken up
- into frames of data.png Graphic file (type png)
-<use ./my-chapters/my-images/theoretical_background/TWI_Messages are broken up 
-into frames of data.png>
-Package pdftex.def Info: ./my-chapters/my-images/theoretical_background/TWI_Mes
-sages are broken up into frames of data.png  used on input line 407.
-(pdftex.def)             Requested size: 338.58632pt x 98.88855pt.
-<./my-chapters/my-images/theoretical_background/TWI_start_condition.png, id=243
-, 338.76563pt x 152.06813pt>
-File: ./my-chapters/my-images/theoretical_background/TWI_start_condition.png Gr
-aphic file (type png)
-<use ./my-chapters/my-images/theoretical_background/TWI_start_condition.png>
-Package pdftex.def Info: ./my-chapters/my-images/theoretical_background/TWI_sta
-rt_condition.png  used on input line 418.
-(pdftex.def)             Requested size: 338.58632pt x 151.99348pt.
-
-
-[15 <./my-chapters/my-images/theoretical_background/TWI_communication.png> <./m
-y-chapters/my-images/theoretical_background/TWI_Messages are broken up into fra
-mes of data.png>]
-
-[16 <./my-chapters/my-images/theoretical_background/TWI_start_condition.png>]
-
-[17]
-<./my-chapters/my-images/theoretical_background/TWI_protocol.png, id=271, 453.1
-9313pt x 112.92188pt>
-File: ./my-chapters/my-images/theoretical_background/TWI_protocol.png Graphic f
-ile (type png)
-<use ./my-chapters/my-images/theoretical_background/TWI_protocol.png>
-Package pdftex.def Info: ./my-chapters/my-images/theoretical_background/TWI_pro
-tocol.png  used on input line 478.
-(pdftex.def)             Requested size: 338.58632pt x 84.36552pt.
-
-
-[18 <./my-chapters/my-images/theoretical_background/TWI_protocol.png>]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 486.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 486.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 486.
-
-<./my-chapters/my-images/theoretical_background/I2S_mode.png, id=284, 496.10344
-pt x 201.00093pt>
-File: ./my-chapters/my-images/theoretical_background/I2S_mode.png Graphic file 
-(type png)
-<use ./my-chapters/my-images/theoretical_background/I2S_mode.png>
-Package pdftex.def Info: ./my-chapters/my-images/theoretical_background/I2S_mod
-e.png  used on input line 496.
-(pdftex.def)             Requested size: 386.95897pt x 156.78008pt.
-
-
-[19 <./my-chapters/my-images/theoretical_background/I2S_mode.png>]
-<./my-chapters/my-images/theoretical_background/I2S_slave_mode.png, id=292, 461
-.47406pt x 246.9225pt>
-File: ./my-chapters/my-images/theoretical_background/I2S_slave_mode.png Graphic
- file (type png)
-<use ./my-chapters/my-images/theoretical_background/I2S_slave_mode.png>
-Package pdftex.def Info: ./my-chapters/my-images/theoretical_background/I2S_sla
-ve_mode.png  used on input line 510.
-(pdftex.def)             Requested size: 386.95897pt x 207.05176pt.
-)
-
-[20 <./my-chapters/my-images/theoretical_background/I2S_slave_mode.png>]
+[3 <./my-chapters/my-diagrams/wave_triangle.pdf>]
 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
-(main.aux)
+(main.aux (my-chapters/hardware_design.aux))
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-07-20>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: AF1BBFB9A4672BD1CF92B6FAB1BBC54E;3802.
+(rerunfilecheck)             Checksum: 828D2BE54E25EE149AD90ABF05D75D18;1089.
  ) 
 Here is how much of TeX's memory you used:
- 16472 strings out of 468134
- 269322 string characters out of 5430740
- 705677 words of memory out of 5000000
- 44736 multiletter control sequences out of 15000+600000
- 654452 words of font info for 111 fonts, out of 8000000 for 9000
+ 16265 strings out of 468134
+ 262656 string characters out of 5430740
+ 693249 words of memory out of 5000000
+ 44598 multiletter control sequences out of 15000+600000
+ 645855 words of font info for 88 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 90i,12n,93p,733b,750s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\nguye\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
-0800.pk><C:/Users/nguye/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
-ts/cm/cmbx12.pfb><C:/Users/nguye/AppData/Local/Programs/MiKTeX/fonts/type1/publ
-ic/amsfonts/cm/cmmi12.pfb><C:/Users/nguye/AppData/Local/Programs/MiKTeX/fonts/t
-ype1/public/amsfonts/cm/cmmi8.pfb><C:/Users/nguye/AppData/Local/Programs/MiKTeX
-/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/nguye/AppData/Local/Program
-s/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/nguye/AppData/Local/
-Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/nguye/AppData
-/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/nguy
-e/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Us
-ers/nguye/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.p
-fb><C:/Users/nguye/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnbx12.p
-fb><C:/Users/nguye/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnbxti10
-.pfb><C:/Users/nguye/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnr12.
-pfb><C:/Users/nguye/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnr17.p
-fb><C:/Users/nguye/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnti12.p
-fb><C:/Users/nguye/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vntt12.p
-fb>
-Output written on main.pdf (23 pages, 1348926 bytes).
+ 90i,11n,93p,394b,472s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/nguye/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
+cmbx12.pfb><C:/Users/nguye/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
+fonts/cm/cmr12.pfb><C:/Users/nguye/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmti12.pfb><C:/Users/nguye/AppData/Local/Programs/MiKTeX/fonts
+/type1/vntex/vnr/vnbx12.pfb><C:/Users/nguye/AppData/Local/Programs/MiKTeX/fonts
+/type1/vntex/vnr/vnr12.pfb><C:/Users/nguye/AppData/Local/Programs/MiKTeX/fonts/
+type1/vntex/vnr/vnr17.pfb>
+Output written on main.pdf (5 pages, 365291 bytes).
 PDF statistics:
- 381 PDF objects out of 1000 (max. 8388607)
- 72 named destinations out of 1000 (max. 500000)
- 207 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 105 PDF objects out of 1000 (max. 8388607)
+ 12 named destinations out of 1000 (max. 500000)
+ 66 words of extra memory for PDF output out of 10000 (max. 10000000)
 

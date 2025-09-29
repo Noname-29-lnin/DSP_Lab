@@ -1,7 +1,7 @@
 module single_port_ram #(
     parameter DATA_WIDTH = 8, 
     parameter ADDR_WIDTH = 11,
-	parameter HEX_LINK	 = "../04_fir_cof/sine_wave.txt"
+	parameter HEX_LINK	 = "./sin_wave.txt"
 )(
     input  logic                      i_clk,
     input  logic                      i_wren,

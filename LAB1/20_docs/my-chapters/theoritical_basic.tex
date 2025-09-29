@@ -503,12 +503,37 @@ In the WM8731 datasheet, it is specified that I$^{2}$S mode operates as follows:
 According to the provided I$^{2}$C register configuration, the WM8731 is set to:
 
 \begin{itemize}[label=-]
-	\item\textbf{ Slave Mode:} When WM8731 operates in Slave mode, both BCLK and DACLRC are inputs, as shown in the figure \ref{fig: I2S slave mode}.
+	\item \textbf{Slave Mode:} When WM8731 operates in Slave mode, both \textit{BCLK} and \textit{DACLRC} are inputs, as shown in Fig.~\ref{fig:I2S_slave_mode}.
 	
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=.8\linewidth]{./my-chapters/my-images/theoretical_background/I2S_slave_mode.png}
 		\caption{I$^{2}$S slave mode.}
-		\label{fig: I2S slave mode}
+		\label{fig:I2S_slave_mode}
 	\end{figure}
+	
+	\item \textbf{Audio Data Format Select:} I$^{2}$S format.
+	
+	\item \textbf{Input Audio Data Bit Length Select:} 24 bits.
+	
+	\item \textbf{USB Mode:} Sample rate $f_{s} = 48~\text{kHz} = \text{LRCLK}$.
+	
+	\item \textbf{MCLK (Master Clock):} The WM8731 operates from a \textit{Master Clock (MCLK)}, which sets the sample rate $f_{s}$ and generates the subsidiary clocks (\textit{BCLK}, \textit{LRCLK}).  
+	In USB mode with a $250 \times f_{s}$ ratio, the relationship is:  
+	\[
+	\text{MCLK} = 250 \times f_{s} = 250 \times 48~\text{kHz} = 12~\text{MHz}.
+	\]
+	
+	To achieve this on the FPGA, use the PLL to synthesize $\text{MCLK} = 12~\text{MHz}$ from the on-board reference clock.
+	
+	In I$^{2}$S, the group chooses a common framing of 25 bits per channel (slot length), stereo (2 channels).  
+	The Bit Clock formula is:
+	\[
+	\begin{aligned}
+		\text{BCLK} &= \text{LRCLK} \times \text{bits per channel} \times \text{number of channels} \\
+		&= 48~\text{kHz} \times 25~\text{bits/channel} \times 2 \\
+		&= 2.4~\text{MHz}.
+	\end{aligned}
+	\]
+	
 \end{itemize}

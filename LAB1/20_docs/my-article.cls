@@ -91,7 +91,7 @@
   right=2cm,
   vmargin=2cm,
   includeheadfoot=true,
-  headheight=35pt
+  headheight=30pt
 }
 % --- Hyperref setup
 \hypersetup{
