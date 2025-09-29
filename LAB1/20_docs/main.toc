@@ -39,5 +39,7 @@
 \contentsline {subsubsection}{\numberline {3.3.3}Module Audio Codec data}{39}{subsubsection.3.3.3}%
 \contentsline {section}{\numberline {4}Hardware Implementation Results}{40}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Simulation}{40}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Top module}{41}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Measurement Waveform}{42}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.1.1}Testbench}{40}{subsubsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.2}Results of Wave Simulation}{42}{subsubsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.2}Top module}{43}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Measurement Waveform}{44}{subsection.4.3}%

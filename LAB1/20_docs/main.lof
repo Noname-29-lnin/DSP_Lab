@@ -32,10 +32,11 @@
 \contentsline {figure}{\numberline {3.13}{\ignorespaces Block diagram for Module Audio Codec config.}}{38}{figure.caption.31}%
 \contentsline {figure}{\numberline {3.14}{\ignorespaces FSM control Module Aduio Codec data.}}{39}{figure.caption.32}%
 \contentsline {figure}{\numberline {3.15}{\ignorespaces Block diagram for Module Audio Codec data.}}{39}{figure.caption.33}%
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Demonstration of square waves with different duty cycles ranging from 10\% to 90\%.}}{40}{figure.caption.34}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Basic waveforms and noise modulation: ECG output signal affected by frequency and amplitude variations of injected noise.}}{40}{figure.caption.35}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Block diagram for Top module.}}{41}{figure.caption.36}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Sine waveform on Oscilloscope.}}{42}{figure.caption.37}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Triangle waveform on Oscilloscope.}}{43}{figure.caption.38}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Sawtooth waveform on Oscilloscope.}}{44}{figure.caption.39}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces ECG waveform on Oscilloscope.}}{45}{figure.caption.40}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces A sine wave affected by third-order harmonic sine noise and white noise.}}{42}{figure.caption.34}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Demonstration of square waves with different duty cycles ranging from 10\% to 90\%.}}{42}{figure.caption.35}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Basic waveforms and noise modulation: ECG output signal affected by frequency and amplitude variations of injected noise.}}{42}{figure.caption.36}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Block diagram for Top module.}}{43}{figure.caption.37}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Sine waveform on Oscilloscope.}}{44}{figure.caption.38}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Triangle waveform on Oscilloscope.}}{45}{figure.caption.39}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Sawtooth waveform on Oscilloscope.}}{46}{figure.caption.40}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces ECG waveform on Oscilloscope.}}{47}{figure.caption.41}%
