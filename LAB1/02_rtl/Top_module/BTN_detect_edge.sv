@@ -9,20 +9,23 @@ module BTN_detect_edge(
 );
 
 logic w_p_signal;
+logic w_n_signal;
 
-always_ff @( posedge i_clk or negedge i_rst_n ) begin : proc_detect_edge
+always_ff @( posedge i_clk or negedge i_rst_n ) begin
     if(~i_rst_n) begin
-        w_p_signal <= 1'b0;
-        o_signal   <= 1'b0;
+        w_p_signal  <= 1'b0;
+        w_n_signal  <= 1'b0;
     end else begin
-        w_p_signal <= i_signal;
-        if(i_pos_edge) 
-            o_signal <= (i_signal & (~w_p_signal));
-        else
-            o_signal <= (~i_signal & (w_p_signal));
-            
+        w_p_signal  <= i_signal;
+        w_n_signal  <= w_p_signal;
     end
 end
 
+always_comb begin : outputlogic
+    if(i_pos_edge)
+        o_signal = (~w_n_signal) & (w_p_signal);
+    else
+        o_signal = (w_n_signal) & (~w_p_signal);
+end
 
 endmodule

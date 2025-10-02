@@ -40,7 +40,7 @@ always_comb begin
     if(w_step_phase[SIZE_PHASE]) begin
         w_phase_wave = w_step_phase[SIZE_PHASE-1:0];
     end else begin
-        w_phase_wave = (~w_step_phase[SIZE_PHASE-1:0]) + 1;
+        w_phase_wave = ~(w_step_phase[SIZE_PHASE-1:0]) + 1;
     end
 end
 always_ff @( posedge i_clk or negedge i_rst_n ) begin 

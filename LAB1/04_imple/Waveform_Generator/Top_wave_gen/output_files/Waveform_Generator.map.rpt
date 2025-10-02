@@ -1,0 +1,1370 @@
+Analysis & Synthesis report for Waveform_Generator
+Thu Oct  2 20:48:17 2025
+Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Analysis & Synthesis DSP Block Usage Summary
+  9. State Machine - |Waveform_Generator|codec_data:codec_trans_rec|reg_state
+ 10. State Machine - |Waveform_Generator|config_codec:codec_config_i2c|reg_state
+ 11. State Machine - |Waveform_Generator|config_codec:codec_config_i2c|i2c_trans:i2c|reg_state
+ 12. Registers Removed During Synthesis
+ 13. Removed Registers Triggering Further Register Optimizations
+ 14. General Register Statistics
+ 15. Inverted Register Statistics
+ 16. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 17. Parameter Settings for User Entity Instance: config_codec:codec_config_i2c
+ 18. Parameter Settings for User Entity Instance: Top_gen_wave:control_io
+ 19. Parameter Settings for User Entity Instance: Top_gen_wave:control_io|CTR_step_amp:CTR_step_amp_unit
+ 20. Parameter Settings for User Entity Instance: Top_gen_wave:control_io|CTR_adjust_amp_wave:CTR_adjust_amp_wave_unit
+ 21. Parameter Settings for User Entity Instance: Top_gen_wave:control_io|CTR_adjust_amp_noise:CTR_adjust_amp_noise_unit
+ 22. Parameter Settings for User Entity Instance: Top_gen_wave:control_io|CTR_step_phase:CTR_step_phase_unit
+ 23. Parameter Settings for User Entity Instance: Top_gen_wave:control_io|CTR_step_phase:CTR_step_phase_unit|CTR_sevenseg:SEG_UNIT
+ 24. Parameter Settings for User Entity Instance: Top_gen_wave:control_io|CTR_adjust_phase_wave:CTR_adjust_phase_wave_unit
+ 25. Parameter Settings for User Entity Instance: Top_gen_wave:control_io|CTR_adjust_phase_noise:CTR_adjust_phase_noise_unit
+ 26. Parameter Settings for User Entity Instance: wave_gen:wave_gen
+ 27. Parameter Settings for User Entity Instance: wave_gen:wave_gen|phase_accummulator:phase_acummulator_for_wave
+ 28. Parameter Settings for User Entity Instance: wave_gen:wave_gen|wave_sin:sine
+ 29. Parameter Settings for User Entity Instance: wave_gen:wave_gen|wave_sin:sine|adder_flex_no_carry:mirror_sine
+ 30. Parameter Settings for User Entity Instance: wave_gen:wave_gen|wave_sin:sine|adder_flex_no_carry:two_compiment
+ 31. Parameter Settings for User Entity Instance: wave_gen:wave_gen|wave_sin:sine|single_port_ram:sine_rom
+ 32. Parameter Settings for User Entity Instance: wave_gen:wave_gen|wave_triangle:triangle
+ 33. Parameter Settings for User Entity Instance: wave_gen:wave_gen|wave_triangle:triangle|adder_flex_no_carry:mirror_sawtooth
+ 34. Parameter Settings for User Entity Instance: wave_gen:wave_gen|wave_square:square
+ 35. Parameter Settings for User Entity Instance: wave_gen:wave_gen|wave_square:square|compare_great_than:duty_90_t
+ 36. Parameter Settings for User Entity Instance: wave_gen:wave_gen|wave_square:square|compare_great_than:duty_80_t
+ 37. Parameter Settings for User Entity Instance: wave_gen:wave_gen|wave_square:square|compare_great_than:duty_66_t
+ 38. Parameter Settings for User Entity Instance: wave_gen:wave_gen|wave_ecg:ecg
+ 39. Parameter Settings for User Entity Instance: wave_gen:wave_gen|wave_ecg:ecg|single_port_ram:ecg_rom
+ 40. Parameter Settings for User Entity Instance: wave_gen:wave_gen|lfsr:white_noise
+ 41. Parameter Settings for User Entity Instance: wave_gen:wave_gen|phase_accummulator:phase_acummulator_for_sin_noise
+ 42. Parameter Settings for User Entity Instance: wave_gen:wave_gen|wave_sin:sine_noise
+ 43. Parameter Settings for User Entity Instance: wave_gen:wave_gen|wave_sin:sine_noise|adder_flex_no_carry:mirror_sine
+ 44. Parameter Settings for User Entity Instance: wave_gen:wave_gen|wave_sin:sine_noise|adder_flex_no_carry:two_compiment
+ 45. Parameter Settings for User Entity Instance: wave_gen:wave_gen|wave_sin:sine_noise|single_port_ram:sine_rom
+ 46. Port Connectivity Checks: "wave_gen:wave_gen|wave_ecg:ecg|single_port_ram:ecg_rom"
+ 47. Port Connectivity Checks: "wave_gen:wave_gen|wave_square:square|compare_great_than:duty_66_t"
+ 48. Port Connectivity Checks: "wave_gen:wave_gen|wave_square:square|compare_great_than:duty_80_t"
+ 49. Port Connectivity Checks: "wave_gen:wave_gen|wave_square:square|compare_great_than:duty_90_t"
+ 50. Port Connectivity Checks: "wave_gen:wave_gen|wave_triangle:triangle|adder_flex_no_carry:mirror_sawtooth"
+ 51. Port Connectivity Checks: "wave_gen:wave_gen|wave_sin:sine|single_port_ram:sine_rom"
+ 52. Port Connectivity Checks: "wave_gen:wave_gen|wave_sin:sine|adder_flex_no_carry:two_compiment"
+ 53. Port Connectivity Checks: "wave_gen:wave_gen|wave_sin:sine|adder_flex_no_carry:mirror_sine"
+ 54. Port Connectivity Checks: "Top_gen_wave:control_io|CTR_adjust_phase_noise:CTR_adjust_phase_noise_unit|BTN_detect_edge:BTN_DE_unit"
+ 55. Port Connectivity Checks: "Top_gen_wave:control_io|CTR_adjust_phase_wave:CTR_adjust_phase_wave_unit|BTN_detect_edge:BTN_DE_unit"
+ 56. Port Connectivity Checks: "Top_gen_wave:control_io|CTR_step_phase:CTR_step_phase_unit|CTR_sevenseg:SEG_UNIT|seven_seg_anode_common:HEX_1_unit"
+ 57. Port Connectivity Checks: "Top_gen_wave:control_io|CTR_step_phase:CTR_step_phase_unit|BTN_detect_edge:BTN_DE_unit_1"
+ 58. Port Connectivity Checks: "Top_gen_wave:control_io|CTR_step_phase:CTR_step_phase_unit|BTN_detect_edge:BTN_DE_unit"
+ 59. Port Connectivity Checks: "Top_gen_wave:control_io|CTR_adjust_amp_noise:CTR_adjust_amp_noise_unit|seven_seg_anode_common:SEVEN_SEG_Unit"
+ 60. Port Connectivity Checks: "Top_gen_wave:control_io|CTR_adjust_amp_noise:CTR_adjust_amp_noise_unit|BTN_detect_edge:BTN_DE_unit"
+ 61. Port Connectivity Checks: "Top_gen_wave:control_io|CTR_adjust_amp_wave:CTR_adjust_amp_wave_unit|seven_seg_anode_common:SEVEN_SEG_Unit"
+ 62. Port Connectivity Checks: "Top_gen_wave:control_io|CTR_adjust_amp_wave:CTR_adjust_amp_wave_unit|BTN_detect_edge:BTN_DE_unit"
+ 63. Port Connectivity Checks: "Top_gen_wave:control_io|CTR_step_amp:CTR_step_amp_unit|BTN_detect_edge:BTN_DE_unit_1"
+ 64. Port Connectivity Checks: "Top_gen_wave:control_io|CTR_step_amp:CTR_step_amp_unit|BTN_detect_edge:BTN_DE_unit"
+ 65. Port Connectivity Checks: "Top_gen_wave:control_io|BTN_detect_edge:BTN_detect_edge_3_unit"
+ 66. Port Connectivity Checks: "Top_gen_wave:control_io|BTN_detect_edge:BTN_detect_edge_2_unit"
+ 67. Port Connectivity Checks: "Top_gen_wave:control_io|BTN_detect_edge:BTN_detect_edge_1_unit"
+ 68. Port Connectivity Checks: "Top_gen_wave:control_io|BTN_detect_edge:BTN_detect_edge_0_unit"
+ 69. Port Connectivity Checks: "codec_data:codec_trans_rec"
+ 70. Port Connectivity Checks: "config_codec:codec_config_i2c|i2c_trans:i2c"
+ 71. Post-Synthesis Netlist Statistics for Top Partition
+ 72. Elapsed Time Per Partition
+ 73. Analysis & Synthesis Messages
+ 74. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2025  Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Altera and sold by Altera or its authorized distributors.  Please
+refer to the Altera Software License Subscription Agreements 
+on the Quartus Prime software download page.
+
+
+
++-----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                      ;
++---------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Thu Oct  2 20:48:17 2025           ;
+; Quartus Prime Version           ; 24.1std.0 Build 1077 03/04/2025 SC Lite Edition ;
+; Revision Name                   ; Waveform_Generator                              ;
+; Top-level Entity Name           ; Waveform_Generator                              ;
+; Family                          ; Cyclone V                                       ;
+; Logic utilization (in ALMs)     ; N/A                                             ;
+; Total registers                 ; 289                                             ;
+; Total pins                      ; 75                                              ;
+; Total virtual pins              ; 0                                               ;
+; Total block memory bits         ; 0                                               ;
+; Total DSP Blocks                ; 2                                               ;
+; Total HSSI RX PCSs              ; 0                                               ;
+; Total HSSI PMA RX Deserializers ; 0                                               ;
+; Total HSSI TX PCSs              ; 0                                               ;
+; Total HSSI PMA TX Serializers   ; 0                                               ;
+; Total PLLs                      ; 0                                               ;
+; Total DLLs                      ; 0                                               ;
++---------------------------------+-------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CSXFC6D6F31C6     ;                    ;
+; Top-level entity name                                                           ; Waveform_Generator ; Waveform_Generator ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.1%      ;
+;     Processor 3            ;   0.0%      ;
+;     Processor 4            ;   0.0%      ;
++----------------------------+-------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                            ;
++------------------------------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path                     ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                    ; Library ;
++------------------------------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------------------------------+---------+
+; Waveform_Generator.sv                                ; yes             ; User SystemVerilog HDL File  ; /home/noname/Documents/project_tiny/DSP_Lab/LAB1/04_imple/Waveform_Generator/Top_wave_gen/Waveform_Generator.sv ;         ;
+; ../../../02_rtl/CoDec/i2c_trans.sv                   ; yes             ; User SystemVerilog HDL File  ; /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/CoDec/i2c_trans.sv                                      ;         ;
+; ../../../02_rtl/CoDec/config_codec.sv                ; yes             ; User SystemVerilog HDL File  ; /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/CoDec/config_codec.sv                                   ;         ;
+; ../../../02_rtl/CoDec/codec_data.sv                  ; yes             ; User SystemVerilog HDL File  ; /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/CoDec/codec_data.sv                                     ;         ;
+; ../../../02_rtl/Top_module/Top_gen_wave.sv           ; yes             ; User SystemVerilog HDL File  ; /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv                              ;         ;
+; ../../../02_rtl/Top_module/seven_seg_anode_common.sv ; yes             ; User SystemVerilog HDL File  ; /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/seven_seg_anode_common.sv                    ;         ;
+; ../../../02_rtl/Top_module/CTR_step_phase.sv         ; yes             ; User SystemVerilog HDL File  ; /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/CTR_step_phase.sv                            ;         ;
+; ../../../02_rtl/Top_module/CTR_step_amp.sv           ; yes             ; User SystemVerilog HDL File  ; /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/CTR_step_amp.sv                              ;         ;
+; ../../../02_rtl/Top_module/CTR_sevenseg.sv           ; yes             ; User SystemVerilog HDL File  ; /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/CTR_sevenseg.sv                              ;         ;
+; ../../../02_rtl/Top_module/CTR_adjust_phase_wave.sv  ; yes             ; User SystemVerilog HDL File  ; /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/CTR_adjust_phase_wave.sv                     ;         ;
+; ../../../02_rtl/Top_module/CTR_adjust_phase_noise.sv ; yes             ; User SystemVerilog HDL File  ; /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/CTR_adjust_phase_noise.sv                    ;         ;
+; ../../../02_rtl/Top_module/CTR_adjust_amp_wave.sv    ; yes             ; User SystemVerilog HDL File  ; /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/CTR_adjust_amp_wave.sv                       ;         ;
+; ../../../02_rtl/Top_module/CTR_adjust_amp_noise.sv   ; yes             ; User SystemVerilog HDL File  ; /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/CTR_adjust_amp_noise.sv                      ;         ;
+; ../../../02_rtl/Top_module/BTN_detect_edge.sv        ; yes             ; User SystemVerilog HDL File  ; /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/BTN_detect_edge.sv                           ;         ;
+; ../../../02_rtl/Wave_gen/wave_triangle.sv            ; yes             ; User SystemVerilog HDL File  ; /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Wave_gen/wave_triangle.sv                               ;         ;
+; ../../../02_rtl/Wave_gen/wave_square.sv              ; yes             ; User SystemVerilog HDL File  ; /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Wave_gen/wave_square.sv                                 ;         ;
+; ../../../02_rtl/Wave_gen/wave_sin.sv                 ; yes             ; User SystemVerilog HDL File  ; /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Wave_gen/wave_sin.sv                                    ;         ;
+; ../../../02_rtl/Wave_gen/wave_gen.sv                 ; yes             ; User SystemVerilog HDL File  ; /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Wave_gen/wave_gen.sv                                    ;         ;
+; ../../../02_rtl/Wave_gen/wave_ecg.sv                 ; yes             ; User SystemVerilog HDL File  ; /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Wave_gen/wave_ecg.sv                                    ;         ;
+; ../../../02_rtl/Wave_gen/single_port_RAM.sv          ; yes             ; User SystemVerilog HDL File  ; /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Wave_gen/single_port_RAM.sv                             ;         ;
+; ../../../02_rtl/Wave_gen/phase_accummulator.sv       ; yes             ; User SystemVerilog HDL File  ; /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Wave_gen/phase_accummulator.sv                          ;         ;
+; ../../../02_rtl/Wave_gen/lfsr.sv                     ; yes             ; User SystemVerilog HDL File  ; /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Wave_gen/lfsr.sv                                        ;         ;
+; ../../../02_rtl/Wave_gen/compare_great_than.sv       ; yes             ; User SystemVerilog HDL File  ; /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Wave_gen/compare_great_than.sv                          ;         ;
+; ../../../02_rtl/Wave_gen/adder_flex_no_carry.sv      ; yes             ; User SystemVerilog HDL File  ; /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Wave_gen/adder_flex_no_carry.sv                         ;         ;
++------------------------------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------------------------------+---------+
+
+
++--------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary            ;
++---------------------------------------------+----------+
+; Resource                                    ; Usage    ;
++---------------------------------------------+----------+
+; Estimate of Logic utilization (ALMs needed) ; 890      ;
+;                                             ;          ;
+; Combinational ALUT usage for logic          ; 1061     ;
+;     -- 7 input functions                    ; 41       ;
+;     -- 6 input functions                    ; 668      ;
+;     -- 5 input functions                    ; 59       ;
+;     -- 4 input functions                    ; 66       ;
+;     -- <=3 input functions                  ; 227      ;
+;                                             ;          ;
+; Dedicated logic registers                   ; 289      ;
+;                                             ;          ;
+; I/O pins                                    ; 75       ;
+;                                             ;          ;
+; Total DSP Blocks                            ; 2        ;
+;                                             ;          ;
+; Maximum fan-out node                        ; CLOCK_12 ;
+; Maximum fan-out                             ; 288      ;
+; Total fan-out                               ; 6686     ;
+; Average fan-out                             ; 4.45     ;
++---------------------------------------------+----------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                                  ;
++------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+------------------------+--------------+
+; Compilation Hierarchy Node                                 ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                    ; Entity Name            ; Library Name ;
++------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+------------------------+--------------+
+; |Waveform_Generator                                        ; 1061 (3)            ; 289 (3)                   ; 0                 ; 2          ; 75   ; 0            ; |Waveform_Generator                                                                                                                    ; Waveform_Generator     ; work         ;
+;    |Top_gen_wave:control_io|                               ; 123 (30)            ; 132 (38)                  ; 0                 ; 0          ; 0    ; 0            ; |Waveform_Generator|Top_gen_wave:control_io                                                                                            ; Top_gen_wave           ; work         ;
+;       |BTN_detect_edge:BTN_detect_edge_1_unit|             ; 1 (1)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |Waveform_Generator|Top_gen_wave:control_io|BTN_detect_edge:BTN_detect_edge_1_unit                                                     ; BTN_detect_edge        ; work         ;
+;       |BTN_detect_edge:BTN_detect_edge_2_unit|             ; 0 (0)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |Waveform_Generator|Top_gen_wave:control_io|BTN_detect_edge:BTN_detect_edge_2_unit                                                     ; BTN_detect_edge        ; work         ;
+;       |CTR_adjust_amp_noise:CTR_adjust_amp_noise_unit|     ; 12 (5)              ; 11 (11)                   ; 0                 ; 0          ; 0    ; 0            ; |Waveform_Generator|Top_gen_wave:control_io|CTR_adjust_amp_noise:CTR_adjust_amp_noise_unit                                             ; CTR_adjust_amp_noise   ; work         ;
+;          |seven_seg_anode_common:SEVEN_SEG_Unit|           ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Waveform_Generator|Top_gen_wave:control_io|CTR_adjust_amp_noise:CTR_adjust_amp_noise_unit|seven_seg_anode_common:SEVEN_SEG_Unit       ; seven_seg_anode_common ; work         ;
+;       |CTR_adjust_amp_wave:CTR_adjust_amp_wave_unit|       ; 13 (6)              ; 11 (11)                   ; 0                 ; 0          ; 0    ; 0            ; |Waveform_Generator|Top_gen_wave:control_io|CTR_adjust_amp_wave:CTR_adjust_amp_wave_unit                                               ; CTR_adjust_amp_wave    ; work         ;
+;          |seven_seg_anode_common:SEVEN_SEG_Unit|           ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Waveform_Generator|Top_gen_wave:control_io|CTR_adjust_amp_wave:CTR_adjust_amp_wave_unit|seven_seg_anode_common:SEVEN_SEG_Unit         ; seven_seg_anode_common ; work         ;
+;       |CTR_adjust_phase_noise:CTR_adjust_phase_noise_unit| ; 23 (23)             ; 23 (21)                   ; 0                 ; 0          ; 0    ; 0            ; |Waveform_Generator|Top_gen_wave:control_io|CTR_adjust_phase_noise:CTR_adjust_phase_noise_unit                                         ; CTR_adjust_phase_noise ; work         ;
+;          |BTN_detect_edge:BTN_DE_unit|                     ; 0 (0)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |Waveform_Generator|Top_gen_wave:control_io|CTR_adjust_phase_noise:CTR_adjust_phase_noise_unit|BTN_detect_edge:BTN_DE_unit             ; BTN_detect_edge        ; work         ;
+;       |CTR_adjust_phase_wave:CTR_adjust_phase_wave_unit|   ; 23 (23)             ; 21 (21)                   ; 0                 ; 0          ; 0    ; 0            ; |Waveform_Generator|Top_gen_wave:control_io|CTR_adjust_phase_wave:CTR_adjust_phase_wave_unit                                           ; CTR_adjust_phase_wave  ; work         ;
+;       |CTR_step_amp:CTR_step_amp_unit|                     ; 3 (3)               ; 5 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |Waveform_Generator|Top_gen_wave:control_io|CTR_step_amp:CTR_step_amp_unit                                                             ; CTR_step_amp           ; work         ;
+;          |BTN_detect_edge:BTN_DE_unit|                     ; 0 (0)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |Waveform_Generator|Top_gen_wave:control_io|CTR_step_amp:CTR_step_amp_unit|BTN_detect_edge:BTN_DE_unit                                 ; BTN_detect_edge        ; work         ;
+;       |CTR_step_phase:CTR_step_phase_unit|                 ; 18 (8)              ; 19 (6)                    ; 0                 ; 0          ; 0    ; 0            ; |Waveform_Generator|Top_gen_wave:control_io|CTR_step_phase:CTR_step_phase_unit                                                         ; CTR_step_phase         ; work         ;
+;          |CTR_sevenseg:SEG_UNIT|                           ; 10 (4)              ; 13 (13)                   ; 0                 ; 0          ; 0    ; 0            ; |Waveform_Generator|Top_gen_wave:control_io|CTR_step_phase:CTR_step_phase_unit|CTR_sevenseg:SEG_UNIT                                   ; CTR_sevenseg           ; work         ;
+;             |seven_seg_anode_common:HEX_1_unit|            ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Waveform_Generator|Top_gen_wave:control_io|CTR_step_phase:CTR_step_phase_unit|CTR_sevenseg:SEG_UNIT|seven_seg_anode_common:HEX_1_unit ; seven_seg_anode_common ; work         ;
+;             |seven_seg_anode_common:HEX_2_unit|            ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Waveform_Generator|Top_gen_wave:control_io|CTR_step_phase:CTR_step_phase_unit|CTR_sevenseg:SEG_UNIT|seven_seg_anode_common:HEX_2_unit ; seven_seg_anode_common ; work         ;
+;    |codec_data:codec_trans_rec|                            ; 23 (23)             ; 44 (44)                   ; 0                 ; 0          ; 0    ; 0            ; |Waveform_Generator|codec_data:codec_trans_rec                                                                                         ; codec_data             ; work         ;
+;    |config_codec:codec_config_i2c|                         ; 46 (24)             ; 40 (12)                   ; 0                 ; 0          ; 0    ; 0            ; |Waveform_Generator|config_codec:codec_config_i2c                                                                                      ; config_codec           ; work         ;
+;       |i2c_trans:i2c|                                      ; 22 (22)             ; 28 (28)                   ; 0                 ; 0          ; 0    ; 0            ; |Waveform_Generator|config_codec:codec_config_i2c|i2c_trans:i2c                                                                        ; i2c_trans              ; work         ;
+;    |wave_gen:wave_gen|                                     ; 866 (134)           ; 70 (0)                    ; 0                 ; 2          ; 0    ; 0            ; |Waveform_Generator|wave_gen:wave_gen                                                                                                  ; wave_gen               ; work         ;
+;       |lfsr:white_noise|                                   ; 3 (3)               ; 24 (24)                   ; 0                 ; 0          ; 0    ; 0            ; |Waveform_Generator|wave_gen:wave_gen|lfsr:white_noise                                                                                 ; lfsr                   ; work         ;
+;       |phase_accummulator:phase_acummulator_for_sin_noise| ; 18 (18)             ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |Waveform_Generator|wave_gen:wave_gen|phase_accummulator:phase_acummulator_for_sin_noise                                               ; phase_accummulator     ; work         ;
+;       |phase_accummulator:phase_acummulator_for_wave|      ; 18 (18)             ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |Waveform_Generator|wave_gen:wave_gen|phase_accummulator:phase_acummulator_for_wave                                                    ; phase_accummulator     ; work         ;
+;       |wave_ecg:ecg|                                       ; 424 (0)             ; 10 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |Waveform_Generator|wave_gen:wave_gen|wave_ecg:ecg                                                                                     ; wave_ecg               ; work         ;
+;          |single_port_ram:ecg_rom|                         ; 424 (424)           ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |Waveform_Generator|wave_gen:wave_gen|wave_ecg:ecg|single_port_ram:ecg_rom                                                             ; single_port_ram        ; work         ;
+;       |wave_sin:sine_noise|                                ; 132 (14)            ; 8 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Waveform_Generator|wave_gen:wave_gen|wave_sin:sine_noise                                                                              ; wave_sin               ; work         ;
+;          |adder_flex_no_carry:two_compiment|               ; 20 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Waveform_Generator|wave_gen:wave_gen|wave_sin:sine_noise|adder_flex_no_carry:two_compiment                                            ; adder_flex_no_carry    ; work         ;
+;             |cla_4:gen_loop[0].add4|                       ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Waveform_Generator|wave_gen:wave_gen|wave_sin:sine_noise|adder_flex_no_carry:two_compiment|cla_4:gen_loop[0].add4                     ; cla_4                  ; work         ;
+;             |cla_4:gen_loop[1].add4|                       ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Waveform_Generator|wave_gen:wave_gen|wave_sin:sine_noise|adder_flex_no_carry:two_compiment|cla_4:gen_loop[1].add4                     ; cla_4                  ; work         ;
+;             |cla_4:gen_loop[2].add4|                       ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Waveform_Generator|wave_gen:wave_gen|wave_sin:sine_noise|adder_flex_no_carry:two_compiment|cla_4:gen_loop[2].add4                     ; cla_4                  ; work         ;
+;             |cla_4:gen_loop[3].add4|                       ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Waveform_Generator|wave_gen:wave_gen|wave_sin:sine_noise|adder_flex_no_carry:two_compiment|cla_4:gen_loop[3].add4                     ; cla_4                  ; work         ;
+;             |cla_4:gen_loop[4].add4|                       ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Waveform_Generator|wave_gen:wave_gen|wave_sin:sine_noise|adder_flex_no_carry:two_compiment|cla_4:gen_loop[4].add4                     ; cla_4                  ; work         ;
+;             |cla_4_n:add|                                  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Waveform_Generator|wave_gen:wave_gen|wave_sin:sine_noise|adder_flex_no_carry:two_compiment|cla_4_n:add                                ; cla_4_n                ; work         ;
+;          |single_port_ram:sine_rom|                        ; 98 (98)             ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |Waveform_Generator|wave_gen:wave_gen|wave_sin:sine_noise|single_port_ram:sine_rom                                                     ; single_port_ram        ; work         ;
+;       |wave_sin:sine|                                      ; 128 (11)            ; 8 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Waveform_Generator|wave_gen:wave_gen|wave_sin:sine                                                                                    ; wave_sin               ; work         ;
+;          |adder_flex_no_carry:two_compiment|               ; 16 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Waveform_Generator|wave_gen:wave_gen|wave_sin:sine|adder_flex_no_carry:two_compiment                                                  ; adder_flex_no_carry    ; work         ;
+;             |cla_4:gen_loop[0].add4|                       ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Waveform_Generator|wave_gen:wave_gen|wave_sin:sine|adder_flex_no_carry:two_compiment|cla_4:gen_loop[0].add4                           ; cla_4                  ; work         ;
+;             |cla_4:gen_loop[1].add4|                       ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Waveform_Generator|wave_gen:wave_gen|wave_sin:sine|adder_flex_no_carry:two_compiment|cla_4:gen_loop[1].add4                           ; cla_4                  ; work         ;
+;             |cla_4:gen_loop[2].add4|                       ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Waveform_Generator|wave_gen:wave_gen|wave_sin:sine|adder_flex_no_carry:two_compiment|cla_4:gen_loop[2].add4                           ; cla_4                  ; work         ;
+;             |cla_4:gen_loop[3].add4|                       ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Waveform_Generator|wave_gen:wave_gen|wave_sin:sine|adder_flex_no_carry:two_compiment|cla_4:gen_loop[3].add4                           ; cla_4                  ; work         ;
+;             |cla_4:gen_loop[4].add4|                       ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Waveform_Generator|wave_gen:wave_gen|wave_sin:sine|adder_flex_no_carry:two_compiment|cla_4:gen_loop[4].add4                           ; cla_4                  ; work         ;
+;          |single_port_ram:sine_rom|                        ; 101 (101)           ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |Waveform_Generator|wave_gen:wave_gen|wave_sin:sine|single_port_ram:sine_rom                                                           ; single_port_ram        ; work         ;
+;       |wave_square:square|                                 ; 9 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Waveform_Generator|wave_gen:wave_gen|wave_square:square                                                                               ; wave_square            ; work         ;
+;          |compare_great_than:duty_66_t|                    ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Waveform_Generator|wave_gen:wave_gen|wave_square:square|compare_great_than:duty_66_t                                                  ; compare_great_than     ; work         ;
+;          |compare_great_than:duty_80_t|                    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Waveform_Generator|wave_gen:wave_gen|wave_square:square|compare_great_than:duty_80_t                                                  ; compare_great_than     ; work         ;
+;          |compare_great_than:duty_90_t|                    ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Waveform_Generator|wave_gen:wave_gen|wave_square:square|compare_great_than:duty_90_t                                                  ; compare_great_than     ; work         ;
++------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-----------------------------------------------+
+; Analysis & Synthesis DSP Block Usage Summary  ;
++---------------------------------+-------------+
+; Statistic                       ; Number Used ;
++---------------------------------+-------------+
+; Independent 27x27               ; 2           ;
+; Total number of DSP blocks      ; 2           ;
+;                                 ;             ;
+; Fixed Point Signed Multiplier   ; 1           ;
+; Fixed Point Unsigned Multiplier ; 1           ;
++---------------------------------+-------------+
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |Waveform_Generator|codec_data:codec_trans_rec|reg_state                                                                                                                                                                                                                                                          ;
++--------------------------+--------------------------+-------------------------+------------------------+--------------------------+-------------------------+-------------------------+------------------------+-----------------------+-------------------------+------------------------+----------------------+----------------+
+; Name                     ; reg_state.RIGHT_HOLD_III ; reg_state.RIGHT_HOLD_II ; reg_state.RIGHT_HOLD_I ; reg_state.RIGHT_SETUP_II ; reg_state.RIGHT_SETUP_I ; reg_state.LEFT_HOLD_III ; reg_state.LEFT_HOLD_II ; reg_state.LEFT_HOLD_I ; reg_state.LEFT_SETUP_II ; reg_state.LEFT_SETUP_I ; reg_state.FIRST_DATA ; reg_state.IDLE ;
++--------------------------+--------------------------+-------------------------+------------------------+--------------------------+-------------------------+-------------------------+------------------------+-----------------------+-------------------------+------------------------+----------------------+----------------+
+; reg_state.IDLE           ; 0                        ; 0                       ; 0                      ; 0                        ; 0                       ; 0                       ; 0                      ; 0                     ; 0                       ; 0                      ; 0                    ; 0              ;
+; reg_state.FIRST_DATA     ; 0                        ; 0                       ; 0                      ; 0                        ; 0                       ; 0                       ; 0                      ; 0                     ; 0                       ; 0                      ; 1                    ; 1              ;
+; reg_state.LEFT_SETUP_I   ; 0                        ; 0                       ; 0                      ; 0                        ; 0                       ; 0                       ; 0                      ; 0                     ; 0                       ; 1                      ; 0                    ; 1              ;
+; reg_state.LEFT_SETUP_II  ; 0                        ; 0                       ; 0                      ; 0                        ; 0                       ; 0                       ; 0                      ; 0                     ; 1                       ; 0                      ; 0                    ; 1              ;
+; reg_state.LEFT_HOLD_I    ; 0                        ; 0                       ; 0                      ; 0                        ; 0                       ; 0                       ; 0                      ; 1                     ; 0                       ; 0                      ; 0                    ; 1              ;
+; reg_state.LEFT_HOLD_II   ; 0                        ; 0                       ; 0                      ; 0                        ; 0                       ; 0                       ; 1                      ; 0                     ; 0                       ; 0                      ; 0                    ; 1              ;
+; reg_state.LEFT_HOLD_III  ; 0                        ; 0                       ; 0                      ; 0                        ; 0                       ; 1                       ; 0                      ; 0                     ; 0                       ; 0                      ; 0                    ; 1              ;
+; reg_state.RIGHT_SETUP_I  ; 0                        ; 0                       ; 0                      ; 0                        ; 1                       ; 0                       ; 0                      ; 0                     ; 0                       ; 0                      ; 0                    ; 1              ;
+; reg_state.RIGHT_SETUP_II ; 0                        ; 0                       ; 0                      ; 1                        ; 0                       ; 0                       ; 0                      ; 0                     ; 0                       ; 0                      ; 0                    ; 1              ;
+; reg_state.RIGHT_HOLD_I   ; 0                        ; 0                       ; 1                      ; 0                        ; 0                       ; 0                       ; 0                      ; 0                     ; 0                       ; 0                      ; 0                    ; 1              ;
+; reg_state.RIGHT_HOLD_II  ; 0                        ; 1                       ; 0                      ; 0                        ; 0                       ; 0                       ; 0                      ; 0                     ; 0                       ; 0                      ; 0                    ; 1              ;
+; reg_state.RIGHT_HOLD_III ; 1                        ; 0                       ; 0                      ; 0                        ; 0                       ; 0                       ; 0                      ; 0                     ; 0                       ; 0                      ; 0                    ; 1              ;
++--------------------------+--------------------------+-------------------------+------------------------+--------------------------+-------------------------+-------------------------+------------------------+-----------------------+-------------------------+------------------------+----------------------+----------------+
+
+
+Encoding Type:  One-Hot
++--------------------------------------------------------------------------------------+
+; State Machine - |Waveform_Generator|config_codec:codec_config_i2c|reg_state          ;
++-----------------+----------------+----------------+-----------------+----------------+
+; Name            ; reg_state.DONE ; reg_state.HOLD ; reg_state.START ; reg_state.IDLE ;
++-----------------+----------------+----------------+-----------------+----------------+
+; reg_state.IDLE  ; 0              ; 0              ; 0               ; 0              ;
+; reg_state.START ; 0              ; 0              ; 1               ; 1              ;
+; reg_state.HOLD  ; 0              ; 1              ; 0               ; 1              ;
+; reg_state.DONE  ; 1              ; 0              ; 0               ; 1              ;
++-----------------+----------------+----------------+-----------------+----------------+
+
+
+Encoding Type:  One-Hot
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |Waveform_Generator|config_codec:codec_config_i2c|i2c_trans:i2c|reg_state                                                                                                                                                  ;
++--------------------+-------------------+------------------+-------------------+--------------------+-------------------+------------------+-------------------+------------------+--------------------+-------------------+----------------+
+; Name               ; reg_state.STOP_II ; reg_state.STOP_I ; reg_state.DATA_IV ; reg_state.DATA_III ; reg_state.DATA_II ; reg_state.DATA_I ; reg_state.HOLD_II ; reg_state.HOLD_I ; reg_state.START_II ; reg_state.START_I ; reg_state.IDLE ;
++--------------------+-------------------+------------------+-------------------+--------------------+-------------------+------------------+-------------------+------------------+--------------------+-------------------+----------------+
+; reg_state.IDLE     ; 0                 ; 0                ; 0                 ; 0                  ; 0                 ; 0                ; 0                 ; 0                ; 0                  ; 0                 ; 0              ;
+; reg_state.START_I  ; 0                 ; 0                ; 0                 ; 0                  ; 0                 ; 0                ; 0                 ; 0                ; 0                  ; 1                 ; 1              ;
+; reg_state.START_II ; 0                 ; 0                ; 0                 ; 0                  ; 0                 ; 0                ; 0                 ; 0                ; 1                  ; 0                 ; 1              ;
+; reg_state.HOLD_I   ; 0                 ; 0                ; 0                 ; 0                  ; 0                 ; 0                ; 0                 ; 1                ; 0                  ; 0                 ; 1              ;
+; reg_state.HOLD_II  ; 0                 ; 0                ; 0                 ; 0                  ; 0                 ; 0                ; 1                 ; 0                ; 0                  ; 0                 ; 1              ;
+; reg_state.DATA_I   ; 0                 ; 0                ; 0                 ; 0                  ; 0                 ; 1                ; 0                 ; 0                ; 0                  ; 0                 ; 1              ;
+; reg_state.DATA_II  ; 0                 ; 0                ; 0                 ; 0                  ; 1                 ; 0                ; 0                 ; 0                ; 0                  ; 0                 ; 1              ;
+; reg_state.DATA_III ; 0                 ; 0                ; 0                 ; 1                  ; 0                 ; 0                ; 0                 ; 0                ; 0                  ; 0                 ; 1              ;
+; reg_state.DATA_IV  ; 0                 ; 0                ; 1                 ; 0                  ; 0                 ; 0                ; 0                 ; 0                ; 0                  ; 0                 ; 1              ;
+; reg_state.STOP_I   ; 0                 ; 1                ; 0                 ; 0                  ; 0                 ; 0                ; 0                 ; 0                ; 0                  ; 0                 ; 1              ;
+; reg_state.STOP_II  ; 1                 ; 0                ; 0                 ; 0                  ; 0                 ; 0                ; 0                 ; 0                ; 0                  ; 0                 ; 1              ;
++--------------------+-------------------+------------------+-------------------+--------------------+-------------------+------------------+-------------------+------------------+--------------------+-------------------+----------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                                                                                                                              ;
++-----------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------+
+; Register name                                                                                                   ; Reason for Removal                                                                                                            ;
++-----------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------+
+; Top_gen_wave:control_io|CTR_step_phase:CTR_step_phase_unit|o_step[0]                                            ; Stuck at VCC due to stuck port data_in                                                                                        ;
+; Top_gen_wave:control_io|CTR_step_phase:CTR_step_phase_unit|CTR_sevenseg:SEG_UNIT|o_hex_0[0]                     ; Stuck at VCC due to stuck port data_in                                                                                        ;
+; Top_gen_wave:control_io|CTR_step_amp:CTR_step_amp_unit|o_step[0]                                                ; Stuck at VCC due to stuck port data_in                                                                                        ;
+; Top_gen_wave:control_io|CTR_step_amp:CTR_step_amp_unit|o_hex_0[0,3..6]                                          ; Stuck at VCC due to stuck port data_in                                                                                        ;
+; Top_gen_wave:control_io|CTR_step_amp:CTR_step_amp_unit|o_hex_1[0..5]                                            ; Stuck at VCC due to stuck port data_in                                                                                        ;
+; config_codec:codec_config_i2c|i2c_trans:i2c|data[8,15..17,19,20,22,25,26]                                       ; Stuck at GND due to stuck port data_in                                                                                        ;
+; Top_gen_wave:control_io|o_hex_0[0,3..6]                                                                         ; Stuck at VCC due to stuck port data_in                                                                                        ;
+; Top_gen_wave:control_io|o_hex_1[0..5]                                                                           ; Stuck at VCC due to stuck port data_in                                                                                        ;
+; Top_gen_wave:control_io|o_hex_3[0]                                                                              ; Stuck at VCC due to stuck port data_in                                                                                        ;
+; config_codec:codec_config_i2c|i2c_trans:i2c|data[0]                                                             ; Merged with config_codec:codec_config_i2c|i2c_trans:i2c|data[9]                                                               ;
+; config_codec:codec_config_i2c|i2c_trans:i2c|data[9]                                                             ; Merged with config_codec:codec_config_i2c|i2c_trans:i2c|data[18]                                                              ;
+; config_codec:codec_config_i2c|i2c_trans:i2c|data[18]                                                            ; Merged with config_codec:codec_config_i2c|i2c_trans:i2c|data[21]                                                              ;
+; config_codec:codec_config_i2c|i2c_trans:i2c|data[21]                                                            ; Merged with config_codec:codec_config_i2c|i2c_trans:i2c|data[23]                                                              ;
+; config_codec:codec_config_i2c|i2c_trans:i2c|data[23]                                                            ; Merged with config_codec:codec_config_i2c|i2c_trans:i2c|data[24]                                                              ;
+; Top_gen_wave:control_io|CTR_step_amp:CTR_step_amp_unit|BTN_detect_edge:BTN_DE_unit_1|w_n_signal                 ; Merged with Top_gen_wave:control_io|BTN_detect_edge:BTN_detect_edge_1_unit|w_n_signal                                         ;
+; Top_gen_wave:control_io|CTR_step_phase:CTR_step_phase_unit|BTN_detect_edge:BTN_DE_unit_1|w_n_signal             ; Merged with Top_gen_wave:control_io|BTN_detect_edge:BTN_detect_edge_1_unit|w_n_signal                                         ;
+; Top_gen_wave:control_io|CTR_step_amp:CTR_step_amp_unit|BTN_detect_edge:BTN_DE_unit_1|w_p_signal                 ; Merged with Top_gen_wave:control_io|BTN_detect_edge:BTN_detect_edge_1_unit|w_p_signal                                         ;
+; Top_gen_wave:control_io|CTR_step_phase:CTR_step_phase_unit|BTN_detect_edge:BTN_DE_unit_1|w_p_signal             ; Merged with Top_gen_wave:control_io|BTN_detect_edge:BTN_detect_edge_1_unit|w_p_signal                                         ;
+; Top_gen_wave:control_io|CTR_step_amp:CTR_step_amp_unit|o_hex_0[2]                                               ; Merged with Top_gen_wave:control_io|CTR_step_amp:CTR_step_amp_unit|o_hex_0[1]                                                 ;
+; Top_gen_wave:control_io|CTR_step_amp:CTR_step_amp_unit|w_mode                                                   ; Merged with Top_gen_wave:control_io|CTR_step_amp:CTR_step_amp_unit|o_hex_1[6]                                                 ;
+; Top_gen_wave:control_io|CTR_adjust_amp_noise:CTR_adjust_amp_noise_unit|BTN_detect_edge:BTN_DE_unit|w_n_signal   ; Merged with Top_gen_wave:control_io|BTN_detect_edge:BTN_detect_edge_2_unit|w_n_signal                                         ;
+; Top_gen_wave:control_io|CTR_adjust_amp_wave:CTR_adjust_amp_wave_unit|BTN_detect_edge:BTN_DE_unit|w_n_signal     ; Merged with Top_gen_wave:control_io|BTN_detect_edge:BTN_detect_edge_2_unit|w_n_signal                                         ;
+; Top_gen_wave:control_io|CTR_adjust_amp_noise:CTR_adjust_amp_noise_unit|BTN_detect_edge:BTN_DE_unit|w_p_signal   ; Merged with Top_gen_wave:control_io|BTN_detect_edge:BTN_detect_edge_2_unit|w_p_signal                                         ;
+; Top_gen_wave:control_io|CTR_adjust_amp_wave:CTR_adjust_amp_wave_unit|BTN_detect_edge:BTN_DE_unit|w_p_signal     ; Merged with Top_gen_wave:control_io|BTN_detect_edge:BTN_detect_edge_2_unit|w_p_signal                                         ;
+; Top_gen_wave:control_io|CTR_step_phase:CTR_step_phase_unit|CTR_sevenseg:SEG_UNIT|o_hex_0[2..5]                  ; Merged with Top_gen_wave:control_io|CTR_step_phase:CTR_step_phase_unit|CTR_sevenseg:SEG_UNIT|o_hex_0[1]                       ;
+; Top_gen_wave:control_io|CTR_step_phase:CTR_step_phase_unit|BTN_detect_edge:BTN_DE_unit|w_n_signal               ; Merged with Top_gen_wave:control_io|CTR_step_amp:CTR_step_amp_unit|BTN_detect_edge:BTN_DE_unit|w_n_signal                     ;
+; Top_gen_wave:control_io|CTR_step_phase:CTR_step_phase_unit|BTN_detect_edge:BTN_DE_unit|w_p_signal               ; Merged with Top_gen_wave:control_io|CTR_step_amp:CTR_step_amp_unit|BTN_detect_edge:BTN_DE_unit|w_p_signal                     ;
+; config_codec:codec_config_i2c|i2c_trans:i2c|data[4,6,7]                                                         ; Merged with config_codec:codec_config_i2c|i2c_trans:i2c|data[10]                                                              ;
+; Top_gen_wave:control_io|CTR_step_amp:CTR_step_amp_unit|o_step[2,3]                                              ; Merged with Top_gen_wave:control_io|CTR_step_amp:CTR_step_amp_unit|o_step[1]                                                  ;
+; Top_gen_wave:control_io|CTR_adjust_phase_wave:CTR_adjust_phase_wave_unit|BTN_detect_edge:BTN_DE_unit|w_n_signal ; Merged with Top_gen_wave:control_io|CTR_adjust_phase_noise:CTR_adjust_phase_noise_unit|BTN_detect_edge:BTN_DE_unit|w_n_signal ;
+; Top_gen_wave:control_io|CTR_adjust_phase_wave:CTR_adjust_phase_wave_unit|BTN_detect_edge:BTN_DE_unit|w_p_signal ; Merged with Top_gen_wave:control_io|CTR_adjust_phase_noise:CTR_adjust_phase_noise_unit|BTN_detect_edge:BTN_DE_unit|w_p_signal ;
+; Top_gen_wave:control_io|CTR_step_phase:CTR_step_phase_unit|o_step[7]                                            ; Merged with Top_gen_wave:control_io|CTR_step_phase:CTR_step_phase_unit|o_step[6]                                              ;
+; Top_gen_wave:control_io|CTR_step_phase:CTR_step_phase_unit|o_step[5]                                            ; Merged with Top_gen_wave:control_io|CTR_step_phase:CTR_step_phase_unit|o_step[4]                                              ;
+; Top_gen_wave:control_io|CTR_step_phase:CTR_step_phase_unit|o_step[3]                                            ; Merged with Top_gen_wave:control_io|CTR_step_phase:CTR_step_phase_unit|o_step[2]                                              ;
+; Top_gen_wave:control_io|CTR_step_phase:CTR_step_phase_unit|CTR_sevenseg:SEG_UNIT|o_hex_1[2]                     ; Stuck at GND due to stuck port data_in                                                                                        ;
+; codec_data:codec_trans_rec|reg_state~4                                                                          ; Lost fanout                                                                                                                   ;
+; codec_data:codec_trans_rec|reg_state~5                                                                          ; Lost fanout                                                                                                                   ;
+; codec_data:codec_trans_rec|reg_state~6                                                                          ; Lost fanout                                                                                                                   ;
+; codec_data:codec_trans_rec|reg_state~7                                                                          ; Lost fanout                                                                                                                   ;
+; config_codec:codec_config_i2c|reg_state~8                                                                       ; Lost fanout                                                                                                                   ;
+; config_codec:codec_config_i2c|reg_state~9                                                                       ; Lost fanout                                                                                                                   ;
+; config_codec:codec_config_i2c|i2c_trans:i2c|reg_state~14                                                        ; Lost fanout                                                                                                                   ;
+; config_codec:codec_config_i2c|i2c_trans:i2c|reg_state~15                                                        ; Lost fanout                                                                                                                   ;
+; config_codec:codec_config_i2c|i2c_trans:i2c|reg_state~16                                                        ; Lost fanout                                                                                                                   ;
+; config_codec:codec_config_i2c|i2c_trans:i2c|reg_state~17                                                        ; Lost fanout                                                                                                                   ;
+; Top_gen_wave:control_io|CTR_step_phase:CTR_step_phase_unit|CTR_sevenseg:SEG_UNIT|o_hex_2[4,5]                   ; Merged with Top_gen_wave:control_io|CTR_step_phase:CTR_step_phase_unit|CTR_sevenseg:SEG_UNIT|o_hex_2[3]                       ;
+; Top_gen_wave:control_io|CTR_step_phase:CTR_step_phase_unit|w_mode[0]                                            ; Merged with Top_gen_wave:control_io|CTR_step_phase:CTR_step_phase_unit|CTR_sevenseg:SEG_UNIT|o_hex_0[6]                       ;
+; Total Number of Removed Registers = 80                                                                          ;                                                                                                                               ;
++-----------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                                      ;
++---------------------------------------------------------------------------------------------+---------------------------+----------------------------------------+
+; Register name                                                                               ; Reason for Removal        ; Registers Removed due to This Register ;
++---------------------------------------------------------------------------------------------+---------------------------+----------------------------------------+
+; Top_gen_wave:control_io|CTR_step_phase:CTR_step_phase_unit|CTR_sevenseg:SEG_UNIT|o_hex_0[0] ; Stuck at VCC              ; Top_gen_wave:control_io|o_hex_3[0]     ;
+;                                                                                             ; due to stuck port data_in ;                                        ;
+; Top_gen_wave:control_io|CTR_step_amp:CTR_step_amp_unit|o_hex_0[6]                           ; Stuck at VCC              ; Top_gen_wave:control_io|o_hex_0[6]     ;
+;                                                                                             ; due to stuck port data_in ;                                        ;
+; Top_gen_wave:control_io|CTR_step_amp:CTR_step_amp_unit|o_hex_0[5]                           ; Stuck at VCC              ; Top_gen_wave:control_io|o_hex_0[5]     ;
+;                                                                                             ; due to stuck port data_in ;                                        ;
+; Top_gen_wave:control_io|CTR_step_amp:CTR_step_amp_unit|o_hex_0[4]                           ; Stuck at VCC              ; Top_gen_wave:control_io|o_hex_0[4]     ;
+;                                                                                             ; due to stuck port data_in ;                                        ;
+; Top_gen_wave:control_io|CTR_step_amp:CTR_step_amp_unit|o_hex_0[3]                           ; Stuck at VCC              ; Top_gen_wave:control_io|o_hex_0[3]     ;
+;                                                                                             ; due to stuck port data_in ;                                        ;
+; Top_gen_wave:control_io|CTR_step_amp:CTR_step_amp_unit|o_hex_0[0]                           ; Stuck at VCC              ; Top_gen_wave:control_io|o_hex_0[0]     ;
+;                                                                                             ; due to stuck port data_in ;                                        ;
+; Top_gen_wave:control_io|CTR_step_amp:CTR_step_amp_unit|o_hex_1[5]                           ; Stuck at VCC              ; Top_gen_wave:control_io|o_hex_1[5]     ;
+;                                                                                             ; due to stuck port data_in ;                                        ;
+; Top_gen_wave:control_io|CTR_step_amp:CTR_step_amp_unit|o_hex_1[4]                           ; Stuck at VCC              ; Top_gen_wave:control_io|o_hex_1[4]     ;
+;                                                                                             ; due to stuck port data_in ;                                        ;
+; Top_gen_wave:control_io|CTR_step_amp:CTR_step_amp_unit|o_hex_1[3]                           ; Stuck at VCC              ; Top_gen_wave:control_io|o_hex_1[3]     ;
+;                                                                                             ; due to stuck port data_in ;                                        ;
+; Top_gen_wave:control_io|CTR_step_amp:CTR_step_amp_unit|o_hex_1[2]                           ; Stuck at VCC              ; Top_gen_wave:control_io|o_hex_1[2]     ;
+;                                                                                             ; due to stuck port data_in ;                                        ;
+; Top_gen_wave:control_io|CTR_step_amp:CTR_step_amp_unit|o_hex_1[1]                           ; Stuck at VCC              ; Top_gen_wave:control_io|o_hex_1[1]     ;
+;                                                                                             ; due to stuck port data_in ;                                        ;
+; Top_gen_wave:control_io|CTR_step_amp:CTR_step_amp_unit|o_hex_1[0]                           ; Stuck at VCC              ; Top_gen_wave:control_io|o_hex_1[0]     ;
+;                                                                                             ; due to stuck port data_in ;                                        ;
++---------------------------------------------------------------------------------------------+---------------------------+----------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 289   ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 40    ;
+; Number of registers using Asynchronous Clear ; 263   ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 187   ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------------------------------------------------------------------------------+
+; Inverted Register Statistics                                                                          ;
++---------------------------------------------------------------------------------------------+---------+
+; Inverted Register                                                                           ; Fan out ;
++---------------------------------------------------------------------------------------------+---------+
+; Top_gen_wave:control_io|o_hex_0[1]                                                          ; 1       ;
+; Top_gen_wave:control_io|o_hex_0[2]                                                          ; 1       ;
+; Top_gen_wave:control_io|o_hex_1[6]                                                          ; 1       ;
+; Top_gen_wave:control_io|o_hex_2[0]                                                          ; 1       ;
+; Top_gen_wave:control_io|o_hex_2[1]                                                          ; 1       ;
+; Top_gen_wave:control_io|o_hex_2[2]                                                          ; 1       ;
+; Top_gen_wave:control_io|o_hex_2[3]                                                          ; 1       ;
+; Top_gen_wave:control_io|o_hex_2[4]                                                          ; 1       ;
+; Top_gen_wave:control_io|o_hex_2[5]                                                          ; 1       ;
+; Top_gen_wave:control_io|o_hex_2[6]                                                          ; 1       ;
+; Top_gen_wave:control_io|o_hex_4[0]                                                          ; 1       ;
+; Top_gen_wave:control_io|o_hex_4[1]                                                          ; 1       ;
+; Top_gen_wave:control_io|o_hex_4[2]                                                          ; 1       ;
+; Top_gen_wave:control_io|o_hex_4[3]                                                          ; 1       ;
+; Top_gen_wave:control_io|o_hex_4[4]                                                          ; 1       ;
+; Top_gen_wave:control_io|o_hex_4[5]                                                          ; 1       ;
+; Top_gen_wave:control_io|o_hex_4[6]                                                          ; 1       ;
+; Top_gen_wave:control_io|o_hex_5[0]                                                          ; 1       ;
+; Top_gen_wave:control_io|o_hex_5[1]                                                          ; 1       ;
+; Top_gen_wave:control_io|o_hex_5[2]                                                          ; 1       ;
+; Top_gen_wave:control_io|o_hex_5[3]                                                          ; 1       ;
+; Top_gen_wave:control_io|o_hex_5[4]                                                          ; 1       ;
+; Top_gen_wave:control_io|o_hex_5[5]                                                          ; 1       ;
+; Top_gen_wave:control_io|o_hex_5[6]                                                          ; 1       ;
+; Top_gen_wave:control_io|o_hex_3[1]                                                          ; 1       ;
+; Top_gen_wave:control_io|o_hex_3[2]                                                          ; 1       ;
+; Top_gen_wave:control_io|o_hex_3[3]                                                          ; 1       ;
+; Top_gen_wave:control_io|o_hex_3[4]                                                          ; 1       ;
+; Top_gen_wave:control_io|o_hex_3[5]                                                          ; 1       ;
+; Top_gen_wave:control_io|o_hex_3[6]                                                          ; 1       ;
+; codec_data:codec_trans_rec|o_bclk                                                           ; 1       ;
+; codec_data:codec_trans_rec|o_adclrck                                                        ; 2       ;
+; config_codec:codec_config_i2c|i2c_trans:i2c|reg_scl                                         ; 1       ;
+; Top_gen_wave:control_io|CTR_step_amp:CTR_step_amp_unit|o_hex_0[1]                           ; 2       ;
+; Top_gen_wave:control_io|CTR_step_amp:CTR_step_amp_unit|o_hex_1[6]                           ; 3       ;
+; Top_gen_wave:control_io|CTR_adjust_amp_wave:CTR_adjust_amp_wave_unit|o_hex_2[0]             ; 1       ;
+; Top_gen_wave:control_io|CTR_adjust_amp_noise:CTR_adjust_amp_noise_unit|o_hex_2[0]           ; 1       ;
+; Top_gen_wave:control_io|CTR_adjust_amp_wave:CTR_adjust_amp_wave_unit|o_hex_2[1]             ; 1       ;
+; Top_gen_wave:control_io|CTR_adjust_amp_noise:CTR_adjust_amp_noise_unit|o_hex_2[1]           ; 1       ;
+; Top_gen_wave:control_io|CTR_adjust_amp_wave:CTR_adjust_amp_wave_unit|o_hex_2[2]             ; 1       ;
+; Top_gen_wave:control_io|CTR_adjust_amp_noise:CTR_adjust_amp_noise_unit|o_hex_2[2]           ; 1       ;
+; Top_gen_wave:control_io|CTR_adjust_amp_wave:CTR_adjust_amp_wave_unit|o_hex_2[3]             ; 1       ;
+; Top_gen_wave:control_io|CTR_adjust_amp_noise:CTR_adjust_amp_noise_unit|o_hex_2[3]           ; 1       ;
+; Top_gen_wave:control_io|CTR_adjust_amp_wave:CTR_adjust_amp_wave_unit|o_hex_2[4]             ; 1       ;
+; Top_gen_wave:control_io|CTR_adjust_amp_noise:CTR_adjust_amp_noise_unit|o_hex_2[4]           ; 1       ;
+; Top_gen_wave:control_io|CTR_adjust_amp_wave:CTR_adjust_amp_wave_unit|o_hex_2[5]             ; 1       ;
+; Top_gen_wave:control_io|CTR_adjust_amp_noise:CTR_adjust_amp_noise_unit|o_hex_2[5]           ; 1       ;
+; Top_gen_wave:control_io|CTR_adjust_amp_wave:CTR_adjust_amp_wave_unit|o_hex_2[6]             ; 1       ;
+; Top_gen_wave:control_io|CTR_adjust_amp_noise:CTR_adjust_amp_noise_unit|o_hex_2[6]           ; 1       ;
+; Top_gen_wave:control_io|CTR_step_phase:CTR_step_phase_unit|CTR_sevenseg:SEG_UNIT|o_hex_1[0] ; 1       ;
+; Top_gen_wave:control_io|CTR_step_phase:CTR_step_phase_unit|CTR_sevenseg:SEG_UNIT|o_hex_2[0] ; 1       ;
+; Top_gen_wave:control_io|CTR_adjust_amp_wave:CTR_adjust_amp_wave_unit|o_gain_wave[2]         ; 10      ;
+; Top_gen_wave:control_io|CTR_adjust_amp_noise:CTR_adjust_amp_noise_unit|o_gain_wave[0]       ; 12      ;
+; config_codec:codec_config_i2c|i2c_trans:i2c|reg_sda                                         ; 1       ;
+; wave_gen:wave_gen|lfsr:white_noise|p_noise[0]                                               ; 4       ;
+; Total number of inverted registers = 55                                                     ;         ;
++---------------------------------------------------------------------------------------------+---------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                               ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------+
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |Waveform_Generator|config_codec:codec_config_i2c|i2c_trans:i2c|reg_counter[4] ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |Waveform_Generator|codec_data:codec_trans_rec|reg_index[4]                    ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |Waveform_Generator|Top_gen_wave:control_io|o_hex_2[0]                         ;
+; 8:1                ; 5 bits    ; 25 LEs        ; 20 LEs               ; 5 LEs                  ; No         ; |Waveform_Generator|wave_gen:wave_gen|Mux1                                     ;
+; 8:1                ; 7 bits    ; 35 LEs        ; 28 LEs               ; 7 LEs                  ; No         ; |Waveform_Generator|wave_gen:wave_gen|Mux16                                    ;
+; 7:1                ; 3 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |Waveform_Generator|wave_gen:wave_gen|Mux13                                    ;
+; 8:1                ; 9 bits    ; 45 LEs        ; 45 LEs               ; 0 LEs                  ; No         ; |Waveform_Generator|wave_gen:wave_gen|Mux4                                     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: config_codec:codec_config_i2c ;
++----------------+-------+---------------------------------------------------+
+; Parameter Name ; Value ; Type                                              ;
++----------------+-------+---------------------------------------------------+
+; DEPTH          ; 11    ; Signed Integer                                    ;
++----------------+-------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top_gen_wave:control_io ;
++----------------+-------+---------------------------------------------+
+; Parameter Name ; Value ; Type                                        ;
++----------------+-------+---------------------------------------------+
+; SIZE_BTN       ; 4     ; Signed Integer                              ;
+; SIZE_SW        ; 10    ; Signed Integer                              ;
+; SIZE_LEDR      ; 10    ; Signed Integer                              ;
+; SIZE_LEDG      ; 4     ; Signed Integer                              ;
+; SIZE_WIDTH     ; 24    ; Signed Integer                              ;
+; SIZE_DEPTH     ; 1024  ; Signed Integer                              ;
+; SIZE_SEG       ; 7     ; Signed Integer                              ;
+; NUM_MODE_WAVE  ; 3     ; Signed Integer                              ;
+; NUM_DUTY_CYCLE ; 3     ; Signed Integer                              ;
+; SIZE_GAIN_WAVE ; 3     ; Signed Integer                              ;
++----------------+-------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top_gen_wave:control_io|CTR_step_amp:CTR_step_amp_unit ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; NUM_GAIN_STEP  ; 3     ; Signed Integer                                                             ;
+; NUM_SEG        ; 7     ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top_gen_wave:control_io|CTR_adjust_amp_wave:CTR_adjust_amp_wave_unit ;
++----------------+-------+------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                     ;
++----------------+-------+------------------------------------------------------------------------------------------+
+; NUM_GAIN_STEP  ; 3     ; Signed Integer                                                                           ;
+; NUM_SEG        ; 7     ; Signed Integer                                                                           ;
++----------------+-------+------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top_gen_wave:control_io|CTR_adjust_amp_noise:CTR_adjust_amp_noise_unit ;
++----------------+-------+--------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                       ;
++----------------+-------+--------------------------------------------------------------------------------------------+
+; NUM_GAIN_STEP  ; 3     ; Signed Integer                                                                             ;
+; NUM_SEG        ; 7     ; Signed Integer                                                                             ;
++----------------+-------+--------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top_gen_wave:control_io|CTR_step_phase:CTR_step_phase_unit ;
++----------------+-------+--------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                           ;
++----------------+-------+--------------------------------------------------------------------------------+
+; SIZE_VALUE     ; 7     ; Signed Integer                                                                 ;
+; SIZE_SEG       ; 7     ; Signed Integer                                                                 ;
++----------------+-------+--------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top_gen_wave:control_io|CTR_step_phase:CTR_step_phase_unit|CTR_sevenseg:SEG_UNIT ;
++----------------+-------+------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                 ;
++----------------+-------+------------------------------------------------------------------------------------------------------+
+; NUM_VALUE      ; 3     ; Signed Integer                                                                                       ;
+; NUM_SEG        ; 7     ; Signed Integer                                                                                       ;
++----------------+-------+------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top_gen_wave:control_io|CTR_adjust_phase_wave:CTR_adjust_phase_wave_unit ;
++----------------+-------+----------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------------+
+; SIZE_VALUE     ; 7     ; Signed Integer                                                                               ;
+; SIZE_SEG       ; 7     ; Signed Integer                                                                               ;
+; SIZE_PHASE     ; 10    ; Signed Integer                                                                               ;
++----------------+-------+----------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top_gen_wave:control_io|CTR_adjust_phase_noise:CTR_adjust_phase_noise_unit ;
++----------------+-------+------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                           ;
++----------------+-------+------------------------------------------------------------------------------------------------+
+; SIZE_VALUE     ; 7     ; Signed Integer                                                                                 ;
+; SIZE_SEG       ; 7     ; Signed Integer                                                                                 ;
+; SIZE_PHASE     ; 10    ; Signed Integer                                                                                 ;
++----------------+-------+------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: wave_gen:wave_gen ;
++----------------+-------+---------------------------------------+
+; Parameter Name ; Value ; Type                                  ;
++----------------+-------+---------------------------------------+
+; WIDTH          ; 24    ; Signed Integer                        ;
+; DEPTH          ; 1024  ; Signed Integer                        ;
++----------------+-------+---------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: wave_gen:wave_gen|phase_accummulator:phase_acummulator_for_wave ;
++----------------+-------+-------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                ;
++----------------+-------+-------------------------------------------------------------------------------------+
+; DEPTH          ; 1024  ; Signed Integer                                                                      ;
+; BEHAVIOR       ; 1     ; Signed Integer                                                                      ;
++----------------+-------+-------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: wave_gen:wave_gen|wave_sin:sine ;
++----------------+----------------+--------------------------------------------+
+; Parameter Name ; Value          ; Type                                       ;
++----------------+----------------+--------------------------------------------+
+; WIDTH          ; 24             ; Signed Integer                             ;
+; DEPTH          ; 1024           ; Signed Integer                             ;
+; HEX_LINK       ; ./sin_wave.txt ; String                                     ;
+; BEHAVIOR       ; 0              ; Signed Integer                             ;
++----------------+----------------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: wave_gen:wave_gen|wave_sin:sine|adder_flex_no_carry:mirror_sine ;
++----------------+-------+-------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                ;
++----------------+-------+-------------------------------------------------------------------------------------+
+; WIDTH          ; 8     ; Signed Integer                                                                      ;
++----------------+-------+-------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: wave_gen:wave_gen|wave_sin:sine|adder_flex_no_carry:two_compiment ;
++----------------+-------+---------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------------+
+; WIDTH          ; 24    ; Signed Integer                                                                        ;
++----------------+-------+---------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: wave_gen:wave_gen|wave_sin:sine|single_port_ram:sine_rom ;
++----------------+----------------+---------------------------------------------------------------------+
+; Parameter Name ; Value          ; Type                                                                ;
++----------------+----------------+---------------------------------------------------------------------+
+; DATA_WIDTH     ; 24             ; Signed Integer                                                      ;
+; ADDR_WIDTH     ; 8              ; Signed Integer                                                      ;
+; HEX_LINK       ; ./sin_wave.txt ; String                                                              ;
++----------------+----------------+---------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: wave_gen:wave_gen|wave_triangle:triangle ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; WIDTH          ; 24    ; Signed Integer                                               ;
+; DEPTH          ; 1024  ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: wave_gen:wave_gen|wave_triangle:triangle|adder_flex_no_carry:mirror_sawtooth ;
++----------------+-------+--------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                             ;
++----------------+-------+--------------------------------------------------------------------------------------------------+
+; WIDTH          ; 9     ; Signed Integer                                                                                   ;
++----------------+-------+--------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: wave_gen:wave_gen|wave_square:square ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; WIDTH          ; 24    ; Signed Integer                                           ;
+; DEPTH          ; 1024  ; Signed Integer                                           ;
+; BEHAVIOR       ; 0     ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: wave_gen:wave_gen|wave_square:square|compare_great_than:duty_90_t ;
++----------------+-------+---------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------------+
+; WIDTH          ; 10    ; Signed Integer                                                                        ;
++----------------+-------+---------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: wave_gen:wave_gen|wave_square:square|compare_great_than:duty_80_t ;
++----------------+-------+---------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------------+
+; WIDTH          ; 10    ; Signed Integer                                                                        ;
++----------------+-------+---------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: wave_gen:wave_gen|wave_square:square|compare_great_than:duty_66_t ;
++----------------+-------+---------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------------+
+; WIDTH          ; 10    ; Signed Integer                                                                        ;
++----------------+-------+---------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: wave_gen:wave_gen|wave_ecg:ecg ;
++----------------+----------------+-------------------------------------------+
+; Parameter Name ; Value          ; Type                                      ;
++----------------+----------------+-------------------------------------------+
+; WIDTH          ; 24             ; Signed Integer                            ;
+; DEPTH          ; 1024           ; Signed Integer                            ;
+; HEX_LINK       ; ./ecg_wave.txt ; String                                    ;
++----------------+----------------+-------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: wave_gen:wave_gen|wave_ecg:ecg|single_port_ram:ecg_rom ;
++----------------+----------------+-------------------------------------------------------------------+
+; Parameter Name ; Value          ; Type                                                              ;
++----------------+----------------+-------------------------------------------------------------------+
+; DATA_WIDTH     ; 24             ; Signed Integer                                                    ;
+; ADDR_WIDTH     ; 10             ; Signed Integer                                                    ;
+; HEX_LINK       ; ./ecg_wave.txt ; String                                                            ;
++----------------+----------------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: wave_gen:wave_gen|lfsr:white_noise ;
++----------------+-------+--------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                   ;
++----------------+-------+--------------------------------------------------------+
+; LFSR_WIDTH     ; 24    ; Signed Integer                                         ;
++----------------+-------+--------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: wave_gen:wave_gen|phase_accummulator:phase_acummulator_for_sin_noise ;
++----------------+-------+------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                     ;
++----------------+-------+------------------------------------------------------------------------------------------+
+; DEPTH          ; 1024  ; Signed Integer                                                                           ;
+; BEHAVIOR       ; 1     ; Signed Integer                                                                           ;
++----------------+-------+------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: wave_gen:wave_gen|wave_sin:sine_noise ;
++----------------+----------------+--------------------------------------------------+
+; Parameter Name ; Value          ; Type                                             ;
++----------------+----------------+--------------------------------------------------+
+; WIDTH          ; 24             ; Signed Integer                                   ;
+; DEPTH          ; 1024           ; Signed Integer                                   ;
+; HEX_LINK       ; ./sin_wave.txt ; String                                           ;
+; BEHAVIOR       ; 0              ; Signed Integer                                   ;
++----------------+----------------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: wave_gen:wave_gen|wave_sin:sine_noise|adder_flex_no_carry:mirror_sine ;
++----------------+-------+-------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                      ;
++----------------+-------+-------------------------------------------------------------------------------------------+
+; WIDTH          ; 8     ; Signed Integer                                                                            ;
++----------------+-------+-------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: wave_gen:wave_gen|wave_sin:sine_noise|adder_flex_no_carry:two_compiment ;
++----------------+-------+---------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                        ;
++----------------+-------+---------------------------------------------------------------------------------------------+
+; WIDTH          ; 24    ; Signed Integer                                                                              ;
++----------------+-------+---------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: wave_gen:wave_gen|wave_sin:sine_noise|single_port_ram:sine_rom ;
++----------------+----------------+---------------------------------------------------------------------------+
+; Parameter Name ; Value          ; Type                                                                      ;
++----------------+----------------+---------------------------------------------------------------------------+
+; DATA_WIDTH     ; 24             ; Signed Integer                                                            ;
+; ADDR_WIDTH     ; 8              ; Signed Integer                                                            ;
+; HEX_LINK       ; ./sin_wave.txt ; String                                                                    ;
++----------------+----------------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "wave_gen:wave_gen|wave_ecg:ecg|single_port_ram:ecg_rom" ;
++--------+-------+----------+--------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                ;
++--------+-------+----------+--------------------------------------------------------+
+; i_wren ; Input ; Info     ; Stuck at GND                                           ;
++--------+-------+----------+--------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "wave_gen:wave_gen|wave_square:square|compare_great_than:duty_66_t" ;
++-----------+-------+----------+----------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                        ;
++-----------+-------+----------+----------------------------------------------------------------+
+; i_b[1..0] ; Input ; Info     ; Stuck at GND                                                   ;
+; i_b[9]    ; Input ; Info     ; Stuck at GND                                                   ;
+; i_b[8]    ; Input ; Info     ; Stuck at VCC                                                   ;
+; i_b[7]    ; Input ; Info     ; Stuck at GND                                                   ;
+; i_b[6]    ; Input ; Info     ; Stuck at VCC                                                   ;
+; i_b[5]    ; Input ; Info     ; Stuck at GND                                                   ;
+; i_b[4]    ; Input ; Info     ; Stuck at VCC                                                   ;
+; i_b[3]    ; Input ; Info     ; Stuck at GND                                                   ;
+; i_b[2]    ; Input ; Info     ; Stuck at VCC                                                   ;
++-----------+-------+----------+----------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "wave_gen:wave_gen|wave_square:square|compare_great_than:duty_80_t" ;
++-----------+-------+----------+----------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                        ;
++-----------+-------+----------+----------------------------------------------------------------+
+; i_b[7..6] ; Input ; Info     ; Stuck at VCC                                                   ;
+; i_b[1..0] ; Input ; Info     ; Stuck at VCC                                                   ;
+; i_b[9..8] ; Input ; Info     ; Stuck at GND                                                   ;
+; i_b[5..4] ; Input ; Info     ; Stuck at GND                                                   ;
+; i_b[3]    ; Input ; Info     ; Stuck at VCC                                                   ;
+; i_b[2]    ; Input ; Info     ; Stuck at GND                                                   ;
++-----------+-------+----------+----------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "wave_gen:wave_gen|wave_square:square|compare_great_than:duty_90_t" ;
++-----------+-------+----------+----------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                        ;
++-----------+-------+----------+----------------------------------------------------------------+
+; i_b[6..5] ; Input ; Info     ; Stuck at VCC                                                   ;
+; i_b[9..7] ; Input ; Info     ; Stuck at GND                                                   ;
+; i_b[4..3] ; Input ; Info     ; Stuck at GND                                                   ;
+; i_b[2]    ; Input ; Info     ; Stuck at VCC                                                   ;
+; i_b[1]    ; Input ; Info     ; Stuck at GND                                                   ;
+; i_b[0]    ; Input ; Info     ; Stuck at VCC                                                   ;
++-----------+-------+----------+----------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "wave_gen:wave_gen|wave_triangle:triangle|adder_flex_no_carry:mirror_sawtooth" ;
++--------+-------+----------+------------------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                                      ;
++--------+-------+----------+------------------------------------------------------------------------------+
+; i_a    ; Input ; Info     ; Stuck at VCC                                                                 ;
+; i_b[8] ; Input ; Info     ; Stuck at VCC                                                                 ;
+; i_cin  ; Input ; Info     ; Stuck at VCC                                                                 ;
++--------+-------+----------+------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "wave_gen:wave_gen|wave_sin:sine|single_port_ram:sine_rom" ;
++--------+-------+----------+----------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                  ;
++--------+-------+----------+----------------------------------------------------------+
+; i_wren ; Input ; Info     ; Stuck at GND                                             ;
++--------+-------+----------+----------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "wave_gen:wave_gen|wave_sin:sine|adder_flex_no_carry:two_compiment" ;
++------------+-------+----------+---------------------------------------------------------------+
+; Port       ; Type  ; Severity ; Details                                                       ;
++------------+-------+----------+---------------------------------------------------------------+
+; i_b[23..1] ; Input ; Info     ; Stuck at GND                                                  ;
+; i_cin      ; Input ; Info     ; Stuck at GND                                                  ;
++------------+-------+----------+---------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "wave_gen:wave_gen|wave_sin:sine|adder_flex_no_carry:mirror_sine" ;
++-------+-------+----------+------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                          ;
++-------+-------+----------+------------------------------------------------------------------+
+; i_a   ; Input ; Info     ; Stuck at VCC                                                     ;
+; i_cin ; Input ; Info     ; Stuck at VCC                                                     ;
++-------+-------+----------+------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Top_gen_wave:control_io|CTR_adjust_phase_noise:CTR_adjust_phase_noise_unit|BTN_detect_edge:BTN_DE_unit" ;
++------------+-------+----------+----------------------------------------------------------------------------------------------------+
+; Port       ; Type  ; Severity ; Details                                                                                            ;
++------------+-------+----------+----------------------------------------------------------------------------------------------------+
+; i_pos_edge ; Input ; Info     ; Stuck at GND                                                                                       ;
++------------+-------+----------+----------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Top_gen_wave:control_io|CTR_adjust_phase_wave:CTR_adjust_phase_wave_unit|BTN_detect_edge:BTN_DE_unit" ;
++------------+-------+----------+--------------------------------------------------------------------------------------------------+
+; Port       ; Type  ; Severity ; Details                                                                                          ;
++------------+-------+----------+--------------------------------------------------------------------------------------------------+
+; i_pos_edge ; Input ; Info     ; Stuck at GND                                                                                     ;
++------------+-------+----------+--------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Top_gen_wave:control_io|CTR_step_phase:CTR_step_phase_unit|CTR_sevenseg:SEG_UNIT|seven_seg_anode_common:HEX_1_unit" ;
++--------+-------+----------+--------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                                                                            ;
++--------+-------+----------+--------------------------------------------------------------------------------------------------------------------+
+; bin[3] ; Input ; Info     ; Stuck at GND                                                                                                       ;
++--------+-------+----------+--------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Top_gen_wave:control_io|CTR_step_phase:CTR_step_phase_unit|BTN_detect_edge:BTN_DE_unit_1" ;
++------------+-------+----------+--------------------------------------------------------------------------------------+
+; Port       ; Type  ; Severity ; Details                                                                              ;
++------------+-------+----------+--------------------------------------------------------------------------------------+
+; i_pos_edge ; Input ; Info     ; Stuck at GND                                                                         ;
++------------+-------+----------+--------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Top_gen_wave:control_io|CTR_step_phase:CTR_step_phase_unit|BTN_detect_edge:BTN_DE_unit" ;
++------------+-------+----------+------------------------------------------------------------------------------------+
+; Port       ; Type  ; Severity ; Details                                                                            ;
++------------+-------+----------+------------------------------------------------------------------------------------+
+; i_pos_edge ; Input ; Info     ; Stuck at GND                                                                       ;
++------------+-------+----------+------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Top_gen_wave:control_io|CTR_adjust_amp_noise:CTR_adjust_amp_noise_unit|seven_seg_anode_common:SEVEN_SEG_Unit"                              ;
++------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                     ;
++------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------+
+; bin  ; Input ; Warning  ; Input port expression (3 bits) is smaller than the input port (4 bits) it drives.  Extra input bit(s) "bin[3..3]" will be connected to GND. ;
++------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Top_gen_wave:control_io|CTR_adjust_amp_noise:CTR_adjust_amp_noise_unit|BTN_detect_edge:BTN_DE_unit" ;
++------------+-------+----------+------------------------------------------------------------------------------------------------+
+; Port       ; Type  ; Severity ; Details                                                                                        ;
++------------+-------+----------+------------------------------------------------------------------------------------------------+
+; i_pos_edge ; Input ; Info     ; Stuck at GND                                                                                   ;
++------------+-------+----------+------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Top_gen_wave:control_io|CTR_adjust_amp_wave:CTR_adjust_amp_wave_unit|seven_seg_anode_common:SEVEN_SEG_Unit"                                ;
++------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                     ;
++------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------+
+; bin  ; Input ; Warning  ; Input port expression (3 bits) is smaller than the input port (4 bits) it drives.  Extra input bit(s) "bin[3..3]" will be connected to GND. ;
++------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Top_gen_wave:control_io|CTR_adjust_amp_wave:CTR_adjust_amp_wave_unit|BTN_detect_edge:BTN_DE_unit" ;
++------------+-------+----------+----------------------------------------------------------------------------------------------+
+; Port       ; Type  ; Severity ; Details                                                                                      ;
++------------+-------+----------+----------------------------------------------------------------------------------------------+
+; i_pos_edge ; Input ; Info     ; Stuck at GND                                                                                 ;
++------------+-------+----------+----------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Top_gen_wave:control_io|CTR_step_amp:CTR_step_amp_unit|BTN_detect_edge:BTN_DE_unit_1" ;
++------------+-------+----------+----------------------------------------------------------------------------------+
+; Port       ; Type  ; Severity ; Details                                                                          ;
++------------+-------+----------+----------------------------------------------------------------------------------+
+; i_pos_edge ; Input ; Info     ; Stuck at GND                                                                     ;
++------------+-------+----------+----------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Top_gen_wave:control_io|CTR_step_amp:CTR_step_amp_unit|BTN_detect_edge:BTN_DE_unit" ;
++------------+-------+----------+--------------------------------------------------------------------------------+
+; Port       ; Type  ; Severity ; Details                                                                        ;
++------------+-------+----------+--------------------------------------------------------------------------------+
+; i_pos_edge ; Input ; Info     ; Stuck at GND                                                                   ;
++------------+-------+----------+--------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Top_gen_wave:control_io|BTN_detect_edge:BTN_detect_edge_3_unit"                           ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                             ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; i_pos_edge ; Input  ; Info     ; Stuck at GND                                                                        ;
+; o_signal   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Top_gen_wave:control_io|BTN_detect_edge:BTN_detect_edge_2_unit" ;
++------------+-------+----------+------------------------------------------------------------+
+; Port       ; Type  ; Severity ; Details                                                    ;
++------------+-------+----------+------------------------------------------------------------+
+; i_pos_edge ; Input ; Info     ; Stuck at GND                                               ;
++------------+-------+----------+------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Top_gen_wave:control_io|BTN_detect_edge:BTN_detect_edge_1_unit" ;
++------------+-------+----------+------------------------------------------------------------+
+; Port       ; Type  ; Severity ; Details                                                    ;
++------------+-------+----------+------------------------------------------------------------+
+; i_pos_edge ; Input ; Info     ; Stuck at GND                                               ;
++------------+-------+----------+------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Top_gen_wave:control_io|BTN_detect_edge:BTN_detect_edge_0_unit"                           ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                             ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; i_pos_edge ; Input  ; Info     ; Stuck at GND                                                                        ;
+; o_signal   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "codec_data:codec_trans_rec"                                                              ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; o_s2p_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------+
+; Port Connectivity Checks: "config_codec:codec_config_i2c|i2c_trans:i2c" ;
++--------------+-------+----------+---------------------------------------+
+; Port         ; Type  ; Severity ; Details                               ;
++--------------+-------+----------+---------------------------------------+
+; i_addr[4..3] ; Input ; Info     ; Stuck at VCC                          ;
+; i_addr[6..5] ; Input ; Info     ; Stuck at GND                          ;
+; i_addr[2]    ; Input ; Info     ; Stuck at GND                          ;
+; i_addr[1]    ; Input ; Info     ; Stuck at VCC                          ;
+; i_addr[0]    ; Input ; Info     ; Stuck at GND                          ;
+; i_mode       ; Input ; Info     ; Stuck at GND                          ;
++--------------+-------+----------+---------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 289                         ;
+;     CLR               ; 76                          ;
+;     ENA CLR           ; 163                         ;
+;     ENA CLR SLD       ; 24                          ;
+;     SLD               ; 16                          ;
+;     plain             ; 10                          ;
+; arriav_io_obuf        ; 2                           ;
+; arriav_lcell_comb     ; 1095                        ;
+;     arith             ; 86                          ;
+;         1 data inputs ; 2                           ;
+;         2 data inputs ; 84                          ;
+;     extend            ; 41                          ;
+;         7 data inputs ; 41                          ;
+;     normal            ; 968                         ;
+;         0 data inputs ; 2                           ;
+;         1 data inputs ; 76                          ;
+;         2 data inputs ; 32                          ;
+;         3 data inputs ; 65                          ;
+;         4 data inputs ; 66                          ;
+;         5 data inputs ; 59                          ;
+;         6 data inputs ; 668                         ;
+; arriav_mac            ; 2                           ;
+; boundary_port         ; 75                          ;
+;                       ;                             ;
+; Max LUT depth         ; 8.00                        ;
+; Average LUT depth     ; 3.59                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:04     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
+    Info: Processing started: Thu Oct  2 20:48:07 2025
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Waveform_Generator -c Waveform_Generator
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file PLL1_0002.v
+    Info (12023): Found entity 1: PLL1_0002 File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/04_imple/Waveform_Generator/Top_wave_gen/PLL1_0002.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file Waveform_Generator.sv
+    Info (12023): Found entity 1: Waveform_Generator File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/04_imple/Waveform_Generator/Top_wave_gen/Waveform_Generator.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file PLL_12M.v
+    Info (12023): Found entity 1: PLL_12M File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/04_imple/Waveform_Generator/Top_wave_gen/PLL_12M.v Line: 8
+Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/CoDec/i2c_trans.sv
+    Info (12023): Found entity 1: i2c_trans File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/CoDec/i2c_trans.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/CoDec/config_codec.sv
+    Info (12023): Found entity 1: config_codec File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/CoDec/config_codec.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/CoDec/codec_data.sv
+    Info (12023): Found entity 1: codec_data File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/CoDec/codec_data.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv
+    Info (12023): Found entity 1: Top_gen_wave File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/seven_seg_anode_common.sv
+    Info (12023): Found entity 1: seven_seg_anode_common File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/seven_seg_anode_common.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/CTR_step_phase.sv
+    Info (12023): Found entity 1: CTR_step_phase File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/CTR_step_phase.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/CTR_step_amp.sv
+    Info (12023): Found entity 1: CTR_step_amp File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/CTR_step_amp.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/CTR_sevenseg.sv
+    Info (12023): Found entity 1: CTR_sevenseg File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/CTR_sevenseg.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/CTR_adjust_phase_wave.sv
+    Info (12023): Found entity 1: CTR_adjust_phase_wave File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/CTR_adjust_phase_wave.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/CTR_adjust_phase_noise.sv
+    Info (12023): Found entity 1: CTR_adjust_phase_noise File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/CTR_adjust_phase_noise.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/CTR_adjust_amp_wave.sv
+    Info (12023): Found entity 1: CTR_adjust_amp_wave File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/CTR_adjust_amp_wave.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/CTR_adjust_amp_noise.sv
+    Info (12023): Found entity 1: CTR_adjust_amp_noise File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/CTR_adjust_amp_noise.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/BTN_detect_edge.sv
+    Info (12023): Found entity 1: BTN_detect_edge File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/BTN_detect_edge.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Wave_gen/wave_triangle.sv
+    Info (12023): Found entity 1: wave_triangle File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Wave_gen/wave_triangle.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Wave_gen/wave_square.sv
+    Info (12023): Found entity 1: wave_square File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Wave_gen/wave_square.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Wave_gen/wave_sin.sv
+    Info (12023): Found entity 1: wave_sin File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Wave_gen/wave_sin.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Wave_gen/wave_sawtooth.sv
+    Info (12023): Found entity 1: wave_sawtooth File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Wave_gen/wave_sawtooth.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Wave_gen/wave_gen.sv
+    Info (12023): Found entity 1: wave_gen File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Wave_gen/wave_gen.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Wave_gen/wave_ecg.sv
+    Info (12023): Found entity 1: wave_ecg File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Wave_gen/wave_ecg.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Wave_gen/single_port_RAM.sv
+    Info (12023): Found entity 1: single_port_ram File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Wave_gen/single_port_RAM.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Wave_gen/phase_accummulator.sv
+    Info (12023): Found entity 1: phase_accummulator File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Wave_gen/phase_accummulator.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Wave_gen/lfsr.sv
+    Info (12023): Found entity 1: lfsr File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Wave_gen/lfsr.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Wave_gen/compare_great_than.sv
+    Info (12023): Found entity 1: compare_great_than File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Wave_gen/compare_great_than.sv Line: 1
+Info (12021): Found 6 design units, including 6 entities, in source file /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Wave_gen/adder_flex_no_carry.sv
+    Info (12023): Found entity 1: adder_flex_no_carry File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Wave_gen/adder_flex_no_carry.sv Line: 1
+    Info (12023): Found entity 2: fa_1 File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Wave_gen/adder_flex_no_carry.sv Line: 92
+    Info (12023): Found entity 3: cla_2 File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Wave_gen/adder_flex_no_carry.sv Line: 105
+    Info (12023): Found entity 4: cla_3 File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Wave_gen/adder_flex_no_carry.sv Line: 129
+    Info (12023): Found entity 5: cla_4 File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Wave_gen/adder_flex_no_carry.sv Line: 155
+    Info (12023): Found entity 6: cla_4_n File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Wave_gen/adder_flex_no_carry.sv Line: 184
+Info (12127): Elaborating entity "Waveform_Generator" for the top level hierarchy
+Info (12128): Elaborating entity "config_codec" for hierarchy "config_codec:codec_config_i2c" File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/04_imple/Waveform_Generator/Top_wave_gen/Waveform_Generator.sv Line: 59
+Info (12128): Elaborating entity "i2c_trans" for hierarchy "config_codec:codec_config_i2c|i2c_trans:i2c" File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/CoDec/config_codec.sv Line: 123
+Info (12128): Elaborating entity "codec_data" for hierarchy "codec_data:codec_trans_rec" File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/04_imple/Waveform_Generator/Top_wave_gen/Waveform_Generator.sv Line: 75
+Info (12128): Elaborating entity "Top_gen_wave" for hierarchy "Top_gen_wave:control_io" File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/04_imple/Waveform_Generator/Top_wave_gen/Waveform_Generator.sv Line: 112
+Warning (10034): Output port "o_ledr[9]" at Top_gen_wave.sv(28) has no driver File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 28
+Warning (10034): Output port "o_ledr[0]" at Top_gen_wave.sv(28) has no driver File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 28
+Info (12128): Elaborating entity "BTN_detect_edge" for hierarchy "Top_gen_wave:control_io|BTN_detect_edge:BTN_detect_edge_0_unit" File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 82
+Info (12128): Elaborating entity "CTR_step_amp" for hierarchy "Top_gen_wave:control_io|CTR_step_amp:CTR_step_amp_unit" File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 134
+Info (12128): Elaborating entity "CTR_adjust_amp_wave" for hierarchy "Top_gen_wave:control_io|CTR_adjust_amp_wave:CTR_adjust_amp_wave_unit" File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 146
+Info (12128): Elaborating entity "seven_seg_anode_common" for hierarchy "Top_gen_wave:control_io|CTR_adjust_amp_wave:CTR_adjust_amp_wave_unit|seven_seg_anode_common:SEVEN_SEG_Unit" File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/CTR_adjust_amp_wave.sv Line: 38
+Info (12128): Elaborating entity "CTR_adjust_amp_noise" for hierarchy "Top_gen_wave:control_io|CTR_adjust_amp_noise:CTR_adjust_amp_noise_unit" File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 158
+Info (12128): Elaborating entity "CTR_step_phase" for hierarchy "Top_gen_wave:control_io|CTR_step_phase:CTR_step_phase_unit" File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 173
+Info (12128): Elaborating entity "CTR_sevenseg" for hierarchy "Top_gen_wave:control_io|CTR_step_phase:CTR_step_phase_unit|CTR_sevenseg:SEG_UNIT" File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/CTR_step_phase.sv Line: 86
+Info (12128): Elaborating entity "CTR_adjust_phase_wave" for hierarchy "Top_gen_wave:control_io|CTR_adjust_phase_wave:CTR_adjust_phase_wave_unit" File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 185
+Warning (10230): Verilog HDL assignment warning at CTR_adjust_phase_wave.sv(43): truncated value with size 32 to match size of target (10) File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/CTR_adjust_phase_wave.sv Line: 43
+Info (12128): Elaborating entity "CTR_adjust_phase_noise" for hierarchy "Top_gen_wave:control_io|CTR_adjust_phase_noise:CTR_adjust_phase_noise_unit" File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 197
+Warning (10230): Verilog HDL assignment warning at CTR_adjust_phase_noise.sv(43): truncated value with size 32 to match size of target (10) File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/CTR_adjust_phase_noise.sv Line: 43
+Info (12128): Elaborating entity "wave_gen" for hierarchy "wave_gen:wave_gen" File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/04_imple/Waveform_Generator/Top_wave_gen/Waveform_Generator.sv Line: 130
+Info (12128): Elaborating entity "phase_accummulator" for hierarchy "wave_gen:wave_gen|phase_accummulator:phase_acummulator_for_wave" File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Wave_gen/wave_gen.sv Line: 38
+Info (12128): Elaborating entity "wave_sin" for hierarchy "wave_gen:wave_gen|wave_sin:sine" File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Wave_gen/wave_gen.sv Line: 50
+Info (12128): Elaborating entity "adder_flex_no_carry" for hierarchy "wave_gen:wave_gen|wave_sin:sine|adder_flex_no_carry:mirror_sine" File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Wave_gen/wave_sin.sv Line: 40
+Info (12128): Elaborating entity "cla_4" for hierarchy "wave_gen:wave_gen|wave_sin:sine|adder_flex_no_carry:mirror_sine|cla_4:gen_loop[0].add4" File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Wave_gen/adder_flex_no_carry.sv Line: 55
+Info (12128): Elaborating entity "cla_4_n" for hierarchy "wave_gen:wave_gen|wave_sin:sine|adder_flex_no_carry:mirror_sine|cla_4_n:add" File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Wave_gen/adder_flex_no_carry.sv Line: 85
+Info (12128): Elaborating entity "adder_flex_no_carry" for hierarchy "wave_gen:wave_gen|wave_sin:sine|adder_flex_no_carry:two_compiment" File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Wave_gen/wave_sin.sv Line: 49
+Info (12128): Elaborating entity "single_port_ram" for hierarchy "wave_gen:wave_gen|wave_sin:sine|single_port_ram:sine_rom" File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Wave_gen/wave_sin.sv Line: 63
+Warning (10850): Verilog HDL warning at single_port_RAM.sv(16): number of words (1024) in memory file does not match the number of elements in the address range [0:255] File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Wave_gen/single_port_RAM.sv Line: 16
+Info (12128): Elaborating entity "wave_triangle" for hierarchy "wave_gen:wave_gen|wave_triangle:triangle" File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Wave_gen/wave_gen.sv Line: 61
+Info (12128): Elaborating entity "adder_flex_no_carry" for hierarchy "wave_gen:wave_gen|wave_triangle:triangle|adder_flex_no_carry:mirror_sawtooth" File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Wave_gen/wave_triangle.sv Line: 22
+Info (12128): Elaborating entity "fa_1" for hierarchy "wave_gen:wave_gen|wave_triangle:triangle|adder_flex_no_carry:mirror_sawtooth|fa_1:add" File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Wave_gen/adder_flex_no_carry.sv Line: 64
+Info (12128): Elaborating entity "wave_square" for hierarchy "wave_gen:wave_gen|wave_square:square" File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Wave_gen/wave_gen.sv Line: 71
+Info (12128): Elaborating entity "compare_great_than" for hierarchy "wave_gen:wave_gen|wave_square:square|compare_great_than:duty_90_t" File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Wave_gen/wave_square.sv Line: 44
+Info (12128): Elaborating entity "wave_ecg" for hierarchy "wave_gen:wave_gen|wave_ecg:ecg" File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Wave_gen/wave_gen.sv Line: 82
+Info (12128): Elaborating entity "single_port_ram" for hierarchy "wave_gen:wave_gen|wave_ecg:ecg|single_port_ram:ecg_rom" File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Wave_gen/wave_ecg.sv Line: 22
+Info (12128): Elaborating entity "lfsr" for hierarchy "wave_gen:wave_gen|lfsr:white_noise" File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Wave_gen/wave_gen.sv Line: 91
+Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "LEDR[0]" is stuck at GND File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/04_imple/Waveform_Generator/Top_wave_gen/Waveform_Generator.sv Line: 9
+    Warning (13410): Pin "LEDR[9]" is stuck at GND File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/04_imple/Waveform_Generator/Top_wave_gen/Waveform_Generator.sv Line: 9
+    Warning (13410): Pin "HEX0[0]" is stuck at VCC File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/04_imple/Waveform_Generator/Top_wave_gen/Waveform_Generator.sv Line: 10
+    Warning (13410): Pin "HEX0[3]" is stuck at VCC File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/04_imple/Waveform_Generator/Top_wave_gen/Waveform_Generator.sv Line: 10
+    Warning (13410): Pin "HEX0[4]" is stuck at VCC File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/04_imple/Waveform_Generator/Top_wave_gen/Waveform_Generator.sv Line: 10
+    Warning (13410): Pin "HEX0[5]" is stuck at VCC File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/04_imple/Waveform_Generator/Top_wave_gen/Waveform_Generator.sv Line: 10
+    Warning (13410): Pin "HEX0[6]" is stuck at VCC File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/04_imple/Waveform_Generator/Top_wave_gen/Waveform_Generator.sv Line: 10
+    Warning (13410): Pin "HEX1[0]" is stuck at VCC File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/04_imple/Waveform_Generator/Top_wave_gen/Waveform_Generator.sv Line: 11
+    Warning (13410): Pin "HEX1[1]" is stuck at VCC File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/04_imple/Waveform_Generator/Top_wave_gen/Waveform_Generator.sv Line: 11
+    Warning (13410): Pin "HEX1[2]" is stuck at VCC File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/04_imple/Waveform_Generator/Top_wave_gen/Waveform_Generator.sv Line: 11
+    Warning (13410): Pin "HEX1[3]" is stuck at VCC File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/04_imple/Waveform_Generator/Top_wave_gen/Waveform_Generator.sv Line: 11
+    Warning (13410): Pin "HEX1[4]" is stuck at VCC File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/04_imple/Waveform_Generator/Top_wave_gen/Waveform_Generator.sv Line: 11
+    Warning (13410): Pin "HEX1[5]" is stuck at VCC File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/04_imple/Waveform_Generator/Top_wave_gen/Waveform_Generator.sv Line: 11
+    Warning (13410): Pin "HEX5[0]" is stuck at VCC File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/04_imple/Waveform_Generator/Top_wave_gen/Waveform_Generator.sv Line: 15
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 10 registers lost all their fanouts during netlist optimizations.
+Info (144001): Generated suppressed messages file /home/noname/Documents/project_tiny/DSP_Lab/LAB1/04_imple/Waveform_Generator/Top_wave_gen/output_files/Waveform_Generator.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 2 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "SW[0]" File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/04_imple/Waveform_Generator/Top_wave_gen/Waveform_Generator.sv Line: 3
+    Warning (15610): No output dependent on input pin "AUD_ADCDAT" File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/04_imple/Waveform_Generator/Top_wave_gen/Waveform_Generator.sv Line: 19
+Info (21057): Implemented 1215 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 16 input pins
+    Info (21059): Implemented 58 output pins
+    Info (21060): Implemented 1 bidirectional pins
+    Info (21061): Implemented 1138 logic cells
+    Info (21062): Implemented 2 DSP elements
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 25 warnings
+    Info: Peak virtual memory: 489 megabytes
+    Info: Processing ended: Thu Oct  2 20:48:17 2025
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:19
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in /home/noname/Documents/project_tiny/DSP_Lab/LAB1/04_imple/Waveform_Generator/Top_wave_gen/output_files/Waveform_Generator.map.smsg.
+
+

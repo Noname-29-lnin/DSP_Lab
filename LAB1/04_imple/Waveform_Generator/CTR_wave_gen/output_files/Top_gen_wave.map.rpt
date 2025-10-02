@@ -1,0 +1,776 @@
+Analysis & Synthesis report for Top_gen_wave
+Thu Oct  2 20:38:08 2025
+Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. Removed Registers Triggering Further Register Optimizations
+ 10. General Register Statistics
+ 11. Inverted Register Statistics
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 13. Parameter Settings for User Entity Instance: Top-level Entity: |Top_gen_wave
+ 14. Parameter Settings for User Entity Instance: CTR_step_amp:CTR_step_amp_unit
+ 15. Parameter Settings for User Entity Instance: CTR_adjust_amp_wave:CTR_adjust_amp_wave_unit
+ 16. Parameter Settings for User Entity Instance: CTR_adjust_amp_noise:CTR_adjust_amp_noise_unit
+ 17. Parameter Settings for User Entity Instance: CTR_step_phase:CTR_step_phase_unit
+ 18. Parameter Settings for User Entity Instance: CTR_step_phase:CTR_step_phase_unit|CTR_sevenseg:SEG_UNIT
+ 19. Parameter Settings for User Entity Instance: CTR_adjust_phase_wave:CTR_adjust_phase_wave_unit
+ 20. Parameter Settings for User Entity Instance: CTR_adjust_phase_noise:CTR_adjust_phase_noise_unit
+ 21. Port Connectivity Checks: "CTR_adjust_phase_noise:CTR_adjust_phase_noise_unit|BTN_detect_edge:BTN_DE_unit"
+ 22. Port Connectivity Checks: "CTR_adjust_phase_wave:CTR_adjust_phase_wave_unit|BTN_detect_edge:BTN_DE_unit"
+ 23. Port Connectivity Checks: "CTR_step_phase:CTR_step_phase_unit|CTR_sevenseg:SEG_UNIT|seven_seg_anode_common:HEX_1_unit"
+ 24. Port Connectivity Checks: "CTR_step_phase:CTR_step_phase_unit|BTN_detect_edge:BTN_DE_unit_1"
+ 25. Port Connectivity Checks: "CTR_step_phase:CTR_step_phase_unit|BTN_detect_edge:BTN_DE_unit"
+ 26. Port Connectivity Checks: "CTR_adjust_amp_noise:CTR_adjust_amp_noise_unit|seven_seg_anode_common:SEVEN_SEG_Unit"
+ 27. Port Connectivity Checks: "CTR_adjust_amp_noise:CTR_adjust_amp_noise_unit|BTN_detect_edge:BTN_DE_unit"
+ 28. Port Connectivity Checks: "CTR_adjust_amp_wave:CTR_adjust_amp_wave_unit|seven_seg_anode_common:SEVEN_SEG_Unit"
+ 29. Port Connectivity Checks: "CTR_adjust_amp_wave:CTR_adjust_amp_wave_unit|BTN_detect_edge:BTN_DE_unit"
+ 30. Port Connectivity Checks: "CTR_step_amp:CTR_step_amp_unit|BTN_detect_edge:BTN_DE_unit_1"
+ 31. Port Connectivity Checks: "CTR_step_amp:CTR_step_amp_unit|BTN_detect_edge:BTN_DE_unit"
+ 32. Port Connectivity Checks: "BTN_detect_edge:BTN_detect_edge_3_unit"
+ 33. Port Connectivity Checks: "BTN_detect_edge:BTN_detect_edge_2_unit"
+ 34. Port Connectivity Checks: "BTN_detect_edge:BTN_detect_edge_1_unit"
+ 35. Port Connectivity Checks: "BTN_detect_edge:BTN_detect_edge_0_unit"
+ 36. Post-Synthesis Netlist Statistics for Top Partition
+ 37. Elapsed Time Per Partition
+ 38. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2025  Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Altera and sold by Altera or its authorized distributors.  Please
+refer to the Altera Software License Subscription Agreements 
+on the Quartus Prime software download page.
+
+
+
++-----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                      ;
++---------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Thu Oct  2 20:38:08 2025           ;
+; Quartus Prime Version           ; 24.1std.0 Build 1077 03/04/2025 SC Lite Edition ;
+; Revision Name                   ; Top_gen_wave                                    ;
+; Top-level Entity Name           ; Top_gen_wave                                    ;
+; Family                          ; Cyclone V                                       ;
+; Logic utilization (in ALMs)     ; N/A                                             ;
+; Total registers                 ; 132                                             ;
+; Total pins                      ; 103                                             ;
+; Total virtual pins              ; 0                                               ;
+; Total block memory bits         ; 0                                               ;
+; Total DSP Blocks                ; 0                                               ;
+; Total HSSI RX PCSs              ; 0                                               ;
+; Total HSSI PMA RX Deserializers ; 0                                               ;
+; Total HSSI TX PCSs              ; 0                                               ;
+; Total HSSI PMA TX Serializers   ; 0                                               ;
+; Total PLLs                      ; 0                                               ;
+; Total DLLs                      ; 0                                               ;
++---------------------------------+-------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CGXFC7D6F31C6     ;                    ;
+; Top-level entity name                                                           ; Top_gen_wave       ; Top_gen_wave       ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ;   0.0%      ;
++----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                         ;
++------------------------------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path                     ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                 ; Library ;
++------------------------------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------+---------+
+; ../../../02_rtl/Top_module/Top_gen_wave.sv           ; yes             ; User SystemVerilog HDL File  ; /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv           ;         ;
+; ../../../02_rtl/Top_module/seven_seg_anode_common.sv ; yes             ; User SystemVerilog HDL File  ; /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/seven_seg_anode_common.sv ;         ;
+; ../../../02_rtl/Top_module/CTR_step_phase.sv         ; yes             ; User SystemVerilog HDL File  ; /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/CTR_step_phase.sv         ;         ;
+; ../../../02_rtl/Top_module/CTR_step_amp.sv           ; yes             ; User SystemVerilog HDL File  ; /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/CTR_step_amp.sv           ;         ;
+; ../../../02_rtl/Top_module/CTR_sevenseg.sv           ; yes             ; User SystemVerilog HDL File  ; /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/CTR_sevenseg.sv           ;         ;
+; ../../../02_rtl/Top_module/CTR_adjust_phase_wave.sv  ; yes             ; User SystemVerilog HDL File  ; /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/CTR_adjust_phase_wave.sv  ;         ;
+; ../../../02_rtl/Top_module/CTR_adjust_phase_noise.sv ; yes             ; User SystemVerilog HDL File  ; /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/CTR_adjust_phase_noise.sv ;         ;
+; ../../../02_rtl/Top_module/CTR_adjust_amp_wave.sv    ; yes             ; User SystemVerilog HDL File  ; /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/CTR_adjust_amp_wave.sv    ;         ;
+; ../../../02_rtl/Top_module/CTR_adjust_amp_noise.sv   ; yes             ; User SystemVerilog HDL File  ; /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/CTR_adjust_amp_noise.sv   ;         ;
+; ../../../02_rtl/Top_module/BTN_detect_edge.sv        ; yes             ; User SystemVerilog HDL File  ; /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/BTN_detect_edge.sv        ;         ;
++------------------------------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimate of Logic utilization (ALMs needed) ; 71          ;
+;                                             ;             ;
+; Combinational ALUT usage for logic          ; 123         ;
+;     -- 7 input functions                    ; 0           ;
+;     -- 6 input functions                    ; 14          ;
+;     -- 5 input functions                    ; 5           ;
+;     -- 4 input functions                    ; 6           ;
+;     -- <=3 input functions                  ; 98          ;
+;                                             ;             ;
+; Dedicated logic registers                   ; 132         ;
+;                                             ;             ;
+; I/O pins                                    ; 103         ;
+;                                             ;             ;
+; Total DSP Blocks                            ; 0           ;
+;                                             ;             ;
+; Maximum fan-out node                        ; i_clk~input ;
+; Maximum fan-out                             ; 132         ;
+; Total fan-out                               ; 1013        ;
+; Average fan-out                             ; 2.20        ;
++---------------------------------------------+-------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                 ;
++---------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------+------------------------+--------------+
+; Compilation Hierarchy Node                              ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                      ; Entity Name            ; Library Name ;
++---------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------+------------------------+--------------+
+; |Top_gen_wave                                           ; 123 (31)            ; 132 (38)                  ; 0                 ; 0          ; 103  ; 0            ; |Top_gen_wave                                                                                            ; Top_gen_wave           ; work         ;
+;    |BTN_detect_edge:BTN_detect_edge_1_unit|             ; 1 (1)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_gen_wave|BTN_detect_edge:BTN_detect_edge_1_unit                                                     ; BTN_detect_edge        ; work         ;
+;    |BTN_detect_edge:BTN_detect_edge_2_unit|             ; 0 (0)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_gen_wave|BTN_detect_edge:BTN_detect_edge_2_unit                                                     ; BTN_detect_edge        ; work         ;
+;    |CTR_adjust_amp_noise:CTR_adjust_amp_noise_unit|     ; 13 (6)              ; 11 (11)                   ; 0                 ; 0          ; 0    ; 0            ; |Top_gen_wave|CTR_adjust_amp_noise:CTR_adjust_amp_noise_unit                                             ; CTR_adjust_amp_noise   ; work         ;
+;       |seven_seg_anode_common:SEVEN_SEG_Unit|           ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_gen_wave|CTR_adjust_amp_noise:CTR_adjust_amp_noise_unit|seven_seg_anode_common:SEVEN_SEG_Unit       ; seven_seg_anode_common ; work         ;
+;    |CTR_adjust_amp_wave:CTR_adjust_amp_wave_unit|       ; 11 (4)              ; 11 (11)                   ; 0                 ; 0          ; 0    ; 0            ; |Top_gen_wave|CTR_adjust_amp_wave:CTR_adjust_amp_wave_unit                                               ; CTR_adjust_amp_wave    ; work         ;
+;       |seven_seg_anode_common:SEVEN_SEG_Unit|           ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_gen_wave|CTR_adjust_amp_wave:CTR_adjust_amp_wave_unit|seven_seg_anode_common:SEVEN_SEG_Unit         ; seven_seg_anode_common ; work         ;
+;    |CTR_adjust_phase_noise:CTR_adjust_phase_noise_unit| ; 23 (23)             ; 23 (21)                   ; 0                 ; 0          ; 0    ; 0            ; |Top_gen_wave|CTR_adjust_phase_noise:CTR_adjust_phase_noise_unit                                         ; CTR_adjust_phase_noise ; work         ;
+;       |BTN_detect_edge:BTN_DE_unit|                     ; 0 (0)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_gen_wave|CTR_adjust_phase_noise:CTR_adjust_phase_noise_unit|BTN_detect_edge:BTN_DE_unit             ; BTN_detect_edge        ; work         ;
+;    |CTR_adjust_phase_wave:CTR_adjust_phase_wave_unit|   ; 23 (23)             ; 21 (21)                   ; 0                 ; 0          ; 0    ; 0            ; |Top_gen_wave|CTR_adjust_phase_wave:CTR_adjust_phase_wave_unit                                           ; CTR_adjust_phase_wave  ; work         ;
+;    |CTR_step_amp:CTR_step_amp_unit|                     ; 3 (3)               ; 5 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_gen_wave|CTR_step_amp:CTR_step_amp_unit                                                             ; CTR_step_amp           ; work         ;
+;       |BTN_detect_edge:BTN_DE_unit|                     ; 0 (0)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_gen_wave|CTR_step_amp:CTR_step_amp_unit|BTN_detect_edge:BTN_DE_unit                                 ; BTN_detect_edge        ; work         ;
+;    |CTR_step_phase:CTR_step_phase_unit|                 ; 18 (8)              ; 19 (6)                    ; 0                 ; 0          ; 0    ; 0            ; |Top_gen_wave|CTR_step_phase:CTR_step_phase_unit                                                         ; CTR_step_phase         ; work         ;
+;       |CTR_sevenseg:SEG_UNIT|                           ; 10 (4)              ; 13 (13)                   ; 0                 ; 0          ; 0    ; 0            ; |Top_gen_wave|CTR_step_phase:CTR_step_phase_unit|CTR_sevenseg:SEG_UNIT                                   ; CTR_sevenseg           ; work         ;
+;          |seven_seg_anode_common:HEX_1_unit|            ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_gen_wave|CTR_step_phase:CTR_step_phase_unit|CTR_sevenseg:SEG_UNIT|seven_seg_anode_common:HEX_1_unit ; seven_seg_anode_common ; work         ;
+;          |seven_seg_anode_common:HEX_2_unit|            ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_gen_wave|CTR_step_phase:CTR_step_phase_unit|CTR_sevenseg:SEG_UNIT|seven_seg_anode_common:HEX_2_unit ; seven_seg_anode_common ; work         ;
++---------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------+------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                                                                              ;
++-----------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------+
+; Register name                                                                           ; Reason for Removal                                                                                    ;
++-----------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------+
+; CTR_step_phase:CTR_step_phase_unit|o_step[0]                                            ; Stuck at VCC due to stuck port data_in                                                                ;
+; CTR_step_phase:CTR_step_phase_unit|CTR_sevenseg:SEG_UNIT|o_hex_0[0]                     ; Stuck at VCC due to stuck port data_in                                                                ;
+; CTR_step_amp:CTR_step_amp_unit|o_step[0]                                                ; Stuck at VCC due to stuck port data_in                                                                ;
+; CTR_step_amp:CTR_step_amp_unit|o_hex_0[0,3..6]                                          ; Stuck at VCC due to stuck port data_in                                                                ;
+; CTR_step_amp:CTR_step_amp_unit|o_hex_1[0..5]                                            ; Stuck at VCC due to stuck port data_in                                                                ;
+; o_hex_0[6]~reg0                                                                         ; Stuck at VCC due to stuck port data_in                                                                ;
+; o_hex_0[5]~reg0                                                                         ; Stuck at VCC due to stuck port data_in                                                                ;
+; o_hex_0[4]~reg0                                                                         ; Stuck at VCC due to stuck port data_in                                                                ;
+; o_hex_0[3]~reg0                                                                         ; Stuck at VCC due to stuck port data_in                                                                ;
+; o_hex_0[0]~reg0                                                                         ; Stuck at VCC due to stuck port data_in                                                                ;
+; o_hex_1[5]~reg0                                                                         ; Stuck at VCC due to stuck port data_in                                                                ;
+; o_hex_1[4]~reg0                                                                         ; Stuck at VCC due to stuck port data_in                                                                ;
+; o_hex_1[3]~reg0                                                                         ; Stuck at VCC due to stuck port data_in                                                                ;
+; o_hex_1[2]~reg0                                                                         ; Stuck at VCC due to stuck port data_in                                                                ;
+; o_hex_1[1]~reg0                                                                         ; Stuck at VCC due to stuck port data_in                                                                ;
+; o_hex_1[0]~reg0                                                                         ; Stuck at VCC due to stuck port data_in                                                                ;
+; o_hex_3[0]~reg0                                                                         ; Stuck at VCC due to stuck port data_in                                                                ;
+; CTR_step_amp:CTR_step_amp_unit|BTN_detect_edge:BTN_DE_unit_1|w_n_signal                 ; Merged with BTN_detect_edge:BTN_detect_edge_1_unit|w_n_signal                                         ;
+; CTR_step_phase:CTR_step_phase_unit|BTN_detect_edge:BTN_DE_unit_1|w_n_signal             ; Merged with BTN_detect_edge:BTN_detect_edge_1_unit|w_n_signal                                         ;
+; CTR_step_amp:CTR_step_amp_unit|BTN_detect_edge:BTN_DE_unit_1|w_p_signal                 ; Merged with BTN_detect_edge:BTN_detect_edge_1_unit|w_p_signal                                         ;
+; CTR_step_phase:CTR_step_phase_unit|BTN_detect_edge:BTN_DE_unit_1|w_p_signal             ; Merged with BTN_detect_edge:BTN_detect_edge_1_unit|w_p_signal                                         ;
+; CTR_step_amp:CTR_step_amp_unit|o_step[2,3]                                              ; Merged with CTR_step_amp:CTR_step_amp_unit|o_step[1]                                                  ;
+; CTR_adjust_amp_noise:CTR_adjust_amp_noise_unit|BTN_detect_edge:BTN_DE_unit|w_n_signal   ; Merged with BTN_detect_edge:BTN_detect_edge_2_unit|w_n_signal                                         ;
+; CTR_adjust_amp_wave:CTR_adjust_amp_wave_unit|BTN_detect_edge:BTN_DE_unit|w_n_signal     ; Merged with BTN_detect_edge:BTN_detect_edge_2_unit|w_n_signal                                         ;
+; CTR_adjust_amp_noise:CTR_adjust_amp_noise_unit|BTN_detect_edge:BTN_DE_unit|w_p_signal   ; Merged with BTN_detect_edge:BTN_detect_edge_2_unit|w_p_signal                                         ;
+; CTR_adjust_amp_wave:CTR_adjust_amp_wave_unit|BTN_detect_edge:BTN_DE_unit|w_p_signal     ; Merged with BTN_detect_edge:BTN_detect_edge_2_unit|w_p_signal                                         ;
+; CTR_adjust_phase_wave:CTR_adjust_phase_wave_unit|BTN_detect_edge:BTN_DE_unit|w_n_signal ; Merged with CTR_adjust_phase_noise:CTR_adjust_phase_noise_unit|BTN_detect_edge:BTN_DE_unit|w_n_signal ;
+; CTR_adjust_phase_wave:CTR_adjust_phase_wave_unit|BTN_detect_edge:BTN_DE_unit|w_p_signal ; Merged with CTR_adjust_phase_noise:CTR_adjust_phase_noise_unit|BTN_detect_edge:BTN_DE_unit|w_p_signal ;
+; CTR_step_amp:CTR_step_amp_unit|o_hex_0[2]                                               ; Merged with CTR_step_amp:CTR_step_amp_unit|o_hex_0[1]                                                 ;
+; CTR_step_amp:CTR_step_amp_unit|w_mode                                                   ; Merged with CTR_step_amp:CTR_step_amp_unit|o_hex_1[6]                                                 ;
+; CTR_step_phase:CTR_step_phase_unit|CTR_sevenseg:SEG_UNIT|o_hex_0[2..5]                  ; Merged with CTR_step_phase:CTR_step_phase_unit|CTR_sevenseg:SEG_UNIT|o_hex_0[1]                       ;
+; CTR_step_phase:CTR_step_phase_unit|BTN_detect_edge:BTN_DE_unit|w_n_signal               ; Merged with CTR_step_amp:CTR_step_amp_unit|BTN_detect_edge:BTN_DE_unit|w_n_signal                     ;
+; CTR_step_phase:CTR_step_phase_unit|BTN_detect_edge:BTN_DE_unit|w_p_signal               ; Merged with CTR_step_amp:CTR_step_amp_unit|BTN_detect_edge:BTN_DE_unit|w_p_signal                     ;
+; CTR_step_phase:CTR_step_phase_unit|o_step[7]                                            ; Merged with CTR_step_phase:CTR_step_phase_unit|o_step[6]                                              ;
+; CTR_step_phase:CTR_step_phase_unit|o_step[5]                                            ; Merged with CTR_step_phase:CTR_step_phase_unit|o_step[4]                                              ;
+; CTR_step_phase:CTR_step_phase_unit|o_step[3]                                            ; Merged with CTR_step_phase:CTR_step_phase_unit|o_step[2]                                              ;
+; CTR_step_phase:CTR_step_phase_unit|CTR_sevenseg:SEG_UNIT|o_hex_1[2]                     ; Stuck at GND due to stuck port data_in                                                                ;
+; CTR_step_phase:CTR_step_phase_unit|w_mode[0]                                            ; Merged with CTR_step_phase:CTR_step_phase_unit|CTR_sevenseg:SEG_UNIT|o_hex_0[6]                       ;
+; CTR_step_phase:CTR_step_phase_unit|CTR_sevenseg:SEG_UNIT|o_hex_2[4,5]                   ; Merged with CTR_step_phase:CTR_step_phase_unit|CTR_sevenseg:SEG_UNIT|o_hex_2[3]                       ;
+; Total Number of Removed Registers = 53                                                  ;                                                                                                       ;
++-----------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                              ;
++---------------------------------------------------------------------+---------------------------+----------------------------------------+
+; Register name                                                       ; Reason for Removal        ; Registers Removed due to This Register ;
++---------------------------------------------------------------------+---------------------------+----------------------------------------+
+; CTR_step_phase:CTR_step_phase_unit|CTR_sevenseg:SEG_UNIT|o_hex_0[0] ; Stuck at VCC              ; o_hex_3[0]~reg0                        ;
+;                                                                     ; due to stuck port data_in ;                                        ;
+; CTR_step_amp:CTR_step_amp_unit|o_hex_0[6]                           ; Stuck at VCC              ; o_hex_0[6]~reg0                        ;
+;                                                                     ; due to stuck port data_in ;                                        ;
+; CTR_step_amp:CTR_step_amp_unit|o_hex_0[5]                           ; Stuck at VCC              ; o_hex_0[5]~reg0                        ;
+;                                                                     ; due to stuck port data_in ;                                        ;
+; CTR_step_amp:CTR_step_amp_unit|o_hex_0[4]                           ; Stuck at VCC              ; o_hex_0[4]~reg0                        ;
+;                                                                     ; due to stuck port data_in ;                                        ;
+; CTR_step_amp:CTR_step_amp_unit|o_hex_0[3]                           ; Stuck at VCC              ; o_hex_0[3]~reg0                        ;
+;                                                                     ; due to stuck port data_in ;                                        ;
+; CTR_step_amp:CTR_step_amp_unit|o_hex_0[0]                           ; Stuck at VCC              ; o_hex_0[0]~reg0                        ;
+;                                                                     ; due to stuck port data_in ;                                        ;
+; CTR_step_amp:CTR_step_amp_unit|o_hex_1[5]                           ; Stuck at VCC              ; o_hex_1[5]~reg0                        ;
+;                                                                     ; due to stuck port data_in ;                                        ;
+; CTR_step_amp:CTR_step_amp_unit|o_hex_1[4]                           ; Stuck at VCC              ; o_hex_1[4]~reg0                        ;
+;                                                                     ; due to stuck port data_in ;                                        ;
+; CTR_step_amp:CTR_step_amp_unit|o_hex_1[3]                           ; Stuck at VCC              ; o_hex_1[3]~reg0                        ;
+;                                                                     ; due to stuck port data_in ;                                        ;
+; CTR_step_amp:CTR_step_amp_unit|o_hex_1[2]                           ; Stuck at VCC              ; o_hex_1[2]~reg0                        ;
+;                                                                     ; due to stuck port data_in ;                                        ;
+; CTR_step_amp:CTR_step_amp_unit|o_hex_1[1]                           ; Stuck at VCC              ; o_hex_1[1]~reg0                        ;
+;                                                                     ; due to stuck port data_in ;                                        ;
+; CTR_step_amp:CTR_step_amp_unit|o_hex_1[0]                           ; Stuck at VCC              ; o_hex_1[0]~reg0                        ;
+;                                                                     ; due to stuck port data_in ;                                        ;
++---------------------------------------------------------------------+---------------------------+----------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 132   ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 132   ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 82    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------------------------------------------------------+
+; Inverted Register Statistics                                                  ;
++---------------------------------------------------------------------+---------+
+; Inverted Register                                                   ; Fan out ;
++---------------------------------------------------------------------+---------+
+; CTR_adjust_amp_wave:CTR_adjust_amp_wave_unit|o_gain_wave[2]         ; 10      ;
+; CTR_adjust_amp_noise:CTR_adjust_amp_noise_unit|o_gain_wave[0]       ; 12      ;
+; o_hex_0[1]~reg0                                                     ; 1       ;
+; o_hex_0[2]~reg0                                                     ; 1       ;
+; o_hex_1[6]~reg0                                                     ; 1       ;
+; o_hex_2[0]~reg0                                                     ; 1       ;
+; o_hex_2[1]~reg0                                                     ; 1       ;
+; o_hex_2[2]~reg0                                                     ; 1       ;
+; o_hex_2[3]~reg0                                                     ; 1       ;
+; o_hex_2[4]~reg0                                                     ; 1       ;
+; o_hex_2[5]~reg0                                                     ; 1       ;
+; o_hex_2[6]~reg0                                                     ; 1       ;
+; o_hex_3[1]~reg0                                                     ; 1       ;
+; o_hex_3[2]~reg0                                                     ; 1       ;
+; o_hex_3[3]~reg0                                                     ; 1       ;
+; o_hex_3[4]~reg0                                                     ; 1       ;
+; o_hex_3[5]~reg0                                                     ; 1       ;
+; o_hex_3[6]~reg0                                                     ; 1       ;
+; o_hex_4[0]~reg0                                                     ; 1       ;
+; o_hex_4[1]~reg0                                                     ; 1       ;
+; o_hex_4[2]~reg0                                                     ; 1       ;
+; o_hex_4[3]~reg0                                                     ; 1       ;
+; o_hex_4[4]~reg0                                                     ; 1       ;
+; o_hex_4[5]~reg0                                                     ; 1       ;
+; o_hex_4[6]~reg0                                                     ; 1       ;
+; o_hex_5[0]~reg0                                                     ; 1       ;
+; o_hex_5[1]~reg0                                                     ; 1       ;
+; o_hex_5[2]~reg0                                                     ; 1       ;
+; o_hex_5[3]~reg0                                                     ; 1       ;
+; o_hex_5[4]~reg0                                                     ; 1       ;
+; o_hex_5[5]~reg0                                                     ; 1       ;
+; o_hex_5[6]~reg0                                                     ; 1       ;
+; CTR_step_amp:CTR_step_amp_unit|o_hex_0[1]                           ; 2       ;
+; CTR_step_amp:CTR_step_amp_unit|o_hex_1[6]                           ; 3       ;
+; CTR_adjust_amp_wave:CTR_adjust_amp_wave_unit|o_hex_2[0]             ; 1       ;
+; CTR_adjust_amp_noise:CTR_adjust_amp_noise_unit|o_hex_2[0]           ; 1       ;
+; CTR_adjust_amp_wave:CTR_adjust_amp_wave_unit|o_hex_2[1]             ; 1       ;
+; CTR_adjust_amp_noise:CTR_adjust_amp_noise_unit|o_hex_2[1]           ; 1       ;
+; CTR_adjust_amp_wave:CTR_adjust_amp_wave_unit|o_hex_2[2]             ; 1       ;
+; CTR_adjust_amp_noise:CTR_adjust_amp_noise_unit|o_hex_2[2]           ; 1       ;
+; CTR_adjust_amp_wave:CTR_adjust_amp_wave_unit|o_hex_2[3]             ; 1       ;
+; CTR_adjust_amp_noise:CTR_adjust_amp_noise_unit|o_hex_2[3]           ; 1       ;
+; CTR_adjust_amp_wave:CTR_adjust_amp_wave_unit|o_hex_2[4]             ; 1       ;
+; CTR_adjust_amp_noise:CTR_adjust_amp_noise_unit|o_hex_2[4]           ; 1       ;
+; CTR_adjust_amp_wave:CTR_adjust_amp_wave_unit|o_hex_2[5]             ; 1       ;
+; CTR_adjust_amp_noise:CTR_adjust_amp_noise_unit|o_hex_2[5]           ; 1       ;
+; CTR_adjust_amp_wave:CTR_adjust_amp_wave_unit|o_hex_2[6]             ; 1       ;
+; CTR_adjust_amp_noise:CTR_adjust_amp_noise_unit|o_hex_2[6]           ; 1       ;
+; CTR_step_phase:CTR_step_phase_unit|CTR_sevenseg:SEG_UNIT|o_hex_1[0] ; 1       ;
+; CTR_step_phase:CTR_step_phase_unit|CTR_sevenseg:SEG_UNIT|o_hex_2[0] ; 1       ;
+; Total number of inverted registers = 50                             ;         ;
++---------------------------------------------------------------------+---------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------+
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |Top_gen_wave|o_hex_2[1]~reg0 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------+
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |Top_gen_wave ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; SIZE_BTN       ; 4     ; Signed Integer                                      ;
+; SIZE_SW        ; 10    ; Signed Integer                                      ;
+; SIZE_LEDR      ; 10    ; Signed Integer                                      ;
+; SIZE_LEDG      ; 4     ; Signed Integer                                      ;
+; SIZE_WIDTH     ; 24    ; Signed Integer                                      ;
+; SIZE_DEPTH     ; 1024  ; Signed Integer                                      ;
+; SIZE_SEG       ; 7     ; Signed Integer                                      ;
+; NUM_MODE_WAVE  ; 3     ; Signed Integer                                      ;
+; NUM_DUTY_CYCLE ; 3     ; Signed Integer                                      ;
+; SIZE_GAIN_WAVE ; 3     ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CTR_step_amp:CTR_step_amp_unit ;
++----------------+-------+----------------------------------------------------+
+; Parameter Name ; Value ; Type                                               ;
++----------------+-------+----------------------------------------------------+
+; NUM_GAIN_STEP  ; 3     ; Signed Integer                                     ;
+; NUM_SEG        ; 7     ; Signed Integer                                     ;
++----------------+-------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CTR_adjust_amp_wave:CTR_adjust_amp_wave_unit ;
++----------------+-------+------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                             ;
++----------------+-------+------------------------------------------------------------------+
+; NUM_GAIN_STEP  ; 3     ; Signed Integer                                                   ;
+; NUM_SEG        ; 7     ; Signed Integer                                                   ;
++----------------+-------+------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CTR_adjust_amp_noise:CTR_adjust_amp_noise_unit ;
++----------------+-------+--------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                               ;
++----------------+-------+--------------------------------------------------------------------+
+; NUM_GAIN_STEP  ; 3     ; Signed Integer                                                     ;
+; NUM_SEG        ; 7     ; Signed Integer                                                     ;
++----------------+-------+--------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CTR_step_phase:CTR_step_phase_unit ;
++----------------+-------+--------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                   ;
++----------------+-------+--------------------------------------------------------+
+; SIZE_VALUE     ; 7     ; Signed Integer                                         ;
+; SIZE_SEG       ; 7     ; Signed Integer                                         ;
++----------------+-------+--------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CTR_step_phase:CTR_step_phase_unit|CTR_sevenseg:SEG_UNIT ;
++----------------+-------+------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                         ;
++----------------+-------+------------------------------------------------------------------------------+
+; NUM_VALUE      ; 3     ; Signed Integer                                                               ;
+; NUM_SEG        ; 7     ; Signed Integer                                                               ;
++----------------+-------+------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CTR_adjust_phase_wave:CTR_adjust_phase_wave_unit ;
++----------------+-------+----------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                 ;
++----------------+-------+----------------------------------------------------------------------+
+; SIZE_VALUE     ; 7     ; Signed Integer                                                       ;
+; SIZE_SEG       ; 7     ; Signed Integer                                                       ;
+; SIZE_PHASE     ; 10    ; Signed Integer                                                       ;
++----------------+-------+----------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CTR_adjust_phase_noise:CTR_adjust_phase_noise_unit ;
++----------------+-------+------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                   ;
++----------------+-------+------------------------------------------------------------------------+
+; SIZE_VALUE     ; 7     ; Signed Integer                                                         ;
+; SIZE_SEG       ; 7     ; Signed Integer                                                         ;
+; SIZE_PHASE     ; 10    ; Signed Integer                                                         ;
++----------------+-------+------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "CTR_adjust_phase_noise:CTR_adjust_phase_noise_unit|BTN_detect_edge:BTN_DE_unit" ;
++------------+-------+----------+----------------------------------------------------------------------------+
+; Port       ; Type  ; Severity ; Details                                                                    ;
++------------+-------+----------+----------------------------------------------------------------------------+
+; i_pos_edge ; Input ; Info     ; Stuck at GND                                                               ;
++------------+-------+----------+----------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "CTR_adjust_phase_wave:CTR_adjust_phase_wave_unit|BTN_detect_edge:BTN_DE_unit" ;
++------------+-------+----------+--------------------------------------------------------------------------+
+; Port       ; Type  ; Severity ; Details                                                                  ;
++------------+-------+----------+--------------------------------------------------------------------------+
+; i_pos_edge ; Input ; Info     ; Stuck at GND                                                             ;
++------------+-------+----------+--------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "CTR_step_phase:CTR_step_phase_unit|CTR_sevenseg:SEG_UNIT|seven_seg_anode_common:HEX_1_unit" ;
++--------+-------+----------+--------------------------------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                                                    ;
++--------+-------+----------+--------------------------------------------------------------------------------------------+
+; bin[3] ; Input ; Info     ; Stuck at GND                                                                               ;
++--------+-------+----------+--------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "CTR_step_phase:CTR_step_phase_unit|BTN_detect_edge:BTN_DE_unit_1" ;
++------------+-------+----------+--------------------------------------------------------------+
+; Port       ; Type  ; Severity ; Details                                                      ;
++------------+-------+----------+--------------------------------------------------------------+
+; i_pos_edge ; Input ; Info     ; Stuck at GND                                                 ;
++------------+-------+----------+--------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "CTR_step_phase:CTR_step_phase_unit|BTN_detect_edge:BTN_DE_unit" ;
++------------+-------+----------+------------------------------------------------------------+
+; Port       ; Type  ; Severity ; Details                                                    ;
++------------+-------+----------+------------------------------------------------------------+
+; i_pos_edge ; Input ; Info     ; Stuck at GND                                               ;
++------------+-------+----------+------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "CTR_adjust_amp_noise:CTR_adjust_amp_noise_unit|seven_seg_anode_common:SEVEN_SEG_Unit"                                                      ;
++------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                     ;
++------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------+
+; bin  ; Input ; Warning  ; Input port expression (3 bits) is smaller than the input port (4 bits) it drives.  Extra input bit(s) "bin[3..3]" will be connected to GND. ;
++------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "CTR_adjust_amp_noise:CTR_adjust_amp_noise_unit|BTN_detect_edge:BTN_DE_unit" ;
++------------+-------+----------+------------------------------------------------------------------------+
+; Port       ; Type  ; Severity ; Details                                                                ;
++------------+-------+----------+------------------------------------------------------------------------+
+; i_pos_edge ; Input ; Info     ; Stuck at GND                                                           ;
++------------+-------+----------+------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "CTR_adjust_amp_wave:CTR_adjust_amp_wave_unit|seven_seg_anode_common:SEVEN_SEG_Unit"                                                        ;
++------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                     ;
++------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------+
+; bin  ; Input ; Warning  ; Input port expression (3 bits) is smaller than the input port (4 bits) it drives.  Extra input bit(s) "bin[3..3]" will be connected to GND. ;
++------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "CTR_adjust_amp_wave:CTR_adjust_amp_wave_unit|BTN_detect_edge:BTN_DE_unit" ;
++------------+-------+----------+----------------------------------------------------------------------+
+; Port       ; Type  ; Severity ; Details                                                              ;
++------------+-------+----------+----------------------------------------------------------------------+
+; i_pos_edge ; Input ; Info     ; Stuck at GND                                                         ;
++------------+-------+----------+----------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "CTR_step_amp:CTR_step_amp_unit|BTN_detect_edge:BTN_DE_unit_1" ;
++------------+-------+----------+----------------------------------------------------------+
+; Port       ; Type  ; Severity ; Details                                                  ;
++------------+-------+----------+----------------------------------------------------------+
+; i_pos_edge ; Input ; Info     ; Stuck at GND                                             ;
++------------+-------+----------+----------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "CTR_step_amp:CTR_step_amp_unit|BTN_detect_edge:BTN_DE_unit" ;
++------------+-------+----------+--------------------------------------------------------+
+; Port       ; Type  ; Severity ; Details                                                ;
++------------+-------+----------+--------------------------------------------------------+
+; i_pos_edge ; Input ; Info     ; Stuck at GND                                           ;
++------------+-------+----------+--------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "BTN_detect_edge:BTN_detect_edge_3_unit"                                                   ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                             ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; i_pos_edge ; Input  ; Info     ; Stuck at GND                                                                        ;
+; o_signal   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------+
+; Port Connectivity Checks: "BTN_detect_edge:BTN_detect_edge_2_unit" ;
++------------+-------+----------+------------------------------------+
+; Port       ; Type  ; Severity ; Details                            ;
++------------+-------+----------+------------------------------------+
+; i_pos_edge ; Input ; Info     ; Stuck at GND                       ;
++------------+-------+----------+------------------------------------+
+
+
++--------------------------------------------------------------------+
+; Port Connectivity Checks: "BTN_detect_edge:BTN_detect_edge_1_unit" ;
++------------+-------+----------+------------------------------------+
+; Port       ; Type  ; Severity ; Details                            ;
++------------+-------+----------+------------------------------------+
+; i_pos_edge ; Input ; Info     ; Stuck at GND                       ;
++------------+-------+----------+------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "BTN_detect_edge:BTN_detect_edge_0_unit"                                                   ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                             ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; i_pos_edge ; Input  ; Info     ; Stuck at GND                                                                        ;
+; o_signal   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 132                         ;
+;     CLR               ; 50                          ;
+;     ENA CLR           ; 82                          ;
+; arriav_lcell_comb     ; 157                         ;
+;     arith             ; 42                          ;
+;         1 data inputs ; 2                           ;
+;         2 data inputs ; 40                          ;
+;     normal            ; 115                         ;
+;         0 data inputs ; 2                           ;
+;         1 data inputs ; 58                          ;
+;         2 data inputs ; 8                           ;
+;         3 data inputs ; 22                          ;
+;         4 data inputs ; 6                           ;
+;         5 data inputs ; 5                           ;
+;         6 data inputs ; 14                          ;
+; boundary_port         ; 103                         ;
+;                       ;                             ;
+; Max LUT depth         ; 2.00                        ;
+; Average LUT depth     ; 1.19                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
+    Info: Processing started: Thu Oct  2 20:38:01 2025
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Top_gen_wave -c Top_gen_wave
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv
+    Info (12023): Found entity 1: Top_gen_wave File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/seven_seg_anode_common.sv
+    Info (12023): Found entity 1: seven_seg_anode_common File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/seven_seg_anode_common.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/CTR_step_phase.sv
+    Info (12023): Found entity 1: CTR_step_phase File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/CTR_step_phase.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/CTR_step_amp.sv
+    Info (12023): Found entity 1: CTR_step_amp File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/CTR_step_amp.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/CTR_sevenseg.sv
+    Info (12023): Found entity 1: CTR_sevenseg File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/CTR_sevenseg.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/CTR_adjust_phase_wave.sv
+    Info (12023): Found entity 1: CTR_adjust_phase_wave File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/CTR_adjust_phase_wave.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/CTR_adjust_phase_noise.sv
+    Info (12023): Found entity 1: CTR_adjust_phase_noise File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/CTR_adjust_phase_noise.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/CTR_adjust_amp_wave.sv
+    Info (12023): Found entity 1: CTR_adjust_amp_wave File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/CTR_adjust_amp_wave.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/CTR_adjust_amp_noise.sv
+    Info (12023): Found entity 1: CTR_adjust_amp_noise File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/CTR_adjust_amp_noise.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/BTN_detect_edge.sv
+    Info (12023): Found entity 1: BTN_detect_edge File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/BTN_detect_edge.sv Line: 3
+Info (12127): Elaborating entity "Top_gen_wave" for the top level hierarchy
+Warning (10034): Output port "o_ledr[9]" at Top_gen_wave.sv(28) has no driver File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 28
+Warning (10034): Output port "o_ledr[0]" at Top_gen_wave.sv(28) has no driver File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 28
+Info (12128): Elaborating entity "BTN_detect_edge" for hierarchy "BTN_detect_edge:BTN_detect_edge_0_unit" File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 82
+Info (12128): Elaborating entity "CTR_step_amp" for hierarchy "CTR_step_amp:CTR_step_amp_unit" File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 134
+Info (12128): Elaborating entity "CTR_adjust_amp_wave" for hierarchy "CTR_adjust_amp_wave:CTR_adjust_amp_wave_unit" File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 146
+Info (12128): Elaborating entity "seven_seg_anode_common" for hierarchy "CTR_adjust_amp_wave:CTR_adjust_amp_wave_unit|seven_seg_anode_common:SEVEN_SEG_Unit" File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/CTR_adjust_amp_wave.sv Line: 38
+Info (12128): Elaborating entity "CTR_adjust_amp_noise" for hierarchy "CTR_adjust_amp_noise:CTR_adjust_amp_noise_unit" File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 158
+Info (12128): Elaborating entity "CTR_step_phase" for hierarchy "CTR_step_phase:CTR_step_phase_unit" File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 173
+Info (12128): Elaborating entity "CTR_sevenseg" for hierarchy "CTR_step_phase:CTR_step_phase_unit|CTR_sevenseg:SEG_UNIT" File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/CTR_step_phase.sv Line: 86
+Info (12128): Elaborating entity "CTR_adjust_phase_wave" for hierarchy "CTR_adjust_phase_wave:CTR_adjust_phase_wave_unit" File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 185
+Warning (10230): Verilog HDL assignment warning at CTR_adjust_phase_wave.sv(43): truncated value with size 32 to match size of target (10) File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/CTR_adjust_phase_wave.sv Line: 43
+Info (12128): Elaborating entity "CTR_adjust_phase_noise" for hierarchy "CTR_adjust_phase_noise:CTR_adjust_phase_noise_unit" File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 197
+Warning (10230): Verilog HDL assignment warning at CTR_adjust_phase_noise.sv(43): truncated value with size 32 to match size of target (10) File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/CTR_adjust_phase_noise.sv Line: 43
+Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "o_ledr[0]" is stuck at GND File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 28
+    Warning (13410): Pin "o_ledr[9]" is stuck at GND File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 28
+    Warning (13410): Pin "o_hex_0[0]" is stuck at VCC File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 243
+    Warning (13410): Pin "o_hex_0[3]" is stuck at VCC File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 243
+    Warning (13410): Pin "o_hex_0[4]" is stuck at VCC File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 243
+    Warning (13410): Pin "o_hex_0[5]" is stuck at VCC File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 243
+    Warning (13410): Pin "o_hex_0[6]" is stuck at VCC File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 243
+    Warning (13410): Pin "o_hex_1[0]" is stuck at VCC File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 243
+    Warning (13410): Pin "o_hex_1[1]" is stuck at VCC File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 243
+    Warning (13410): Pin "o_hex_1[2]" is stuck at VCC File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 243
+    Warning (13410): Pin "o_hex_1[3]" is stuck at VCC File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 243
+    Warning (13410): Pin "o_hex_1[4]" is stuck at VCC File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 243
+    Warning (13410): Pin "o_hex_1[5]" is stuck at VCC File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 243
+    Warning (13410): Pin "o_hex_3[0]" is stuck at VCC File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 243
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "i_sw[0]" File: /home/noname/Documents/project_tiny/DSP_Lab/LAB1/02_rtl/Top_module/Top_gen_wave.sv Line: 15
+Info (21057): Implemented 253 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 15 input pins
+    Info (21059): Implemented 88 output pins
+    Info (21061): Implemented 150 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 23 warnings
+    Info: Peak virtual memory: 470 megabytes
+    Info: Processing ended: Thu Oct  2 20:38:08 2025
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:16
+
+

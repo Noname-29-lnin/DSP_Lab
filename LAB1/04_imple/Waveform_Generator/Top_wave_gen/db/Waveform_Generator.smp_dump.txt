@@ -1,0 +1,36 @@
+
+State Machine - |Waveform_Generator|codec_data:codec_trans_rec|reg_state
+Name reg_state.RIGHT_HOLD_III reg_state.RIGHT_HOLD_II reg_state.RIGHT_HOLD_I reg_state.RIGHT_SETUP_II reg_state.RIGHT_SETUP_I reg_state.LEFT_HOLD_III reg_state.LEFT_HOLD_II reg_state.LEFT_HOLD_I reg_state.LEFT_SETUP_II reg_state.LEFT_SETUP_I reg_state.FIRST_DATA reg_state.IDLE 
+reg_state.IDLE 0 0 0 0 0 0 0 0 0 0 0 0 
+reg_state.FIRST_DATA 0 0 0 0 0 0 0 0 0 0 1 1 
+reg_state.LEFT_SETUP_I 0 0 0 0 0 0 0 0 0 1 0 1 
+reg_state.LEFT_SETUP_II 0 0 0 0 0 0 0 0 1 0 0 1 
+reg_state.LEFT_HOLD_I 0 0 0 0 0 0 0 1 0 0 0 1 
+reg_state.LEFT_HOLD_II 0 0 0 0 0 0 1 0 0 0 0 1 
+reg_state.LEFT_HOLD_III 0 0 0 0 0 1 0 0 0 0 0 1 
+reg_state.RIGHT_SETUP_I 0 0 0 0 1 0 0 0 0 0 0 1 
+reg_state.RIGHT_SETUP_II 0 0 0 1 0 0 0 0 0 0 0 1 
+reg_state.RIGHT_HOLD_I 0 0 1 0 0 0 0 0 0 0 0 1 
+reg_state.RIGHT_HOLD_II 0 1 0 0 0 0 0 0 0 0 0 1 
+reg_state.RIGHT_HOLD_III 1 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |Waveform_Generator|config_codec:codec_config_i2c|reg_state
+Name reg_state.DONE reg_state.HOLD reg_state.START reg_state.IDLE 
+reg_state.IDLE 0 0 0 0 
+reg_state.START 0 0 1 1 
+reg_state.HOLD 0 1 0 1 
+reg_state.DONE 1 0 0 1 
+
+State Machine - |Waveform_Generator|config_codec:codec_config_i2c|i2c_trans:i2c|reg_state
+Name reg_state.STOP_II reg_state.STOP_I reg_state.DATA_IV reg_state.DATA_III reg_state.DATA_II reg_state.DATA_I reg_state.HOLD_II reg_state.HOLD_I reg_state.START_II reg_state.START_I reg_state.IDLE 
+reg_state.IDLE 0 0 0 0 0 0 0 0 0 0 0 
+reg_state.START_I 0 0 0 0 0 0 0 0 0 1 1 
+reg_state.START_II 0 0 0 0 0 0 0 0 1 0 1 
+reg_state.HOLD_I 0 0 0 0 0 0 0 1 0 0 1 
+reg_state.HOLD_II 0 0 0 0 0 0 1 0 0 0 1 
+reg_state.DATA_I 0 0 0 0 0 1 0 0 0 0 1 
+reg_state.DATA_II 0 0 0 0 1 0 0 0 0 0 1 
+reg_state.DATA_III 0 0 0 1 0 0 0 0 0 0 1 
+reg_state.DATA_IV 0 0 1 0 0 0 0 0 0 0 1 
+reg_state.STOP_I 0 1 0 0 0 0 0 0 0 0 1 
+reg_state.STOP_II 1 0 0 0 0 0 0 0 0 0 1 
